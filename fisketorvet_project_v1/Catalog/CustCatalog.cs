@@ -25,9 +25,9 @@ namespace fisketorvet_project_v1.Catalog
             
         }
 
-        public Customer SearCustomer()
+        public Customer SearchCustomer(int id)
         {
-
+            return new Customer();
         }
     }
 }
