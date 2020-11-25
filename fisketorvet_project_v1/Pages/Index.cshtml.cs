@@ -16,7 +16,7 @@ namespace fisketorvet_project_v1.Pages
         {
             _logger = logger;
         }
-
+        //Hello pedro
         public void OnGet()
         {
 
