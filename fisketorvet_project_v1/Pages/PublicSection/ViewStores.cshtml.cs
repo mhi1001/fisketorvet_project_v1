@@ -5,9 +5,9 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace fisketorvet_project_v1.Pages
+namespace fisketorvet_project_v1.Pages.PublicSection
 {
-    public class AdminPageModel : PageModel
+    public class ViewStoresModel : PageModel
     {
         public void OnGet()
         {

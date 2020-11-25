@@ -1,0 +1,58 @@
+﻿@page
+@using fisketorvet_project_v1.Services
+@model fisketorvet_project_v1.Pages.AdminSection.AdminPageModel
+@{
+}
+
+@inject SiteUserCatalog SiteUserCatalog
+<div class="text-center">
+    <h1 class="display-4">Welcome to the Admin Page</h1>
+
+</div>
+<div class="alert alert-primary" role="alert">
+    There are currently @SiteUserCatalog.GetAllSiteUsers().Count users registered in our Website !
+</div>
+<div class="card-deck">
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">Customer Administration</h5>
+            <p class="card-text">
+                In this section you can find several tools to manage the existing users of the shopping center and
+                create new ones.
+            </p>
+        </div>
+        <div class="card-footer">
+            <form method="post">
+                <input type="submit" class="btn btn-light" value="Manage" asp-page-handler="ManageCustomerAdmin" />
+            </form>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">Store Administration</h5>
+            <p class="card-text">
+                In this section you can find several tools to manage the existing Stores of the shopping center and
+                create new ones. By picking which store you can verify it's products.
+            </p>
+        </div>
+        <div class="card-footer">
+            <form method="post">
+                <input type="submit" class="btn btn-light" value="Manage" asp-page-handler="ManageStoreAdmin" />
+            </form>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">Order Administration</h5>
+            <p class="card-text">
+                In this section you can see every created order and also create your own, to be able to troubleshoot or just consult
+                what customers have bought at which time.
+            </p>
+        </div>
+        <div class="card-footer">
+            <form method="post">
+                <input type="submit" class="btn btn-light" value="Manage" asp-page-handler="ManageOrderAdmin" />
+            </form>
+        </div>
+    </div>
+</div>

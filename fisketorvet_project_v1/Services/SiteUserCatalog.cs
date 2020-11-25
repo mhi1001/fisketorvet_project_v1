@@ -1,14 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Security.Policy;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 using fisketorvet_project_v1.Helpers;
 using fisketorvet_project_v1.Models;
-using Microsoft.CodeAnalysis.CSharp.Syntax;
-using Microsoft.Extensions.WebEncoders.Testing;
 
-namespace fisketorvet_project_v1.Catalog
+namespace fisketorvet_project_v1.Services
 {
     public class SiteUserCatalog
     {
