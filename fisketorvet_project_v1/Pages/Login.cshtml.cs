@@ -12,7 +12,6 @@ namespace fisketorvet_project_v1.Pages
 {
     public class LoginModel : PageModel
     {
-        private Dictionary<int, SiteUser> SiteUsers { get; set; }
         private SiteUserCatalog _siteUserRepo;
         [BindProperty]
         public SiteUser SiteUser { get; set; }
@@ -24,7 +23,7 @@ namespace fisketorvet_project_v1.Pages
 
         public void OnGet()
         {
-           // SiteUsers = _siteUserRepo.GetAllSiteUsers();
+           
         }
 
         public IActionResult OnPost()
