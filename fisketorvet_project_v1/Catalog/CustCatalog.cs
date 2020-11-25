@@ -22,8 +22,12 @@ namespace fisketorvet_project_v1.Catalog
 
         public void Update(Customer c)
         {
-            c.ID=new int();
-            c.Address=new string(c.Address);
+            
+        }
+
+        public Customer SearCustomer()
+        {
+
         }
     }
 }
