@@ -9,6 +9,7 @@ namespace fisketorvet_project_v1.Catalog
     public class CustCatalog
     {
         Dictionary<int, Customer> clients=new Dictionary<int, Customer>();
+        private Dictionary<int, Customer> customers { get; set; }
 
         public void AddCustomer(Customer c)
         {
