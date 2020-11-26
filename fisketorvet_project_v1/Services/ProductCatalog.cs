@@ -7,5 +7,15 @@ namespace fisketorvet_project_v1.Services
     {
         private string filePath = @".\Data\Products.json";
         private Dictionary<int, Product> Products { get; set; }
+
+        public void AddProduct(Product p)
+        {
+            Products.Add(p.Id, p);
+        }
+
+        public void RemoveProduct(Product p)
+        {
+            Products.Remove(p.Id);
+        }
     }
 }
