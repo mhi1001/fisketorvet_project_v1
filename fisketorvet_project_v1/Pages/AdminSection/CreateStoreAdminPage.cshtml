@@ -1,0 +1,33 @@
+﻿@page
+@model fisketorvet_project_v1.Pages.AdminSection.CreateStoreAdminPageModel
+@{
+}
+<form method="post">
+    <div class="col-md-4">
+        
+        <div class="form-group">
+            <label asp-for="@Model.Store.Name" class="control-label"> Name </label>
+            <input asp-for="@Model.Store.Name" class="form-control" />
+            @*<span asp-validation-for="@Model.Store.Name" class="text-danger"></span>*@
+        </div>
+        <div class="form-group">
+            <label asp-for="@Model.Store.Location" class="control-label"> Location </label>
+            <input asp-for="@Model.Store.Location" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label asp-for="@Model.Store.ImagePath" class="control-label"> ImageName </label>
+            <input asp-for="@Model.Store.ImagePath" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label asp-for="@Model.Store.TypeOfStore" class="control-label"> Type </label>
+            <input asp-for="@Model.Store.TypeOfStore" class="form-control" />
+            @*<span asp-validation-for="@Model." class="text-danger"></span>*@
+        </div>
+        <div class="form-group">
+            <input type="submit" class="btn btn-primary btn-outline-primary" value="Create" />
+        </div>
+    </div>
+</form>
+<div>
+    <a asp-page="GetAllPizzas">Back to Pizza List</a>
+</div>
