@@ -1,0 +1,30 @@
+﻿@page
+@using fisketorvet_project_v1.Models
+@model fisketorvet_project_v1.Pages.LoginModel
+@{
+}
+<h1> Login </h1>
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div class="form-group">
+                <label class="control-label"> Username </label>
+                <input asp-for="@Model.SiteUser.UserName" class="form-control" />
+                <span asp-validation-for="@Model.SiteUser.UserName" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label"> Password </label>
+                <input asp-for="@Model.SiteUser.Password" type="password" class="form-control" />
+                <span asp-validation-for="@Model.SiteUser.Password" class="text-danger"></span>
+
+            </div>
+            <div class="form-group">
+                <input type="submit" class="btn btn-primary btn-outline-primary" value="Login" />
+            </div>
+        </form>
+        <div>
+            <a asp-page="/Index">Back to MainMenu</a>
+        </div>
+    </div>
+</div>
