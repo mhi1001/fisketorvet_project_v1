@@ -23,6 +23,19 @@ namespace fisketorvet_project_v1.Services
             JsonWriter.WriteToStoresJson(Stores, filePath); //After adding the new one to the dictionary, writes it again to json
         }
 
+        public Store GetStore(int id)
+        {
+            Stores = GetAllStores(); //Populate the dictionary
+            foreach (Store st in Stores.Values)
+            {
+                if (st.Id == id)
+                {
+                    return st;
+                }
+            }
+            return new Store();
+        }
+
         public Store AutoIncrementId(Store s) //Method to automatically add all the ids
         {
             Stores = GetAllStores(); //
@@ -32,7 +45,7 @@ namespace fisketorvet_project_v1.Services
             {
                 Id.Add(store.Id);
             }
-            
+
             if (Id.Count != 0)//if there are IDs, it will get the last value and add +1 
             {
                 int maxId = Id.Max() + 1;
@@ -46,7 +59,7 @@ namespace fisketorvet_project_v1.Services
             return s;
 
         }
-        
+
 
 
     }
