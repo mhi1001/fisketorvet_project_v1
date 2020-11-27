@@ -11,7 +11,13 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Img\" />
+    <Folder Include="wwwroot\img\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\img\bershka.png" />
+    <None Include="wwwroot\img\sportzone.png" />
+    <None Include="wwwroot\img\zara.png" />
   </ItemGroup>
 
 </Project>
