@@ -25,6 +25,7 @@ namespace fisketorvet_project_v1.Services
 
         public Store AutoIncrementId(Store s) //Method to automatically add all the ids
         {
+            Stores = GetAllStores(); //
             // empty list that receives all the IDs
             List<int> Id = new List<int>();
             foreach (var store in Stores.Values)
