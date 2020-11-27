@@ -43,6 +43,7 @@ namespace fisketorvet_project_v1.Pages
 
                     case 1:
                         return RedirectToPage("UserSection/UserPage");
+                    //case 2:if()
                 }
             }
             return Redirect("/Index");
