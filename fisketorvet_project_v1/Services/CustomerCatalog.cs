@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using fisketorvet_project_v1.Helpers;
 using fisketorvet_project_v1.Models;
 
 namespace fisketorvet_project_v1.Services
@@ -7,6 +8,11 @@ namespace fisketorvet_project_v1.Services
     {
         private string filePath = @".\Data\Customers.json";
         private Dictionary<int, Customer> Customers { get; set; }
+
+        public Dictionary<int, SiteUser> GetAllSiteUsers()
+        {
+            return JsonReader.ReadSiteUserJson(filePath);
+        }
 
         public void AddCustomer(Customer c)
         {
