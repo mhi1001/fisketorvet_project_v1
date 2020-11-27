@@ -11,6 +11,7 @@ namespace fisketorvet_project_v1.Models
         public string Name {get; set;}
         public string TypeOfStore { get; set; }
         public string Location { get; set; }
+        public string ImagePath { get; set; }
         public Dictionary<int, Product> Products { get; set; }
     }
 }

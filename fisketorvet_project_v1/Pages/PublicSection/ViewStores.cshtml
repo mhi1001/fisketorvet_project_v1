@@ -1,8 +1,30 @@
 ﻿@page
+@using fisketorvet_project_v1.Models
 @model fisketorvet_project_v1.Pages.PublicSection.ViewStoresModel
 @{
 }
+<style>
+    .card:hover {
+        box-shadow: 8px 8px 8px lightgrey;
+    }
+</style>
+
 <div class="text-center">
     <h1 class="display-4">Our Stores</h1>
 </div>
 
+<div class="card-deck">
+
+    @foreach (Store st in Model.Stores.Values)
+    {
+        <div class="card">
+            <img class="card-img-top" src="/img/storeLogos/@st.ImagePath" alt="">
+            <div class="card-body">
+                <h5 class="card-title">@st.Name</h5>
+                <p class="card-text"> Zara specializes in fast fashion, and products include clothing, accessories, shoes, swimwear, beauty, and perfumes.</p>
+                <p class="card-text"><small class="text-muted"></small></p>
+                <a class="stretched-link" asp-page="StoresDetails" asp-route-id="@st.Id"></a>
+            </div>
+        </div>
+    }
+</div>
