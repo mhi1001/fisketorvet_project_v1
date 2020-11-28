@@ -21,7 +21,7 @@ namespace fisketorvet_project_v1.Pages.PublicSection
         public IActionResult OnGet(int id)
         {
             Store = _storeCatalog.GetStore(id);
-            return Redirect("StoresDetails");
+            return Page();
         }
     }
 }

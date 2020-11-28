@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -11,6 +12,8 @@ public enum ProductType
     Medicine,
     Toys,
     Books,
+    [Display(Name="Fashion Accessories")] //<-- This decoration adds a space when this specific item is displayed
+    FashionAccessories,
 
 }
 namespace fisketorvet_project_v1.Models

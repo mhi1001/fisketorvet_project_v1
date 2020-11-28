@@ -14,17 +14,17 @@
 </div>
 
 <div class="card-deck">
-    
-   @foreach (Store st in Model.Stores.Values)
-   {
-       <div class="card">
-           <img class="card-img-top" src="/img/@st.ImagePath" alt="">
-           <div class="card-body">
-               <h5 class="card-title">@st.Name</h5>
-               <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-               <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-               <a asp-page="EditPizza" asp-route-id="@st.Id"></a>
-           </div>
-       </div>
-   }
+
+    @foreach (Store st in Model.Stores.Values)
+    {
+        <div class="card">
+            <img class="card-img-top" src="/img/storeLogos/@st.ImagePath" alt="">
+            <div class="card-body">
+                <h5 class="card-title">@st.Name</h5>
+                <p class="card-text"> Zara specializes in fast fashion, and products include clothing, accessories, shoes, swimwear, beauty, and perfumes.</p>
+                <p class="card-text"><small class="text-muted"></small></p>
+                <a class="stretched-link" asp-page="StoresDetails" asp-route-id="@st.Id"></a>
+            </div>
+        </div>
+    }
 </div>
