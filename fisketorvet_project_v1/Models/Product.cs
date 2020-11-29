@@ -26,6 +26,6 @@ namespace fisketorvet_project_v1.Models
         public string ProductName { get; set; }
         public string Dimensions { get; set; } //Dimensions can be colour, size, weight, quantity, etc, I just dont know if we
                                                 //should implement all these as variables or leave it all in dimensions
-        
+        public string ImageName { get; set; }
     }
 }

@@ -27,6 +27,7 @@ namespace fisketorvet_project_v1
         {
             services.AddSingleton<SiteUserCatalog>();
             services.AddSingleton<StoreCatalog>();
+            services.AddSingleton<ProductCatalog>();
             
             services.AddRazorPages();
             

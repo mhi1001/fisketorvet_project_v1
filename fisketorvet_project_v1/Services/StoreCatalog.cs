@@ -9,7 +9,9 @@ namespace fisketorvet_project_v1.Services
     {
         private string filePath = @".\Data\Stores.json";
         private Dictionary<int, Store> Stores { get; set; }
+        private Dictionary<int, Product> Products { get; set; }
 
+        
         public Dictionary<int, Store> GetAllStores()
         {
             return JsonReader.ReadStoreJson(filePath);
