@@ -9,17 +9,19 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace fisketorvet_project_v1.Pages.PublicSection
 {
-    public class ViewStoresModel : PageModel
+    public class StoresDetailsModel : PageModel
     {
         private StoreCatalog _storeCatalog;
-        public Dictionary<int, Store> Stores { get; set; }
-        public ViewStoresModel(StoreCatalog repoStoreCatalog )
+        public Store Store { get; set; }
+
+        public StoresDetailsModel(StoreCatalog repoStoreCatalog)
         {
             _storeCatalog = repoStoreCatalog;
         }
-        public void OnGet()
+        public IActionResult OnGet(int id)
         {
-            Stores = _storeCatalog.GetAllStores();
+            Store = _storeCatalog.GetStore(id);
+            return Page();
         }
     }
 }

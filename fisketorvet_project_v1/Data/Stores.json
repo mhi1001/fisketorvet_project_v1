@@ -1,3 +1,26 @@
 {
-
+  "1": {
+    "Id": 1,
+    "Name": "Zara",
+    "TypeOfStore": "Clothing",
+    "Location": "South1",
+    "ImagePath": "zara.png",
+    "Products": null
+  },
+  "2": {
+    "Id": 2,
+    "Name": "Bershka",
+    "TypeOfStore": "Clothing",
+    "Location": "South2",
+    "ImagePath": "bershka.png",
+    "Products": null
+  },
+  "3": {
+    "Id": 3,
+    "Name": "SportZone",
+    "TypeOfStore": "Clothing, Sports & Hobbies",
+    "Location": "South3",
+    "ImagePath": "sportzone.png",
+    "Products": null
+  }
 }

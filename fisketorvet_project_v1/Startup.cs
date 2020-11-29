@@ -8,6 +8,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using fisketorvet_project_v1.Models;
 using fisketorvet_project_v1.Services;
 
 namespace fisketorvet_project_v1
@@ -25,6 +26,9 @@ namespace fisketorvet_project_v1
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddSingleton<SiteUserCatalog>();
+            services.AddSingleton<StoreCatalog>();
+            services.AddSingleton<ProductCatalog>();
+            
             services.AddRazorPages();
             
         }
