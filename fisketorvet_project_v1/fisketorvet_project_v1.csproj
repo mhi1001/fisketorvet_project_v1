@@ -11,7 +11,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Pages\Create\" />
     <Folder Include="wwwroot\img\" />
   </ItemGroup>
 

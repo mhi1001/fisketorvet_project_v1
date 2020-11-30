@@ -29,6 +29,11 @@ namespace fisketorvet_project_v1.Services
             JsonWriter.WriteToStoresJson(Stores, filePath); //After adding the new one to the dictionary, writes it again to json
         }
 
+        public void RemoveStore(int id)
+        {
+            Stores.Remove(id);
+        }
+
         public Store GetStore(int id)
         {
             Stores = GetAllStores(); //Populate the dictionary

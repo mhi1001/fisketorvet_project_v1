@@ -6,10 +6,10 @@
     <h1 class="display-4">Store Administration Page</h1>
 </div>
 
-<div class="text-right">
-    <h6><br /></h6>
-    <button role="alert">Create Store</button>
-    <h6><br /></h6>
+<div align="right">
+    <form method="post">
+        <input type="submit" class="btn btn-primary btn-lg" value="Create New Store" style="background-color: beige; color:black" asp-page-handler="CreateNewStore"/>
+    </form>
 </div>
 
 <main role="main">
@@ -32,7 +32,7 @@
                                         <div class="panel panel-default">
                                             <div class="panel-heading">
                                                 <h4 class="panel-title">
-                                                    <button data-toggle="collapse" class="btn btn-outline-secondary"  data-target="#demo">Edit</button>
+                                                    <button data-toggle="collapse" class="btn btn-sm btn-outline-secondary"  data-target="#demo">Edit</button>
                                                 </h4>
                                             </div>
                                             <div id="demo" class="panel-collapse collapse">
@@ -40,11 +40,16 @@
                                                     <button type="submit" class="btn btn-sm btn-outline-secondary">Store Details</button>
                                                 </div>
                                                 <div class="panel-body">
-                                                    <button type="submit" class="btn btn-outline-secondary">Products</button>
+                                                    <button type="submit" class="btn btn-outline-secondary" align="right">Products</button>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
+                                </div>
+                                <div align="right">
+                                    <form method="post">
+                                        <input align="right" type="submit" class="btn btn-sm btn-outline-secondary" value="Remove" style="background-color: red; color:black" asp-page-handler="CreateNewStore"/>
+                                    </form>
                                 </div>
                                 <small class="text-muted">9 mins</small>
                             </div>
