@@ -11,6 +11,10 @@ namespace fisketorvet_project_v1.Services
         private Dictionary<int, Store> Stores { get; set; }
         private Dictionary<int, Product> Products { get; set; }
 
+        public void AddProductStore(Product product)
+        {
+
+        }
         
         public Dictionary<int, Store> GetAllStores()
         {
