@@ -24,26 +24,36 @@ namespace fisketorvet_project_v1.Pages.AdminSection
         {
             _storeCatalog = repoStoreCatalog;
             _productCatalog = repoProductCatalog;
-            
+            Store = new Store();
             
         }
         public void OnGet()
         {
             
-            Store = _storeCatalog.GetStore(1); //Get Zara Store for testing to add Products. Planning to make it dynamic soon
+             //Get Zara Store for testing to add Products. Planning to make it dynamic soon
             
            }
 
         public IActionResult OnPost()
         {
-            
-            _productCatalog.AutoIncrementId(Product); //give the random generated ID to the Product
+             //give the random generated ID to the Product
            // Store.Products = _storeCatalog.AddProductToStore(Product);//
-           Store.Products = new Dictionary<int, Product>();
-           Store.Products.Add(Product.Id, Product);
+           //Store.Products = new Dictionary<int, Product>();
+           //Store.Products.Add(Product.Id, Product);
+           //Product p = new Product(){Id=1, Dimensions = "L",  ImageName = "tshirt1.jpg", ProductName = "Tshirt", ProductType = Product.ProductType = ProductType.Food};
+           //Store.Products = new Dictionary<int, Product>().Add(p.Id, p);
            //_storeCatalog.AddStore(Store);
-           _storeCatalog.UpdateStore(Store);
-           return Redirect("Index");
+           Store = _storeCatalog.GetStore(1);
+
+           _storeCatalog.AutoIncrementProductId(Product);
+         //  _productCatalog.AutoIncrementId(Product);
+
+           Store = _productCatalog.AddProductToStore(Store, Product);
+
+            //_storeCatalog.AddStore(Store);
+            _storeCatalog.UpdateStore(Store);
+
+           return Redirect("AdminPage");
         }
     }
 }

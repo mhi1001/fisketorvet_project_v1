@@ -8,17 +8,17 @@ namespace fisketorvet_project_v1.Services
     public class StoreCatalog
     {
         private string filePath = @".\Data\Stores.json";
-       
+
         private Dictionary<int, Store> Stores { get; set; }
         private Dictionary<int, Product> Products { get; set; }
 
         public void AddProductStore()
         {
-            
+
 
 
         }
-        
+
         public Dictionary<int, Store> GetAllStores()
         {
             return JsonReader.ReadStoreJson(filePath);
@@ -71,8 +71,10 @@ namespace fisketorvet_project_v1.Services
 
             if (Id.Count != 0)//if there are IDs, it will get the last value and add +1 
             {
+
                 int maxId = Id.Max() + 1;
                 s.Id = maxId;
+
             }
             else//If there are no IDs on the list, it will add automatically 1
             {
@@ -82,7 +84,34 @@ namespace fisketorvet_project_v1.Services
             return s;
 
         }
+        public Product AutoIncrementProductId(Product p) //Method to automatically add all the ids
+        {
+            Stores = GetAllStores(); //
+            // empty list that receives all the IDs
+            List<int> id = new List<int>();
+            foreach (var store in Stores.Values)
+            {
+                foreach (int key in store.Products.Keys)
+                {
+                    id.Add(key);
+                }
+            }
 
+
+
+            if (id.Count != 0)//if there are IDs, it will get the last value and add +1 
+            {
+                int maxId = id.Max() + 1;
+                p.Id = maxId;
+            }
+            else//If there are no IDs on the list, it will add automatically 1
+            {
+                p.Id = 1;
+            }
+
+            return p;
+
+        }
 
 
     }

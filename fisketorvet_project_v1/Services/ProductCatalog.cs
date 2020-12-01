@@ -10,6 +10,11 @@ namespace fisketorvet_project_v1.Services
         private string filePath = @".\Data\Products.json";
         private Dictionary<int, Product> Products { get; set; }
 
+        public Store AddProductToStore(Store store, Product product)
+        {
+            store.Products.Add(product.Id, product);
+            return store;
+        }
 
         public Dictionary<int, Product> GetAllProducts()
         {
@@ -58,6 +63,6 @@ namespace fisketorvet_project_v1.Services
             return p;
 
         }
-
+        
     }
 }

@@ -5,7 +5,15 @@
     "TypeOfStore": "Clothing",
     "Location": "South1",
     "ImagePath": "zara.png",
-    "Products": null
+    "Products": {
+      "3": {
+        "Id": 1,
+        "ProductType": 2,
+        "ProductName": "Cool OverPriced T-Shirt 11",
+        "Dimensions": "XLL",
+        "ImageName": "tshirt3.jpg"
+      }
+    }
   },
   "2": {
     "Id": 2,
@@ -22,21 +30,5 @@
     "Location": "South3",
     "ImagePath": "sportzone.png",
     "Products": null
-  },
-  "0": {
-    "Id": 0,
-    "Name": null,
-    "TypeOfStore": null,
-    "Location": null,
-    "ImagePath": null,
-    "Products": {
-      "3": {
-        "Id": 3,
-        "ProductType": 2,
-        "ProductName": "Cool OverPriced T-Shirt 6",
-        "Dimensions": "XLLL",
-        "ImageName": "tshirt2.jpg"
-      }
-    }
   }
 }
