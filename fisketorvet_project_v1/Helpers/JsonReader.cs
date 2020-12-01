@@ -11,16 +11,17 @@ namespace fisketorvet_project_v1.Helpers
 {
     public class JsonReader
     {
+        public static Dictionary<int, Product> ReadProductsFromStores(string jsonFilePath)
+        {
+            string jsonString = File.ReadAllText(jsonFilePath);
+            return JsonConvert.DeserializeObject<Dictionary<int, Product>>(jsonString);
+        }
+
         public static Dictionary<int, Order> ReadOrderJson(string jsonFilePath)
         {
             string jsonString = File.ReadAllText(jsonFilePath); //Read the json file and set it to a string
 
             return JsonConvert.DeserializeObject<Dictionary<int, Order>>(jsonString); //deserializes into our dictionary
-        }
-
-        internal static Dictionary<int, SiteUser> ReadJson(string filePath)
-        {
-            throw new NotImplementedException();
         }
 
         public static Dictionary<int, Customer> ReadCustomerJson(string jsonFilePath)
@@ -29,12 +30,19 @@ namespace fisketorvet_project_v1.Helpers
 
             return JsonConvert.DeserializeObject<Dictionary<int, Customer>>(jsonString); //deserializes into our dictionary
         }
+
         public static Dictionary<int, Product> ReadProductJson(string jsonFilePath)
         {
             string jsonString = File.ReadAllText(jsonFilePath); //Read the json file and set it to a string
 
             return JsonConvert.DeserializeObject<Dictionary<int, Product>>(jsonString); //deserializes into our dictionary
         }
+
+
+
+
+
+
         public static Dictionary<int, Store> ReadStoreJson(string jsonFilePath)
         {
             string jsonString = File.ReadAllText(jsonFilePath); //Read the json file and set it to a string

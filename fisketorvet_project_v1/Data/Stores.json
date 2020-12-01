@@ -6,12 +6,33 @@
     "Location": "South1",
     "ImagePath": "zara.png",
     "Products": {
-      "3": {
+      "1": {
         "Id": 1,
+        "ProductType": 0,
+        "ProductName": null,
+        "Dimensions": null,
+        "ImageName": null
+      },
+      "2": {
+        "Id": 2,
+        "ProductType": 0,
+        "ProductName": null,
+        "Dimensions": null,
+        "ImageName": null
+      },
+      "3": {
+        "Id": 3,
+        "ProductType": 0,
+        "ProductName": null,
+        "Dimensions": null,
+        "ImageName": null
+      },
+      "0": {
+        "Id": 0,
         "ProductType": 2,
-        "ProductName": "Cool OverPriced T-Shirt 11",
-        "Dimensions": "XLL",
-        "ImageName": "tshirt3.jpg"
+        "ProductName": "Cool OverPriced T-Shirt 2",
+        "Dimensions": "S",
+        "ImageName": "tshirt1.jpg"
       }
     }
   },

@@ -8,7 +8,9 @@ namespace fisketorvet_project_v1.Services
     public class ProductCatalog
     {
         private string filePath = @".\Data\Products.json";
+
         private Dictionary<int, Product> Products { get; set; }
+        public StoreCatalog StoreCatalog;
 
         public Store AddProductToStore(Store store, Product product)
         {
@@ -40,29 +42,6 @@ namespace fisketorvet_project_v1.Services
             }
             return new Product();
         }
-        public Product AutoIncrementId(Product p) //Method to automatically add all the ids
-        {
-            Products = GetAllProducts(); //
-            // empty list that receives all the IDs
-            List<int> id = new List<int>();
-            foreach (Product prd in Products.Values)
-            {
-                id.Add(prd.Id);
-            }
 
-            if (id.Count != 0)//if there are IDs, it will get the last value and add +1 
-            {
-                int maxId = id.Max() + 1;
-                p.Id = maxId;
-            }
-            else//If there are no IDs on the list, it will add automatically 1
-            {
-                p.Id = 1;
-            }
-
-            return p;
-
-        }
-        
     }
 }

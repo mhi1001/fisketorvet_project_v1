@@ -12,17 +12,13 @@ namespace fisketorvet_project_v1.Services
         private Dictionary<int, Store> Stores { get; set; }
         private Dictionary<int, Product> Products { get; set; }
 
-        public void AddProductStore()
-        {
-
-
-
-        }
+        public ProductCatalog ProductCatalog;
 
         public Dictionary<int, Store> GetAllStores()
         {
             return JsonReader.ReadStoreJson(filePath);
         }
+
 
         public void UpdateStore(Store store)
         {
@@ -49,6 +45,7 @@ namespace fisketorvet_project_v1.Services
         public Store GetStore(int id)
         {
             Stores = GetAllStores(); //Populate the dictionary
+
             foreach (Store st in Stores.Values)
             {
                 if (st.Id == id)
@@ -87,17 +84,18 @@ namespace fisketorvet_project_v1.Services
         public Product AutoIncrementProductId(Product p) //Method to automatically add all the ids
         {
             Stores = GetAllStores(); //
+
             // empty list that receives all the IDs
             List<int> id = new List<int>();
             foreach (var store in Stores.Values)
             {
+
+
                 foreach (int key in store.Products.Keys)
                 {
                     id.Add(key);
                 }
             }
-
-
 
             if (id.Count != 0)//if there are IDs, it will get the last value and add +1 
             {

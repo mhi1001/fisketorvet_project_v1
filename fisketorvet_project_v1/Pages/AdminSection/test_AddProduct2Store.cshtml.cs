@@ -43,14 +43,14 @@ namespace fisketorvet_project_v1.Pages.AdminSection
            //Product p = new Product(){Id=1, Dimensions = "L",  ImageName = "tshirt1.jpg", ProductName = "Tshirt", ProductType = Product.ProductType = ProductType.Food};
            //Store.Products = new Dictionary<int, Product>().Add(p.Id, p);
            //_storeCatalog.AddStore(Store);
+
            Store = _storeCatalog.GetStore(1);
-
            _storeCatalog.AutoIncrementProductId(Product);
-         //  _productCatalog.AutoIncrementId(Product);
-
+           
            Store = _productCatalog.AddProductToStore(Store, Product);
 
-            //_storeCatalog.AddStore(Store);
+            
+            
             _storeCatalog.UpdateStore(Store);
 
            return Redirect("AdminPage");
