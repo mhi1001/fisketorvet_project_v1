@@ -17,7 +17,7 @@ namespace fisketorvet_project_v1.Pages.Delete
         public Customer Customer { set; get; }
         public IActionResult OnGet(int id)
         {
-            Customer = CustomerCatalog.GetStore(id);
+            Customer = CustomerCatalog.GetCustomer(id);
             return Page();
         }
 

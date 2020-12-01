@@ -12,13 +12,13 @@ namespace fisketorvet_project_v1.Pages
 {
     public class LoginModel : PageModel
     {
-        private SiteUserCatalog _siteUserRepo;
+        private CustomerCatalog _custCatalogRepo;
         [BindProperty]
-        public SiteUser SiteUser { get; set; }
+        public Customer SiteUser { get; set; }
 
-        public LoginModel(SiteUserCatalog repoSiteUserCatalog)
+        public LoginModel(CustomerCatalog repoCustCatalog)
         {
-            _siteUserRepo = repoSiteUserCatalog;
+            _custCatalogRepo = repoCustCatalog;
         }
 
         public void OnGet()
@@ -35,7 +35,7 @@ namespace fisketorvet_project_v1.Pages
             }
             else
             {
-                switch (_siteUserRepo.SiteAuth(SiteUser.UserName, SiteUser.Password))
+                switch (_custCatalogRepo.SiteAuth(SiteUser.UserName, SiteUser.Password))
                 {
                     case 0:
                         return RedirectToPage("AdminSection/AdminPage");

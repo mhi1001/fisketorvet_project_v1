@@ -18,7 +18,7 @@ namespace fisketorvet_project_v1.Helpers
             return JsonConvert.DeserializeObject<Dictionary<int, Order>>(jsonString); //deserializes into our dictionary
         }
 
-        internal static Dictionary<int, SiteUser> ReadJson(string filePath)
+        internal static Dictionary<int, Customer> ReadJson(string filePath)
         {
             throw new NotImplementedException();
         }
@@ -41,11 +41,11 @@ namespace fisketorvet_project_v1.Helpers
 
             return JsonConvert.DeserializeObject<Dictionary<int, Store>>(jsonString); //deserializes into our dictionary
         }
-        public static Dictionary<int, SiteUser> ReadSiteUserJson(string jsonFilePath)
+        public static Dictionary<int, Customer> ReadCustomersJson(string jsonFilePath)
         {
             string jsonString = File.ReadAllText(jsonFilePath); //Read the json file and set it to a string
 
-            return JsonConvert.DeserializeObject<Dictionary<int, SiteUser>>(jsonString); //deserializes into our dictionary
+            return JsonConvert.DeserializeObject<Dictionary<int, Customer>>(jsonString); //deserializes into our dictionary
         }
     }
 }

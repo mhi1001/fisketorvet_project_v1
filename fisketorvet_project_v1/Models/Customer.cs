@@ -6,7 +6,9 @@ namespace fisketorvet_project_v1.Models
     {
         [Required]
         public int Id { get; set; }
-        [Required(ErrorMessage= "Please enter Name")]
+        [Required(ErrorMessage = "Please enter your username")]
+        public string UserName { get; set; }
+        [Required(ErrorMessage = "Please enter Name")]
         public string Name { get; set; }
         public string Address { get; set; }
         [Required(ErrorMessage="Please enter the email")]
@@ -14,6 +16,7 @@ namespace fisketorvet_project_v1.Models
         public string PhoneNumber { get; set; }
         [Required(ErrorMessage="Please enter the password")]
         public string Password { get; set; }
+        public bool Admin { set; get; }
         
     }
 }
