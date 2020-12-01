@@ -13,7 +13,7 @@ namespace fisketorvet_project_v1.Services
 
         public void AddProductStore(Product product)
         {
-
+            //test
         }
         
         public Dictionary<int, Store> GetAllStores()
