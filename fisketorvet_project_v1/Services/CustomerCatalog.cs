@@ -9,9 +9,9 @@ namespace fisketorvet_project_v1.Services
         private string filePath = @".\Data\Customers.json";
         private Dictionary<int, Customer> Customers { get; set; }
 
-        public Dictionary<int, SiteUser> GetAllSiteUsers()
+        public Dictionary<int, Customer> GetAllCustomers()
         {
-            return JsonReader.ReadSiteUserJson(filePath);
+            return JsonReader.ReadCustomerJson(filePath);
         }
 
         public void AddCustomer(Customer c)
@@ -19,11 +19,23 @@ namespace fisketorvet_project_v1.Services
             Customers.Add(c.Id,c);
         }
 
-        public void RemoveCustomer(Customer c)
+        public void RemoveCustomer(int id)
         {
-            Customers.Remove(c.Id);
+            Customers.Remove(id);
         }
 
+        public Customer GetStore(int id)
+        {
+            Customers = GetAllCustomers(); //Populate the dictionary
+            foreach (Customer c in Customers.Values)
+            {
+                if (c.Id == id)
+                {
+                    return c;
+                }
+            }
+            return new Customer();
+        }
 
     }
 }
