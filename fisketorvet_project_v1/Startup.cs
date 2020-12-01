@@ -28,6 +28,7 @@ namespace fisketorvet_project_v1
             services.AddSingleton<CustomerCatalog>();
             services.AddSingleton<StoreCatalog>();
             services.AddSingleton<ProductCatalog>();
+            services.AddSession();
             
             services.AddRazorPages();
             
@@ -49,7 +50,7 @@ namespace fisketorvet_project_v1
 
             app.UseHttpsRedirection();
             app.UseStaticFiles();
-
+            app.UseSession();
             app.UseRouting();
 
             app.UseAuthorization();

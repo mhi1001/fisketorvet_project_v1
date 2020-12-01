@@ -5,8 +5,10 @@ using System.Security.Policy;
 using System.Threading.Tasks;
 using fisketorvet_project_v1.Models;
 using fisketorvet_project_v1.Services;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using Newtonsoft.Json;
 
 namespace fisketorvet_project_v1.Pages
 {
@@ -22,31 +24,26 @@ namespace fisketorvet_project_v1.Pages
         }
 
         public void OnGet()
-        {
-           
+        { 
         }
 
         public IActionResult OnPost()
         {
-
-            if (!ModelState.IsValid)
+            if (ModelState.IsValid)
             {
                 return Page();
             }
             else
             {
-                switch (_custCatalogRepo.SiteAuth(SiteUser.UserName, SiteUser.Password))
+                if (_custCatalogRepo.SiteAuth(SiteUser.UserName, SiteUser.Password) != null)
                 {
-                    case 0:
-                        return RedirectToPage("AdminSection/AdminPage");
-
-
-                    case 1:
-                        return RedirectToPage("UserSection/UserPage");
-                    //case 2:if()
+                    Customer s = _custCatalogRepo.SiteAuth(SiteUser.UserName, SiteUser.Password);
+                    HttpContext.Session.SetString("cat",JsonConvert.SerializeObject(s));
+                    if (s.Admin) return RedirectToPage("/AdminSection/AdminPage");
+                    else return RedirectToPage("/UserSection/UserPage");
                 }
             }
-            return Redirect("/Index");
+           return RedirectToPage("/Index");
         }
     }
 }

@@ -1,17 +1,2 @@
 {
-  "1": {
-    "UserName": "admin",
-    "Password": "admin",
-    "Admin":true
-  },
-  "2": {
-    "UserName": "user",
-    "Password": "user",
-    "Admin": false
-  },
-  "3": {
-    "UserName": "Cata_Lina",
-    "Password": "1234",
-    "Admin":  true 
-  } 
 }
