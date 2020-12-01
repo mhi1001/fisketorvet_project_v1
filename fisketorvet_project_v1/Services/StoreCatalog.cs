@@ -8,17 +8,34 @@ namespace fisketorvet_project_v1.Services
     public class StoreCatalog
     {
         private string filePath = @".\Data\Stores.json";
+       
         private Dictionary<int, Store> Stores { get; set; }
         private Dictionary<int, Product> Products { get; set; }
 
-        public void AddProductStore(Product product)
+        public void AddProductStore()
         {
-            //test
+            
+
+
         }
         
         public Dictionary<int, Store> GetAllStores()
         {
             return JsonReader.ReadStoreJson(filePath);
+        }
+
+        public void UpdateStore(Store store)
+        {
+            Stores = GetAllStores();
+            Store foundStore = Stores[store.Id];
+            foundStore.Id = store.Id;
+            foundStore.Name = store.Name;
+            foundStore.Location = store.Location;
+            foundStore.ImagePath = store.ImagePath;
+            foundStore.TypeOfStore = store.TypeOfStore;
+            foundStore.Products = store.Products;
+
+            JsonWriter.WriteToStoresJson(Stores, filePath);
         }
 
         public void AddStore(Store store)
