@@ -2,6 +2,7 @@
 using fisketorvet_project_v1.Helpers;
 using fisketorvet_project_v1.Models;
 using Microsoft.AspNetCore.Components;
+using Newtonsoft.Json;
 
 namespace fisketorvet_project_v1.Services
 {
@@ -12,7 +13,7 @@ namespace fisketorvet_project_v1.Services
 
         public Dictionary<int, Customer> GetAllCustomers()
         {
-            return JsonReader.ReadCustomerJson(filePath);
+            return JsonReader<int, Customer>.ReadJson(filePath);
         }
 
         public void AddCustomer(Customer c)
