@@ -12,7 +12,7 @@ namespace fisketorvet_project_v1.Services
         private string filePath = @".\Data\Stores.json";
 
         private Dictionary<int, Store> Stores { get; set; }
-
+        private Store s;
 
 
 
@@ -33,7 +33,6 @@ namespace fisketorvet_project_v1.Services
             foundStore.TypeOfStore = store.TypeOfStore;
             foundStore.Products = store.Products;
 
-
             JsonWriter<int, Store>.WriteToJson(Stores, filePath);
         }
 
@@ -52,6 +51,13 @@ namespace fisketorvet_project_v1.Services
             store.Id = GenerateStoreId(Stores);
             Stores.Add(store.Id, store);
             JsonWriter<int, Store>.WriteToJson(Stores, filePath); //After adding the new one to the dictionary, writes it again to json
+        }
+
+        public void RemoveStore(int id)
+        {
+            Stores = GetAllStores();
+            Stores.Remove(id);
+            JsonWriter<int, Store>.WriteToJson(Stores,filePath);
         }
 
         public Store GetStore(int id) //Faster way to find store

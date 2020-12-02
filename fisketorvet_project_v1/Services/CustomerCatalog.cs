@@ -2,6 +2,7 @@
 using fisketorvet_project_v1.Helpers;
 using fisketorvet_project_v1.Models;
 using Microsoft.AspNetCore.Components;
+using Newtonsoft.Json;
 
 namespace fisketorvet_project_v1.Services
 {
