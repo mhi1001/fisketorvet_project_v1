@@ -22,5 +22,21 @@
     "Location": "South3",
     "ImagePath": "sportzone.png",
     "Products": null
+  },
+  "0": {
+    "Id": 0,
+    "Name": null,
+    "TypeOfStore": null,
+    "Location": null,
+    "ImagePath": null,
+    "Products": {
+      "3": {
+        "Id": 3,
+        "ProductType": 2,
+        "ProductName": "Cool OverPriced T-Shirt 6",
+        "Dimensions": "XLLL",
+        "ImageName": "tshirt2.jpg"
+      }
+    }
   }
 }

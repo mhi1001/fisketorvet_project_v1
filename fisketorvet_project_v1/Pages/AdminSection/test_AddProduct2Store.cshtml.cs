@@ -18,7 +18,7 @@ namespace fisketorvet_project_v1.Pages.AdminSection
         public Product Product { get; set; }
         [BindProperty]
         public Store Store { get; set; }
-         
+
 
         public test_AddProduct2StoreModel(StoreCatalog repoStoreCatalog, ProductCatalog repoProductCatalog)
         {
@@ -31,6 +31,7 @@ namespace fisketorvet_project_v1.Pages.AdminSection
         {
             
             Store = _storeCatalog.GetStore(1); //Get Zara Store for testing to add Products. Planning to make it dynamic soon
+            
            }
 
         public IActionResult OnPost()
@@ -38,17 +39,11 @@ namespace fisketorvet_project_v1.Pages.AdminSection
             
             _productCatalog.AutoIncrementId(Product); //give the random generated ID to the Product
            // Store.Products = _storeCatalog.AddProductToStore(Product);//
-           Store.Products.Add(Product.Id, Product);//idk how to make this shit work
-                                                    //giving null because the dictionary itself is not initialized.
-                                                    //I cant initialize it somewhere or else data will always get rewritten ? 
-                                                    //Json is also confusing me about this, i dont know how to proceed to make it so
-                                                    //I can add the products to this specific store (since the store model has a products dictionary) while
-                                                    //at the same time saving, the products to an individual json file.......
-                                                    //if i dont link it like this, how am i supposed to display all the products that are
-                                                    //respective of that the store you pick ??????????????
-                                                    //spent 2 hours on this and i still cant do it 
-            
-            return Redirect("Index");
+           Store.Products = new Dictionary<int, Product>();
+           Store.Products.Add(Product.Id, Product);
+           //_storeCatalog.AddStore(Store);
+           _storeCatalog.UpdateStore(Store);
+           return Redirect("Index");
         }
     }
 }
