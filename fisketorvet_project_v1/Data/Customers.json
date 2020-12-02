@@ -1,3 +1,28 @@
 {
-
+  "1": {
+    "Id": 1, 
+    "UserName": "admin",
+    "Name": "Admin",
+    "Email": "admin@gmial.com",
+    "Password": "admin",
+    "Admin": true
+  },
+  "2": {
+    "Id": 2,
+    "UserName": "user",
+    "Name": "User",
+    "Address": "My one and only home",
+    "Email": "user@gmial.com",
+    "PhoneNumber": "+45helooooooo",
+    "Password": "user",
+    "Admin": false
+  },
+  "3": {
+    "Id": 3,
+    "UserName": "Cata_Lina",
+    "Name": "Catalina",
+    "Email": "paul6465@edu.easj.dk",
+    "Password": "1234",
+    "Admin": true
+  }
 }

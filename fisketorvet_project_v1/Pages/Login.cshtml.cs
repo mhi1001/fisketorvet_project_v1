@@ -5,47 +5,45 @@ using System.Security.Policy;
 using System.Threading.Tasks;
 using fisketorvet_project_v1.Models;
 using fisketorvet_project_v1.Services;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using Newtonsoft.Json;
 
 namespace fisketorvet_project_v1.Pages
 {
     public class LoginModel : PageModel
     {
-        private SiteUserCatalog _siteUserRepo;
+        private CustomerCatalog _custCatalogRepo;
         [BindProperty]
-        public SiteUser SiteUser { get; set; }
+        public Customer SiteUser { get; set; }
 
-        public LoginModel(SiteUserCatalog repoSiteUserCatalog)
+        public LoginModel(CustomerCatalog repoCustCatalog)
         {
-            _siteUserRepo = repoSiteUserCatalog;
+            _custCatalogRepo = repoCustCatalog;
         }
 
         public void OnGet()
-        {
-           
+        { 
         }
 
         public IActionResult OnPost()
         {
-
-            if (!ModelState.IsValid)
+            if (ModelState.IsValid)
             {
                 return Page();
             }
             else
             {
-                switch (_siteUserRepo.SiteAuth(SiteUser.UserName, SiteUser.Password))
+                if (_custCatalogRepo.SiteAuth(SiteUser.UserName, SiteUser.Password) != null)
                 {
-                    case 0:
-                        return RedirectToPage("AdminSection/AdminPage");
-
-
-                    case 1:
-                        return RedirectToPage("UserSection/UserPage");
+                    Customer s = _custCatalogRepo.SiteAuth(SiteUser.UserName, SiteUser.Password);
+                    HttpContext.Session.SetString("cat",JsonConvert.SerializeObject(s));
+                    if (s.Admin) return RedirectToPage("/AdminSection/AdminPage");
+                    else return RedirectToPage("/UserSection/UserPage");
                 }
             }
-            return Redirect("/Index");
+           return RedirectToPage("/Index");
         }
     }
 }

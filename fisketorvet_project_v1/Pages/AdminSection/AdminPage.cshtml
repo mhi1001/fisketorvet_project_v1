@@ -4,15 +4,14 @@
 @{
 }
 
-@inject SiteUserCatalog SiteUserCatalog
+@inject CustomerCatalog CustomerCatalog
 @inject StoreCatalog StoreCatalog
 <div class="text-center">
-    <h1 class="display-4">Welcome to the Admin Page
-        Pedroooo, you here?</h1>
+    <h1 class="display-4">Welcome to the Admin Page</h1>
 
 </div>
 <div class="alert alert-primary" role="alert">
-    There are currently @SiteUserCatalog.GetAllSiteUsers().Count users registered in our Website !
+    There are currently @CustomerCatalog.GetAllCustomers().Count users registered in our Website !
 </div>
 <div class="alert alert-primary" role="alert">
     There are currently @StoreCatalog.GetAllStores().Count stores in our Shopping mall !

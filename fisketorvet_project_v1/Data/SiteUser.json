@@ -1,12 +1,2 @@
 {
-  "1": {
-    "UserName": "admin",
-    "Password": "admin",
-    "Admin":true
-  },
-  "2": {
-    "UserName": "user",
-    "Password": "user",
-    "Admin":false
-  }
 }
