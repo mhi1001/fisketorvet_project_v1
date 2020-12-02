@@ -25,7 +25,7 @@ namespace fisketorvet_project_v1.Pages.AdminSection
 
         public IActionResult OnPost()
         {
-            _storeCatalog.AutoIncrementId(Store); //Add an ID to store
+             
             _storeCatalog.AddStore(Store); //Add the store to the catalog
 
             return Redirect("StoreAdminPage");

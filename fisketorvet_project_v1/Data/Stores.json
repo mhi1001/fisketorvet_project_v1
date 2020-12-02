@@ -4,35 +4,21 @@
     "Name": "Zara",
     "TypeOfStore": "Clothing",
     "Location": "South1",
-    "ImagePath": "zara.png",
+    "ImagePath": "/img/storeLogos/zara.png",
     "Products": {
       "1": {
         "Id": 1,
-        "ProductType": 0,
-        "ProductName": null,
-        "Dimensions": null,
-        "ImageName": null
+        "ProductType": 2,
+        "ProductName": "Cool Latvian T Shirt",
+        "Dimensions": "L",
+        "ImageName": "tshirt1.jpg"
       },
       "2": {
         "Id": 2,
-        "ProductType": 0,
-        "ProductName": null,
-        "Dimensions": null,
-        "ImageName": null
-      },
-      "3": {
-        "Id": 3,
-        "ProductType": 0,
-        "ProductName": null,
-        "Dimensions": null,
-        "ImageName": null
-      },
-      "0": {
-        "Id": 0,
         "ProductType": 2,
-        "ProductName": "Cool OverPriced T-Shirt 2",
+        "ProductName": "Cool Romanian T-Shirt",
         "Dimensions": "S",
-        "ImageName": "tshirt1.jpg"
+        "ImageName": "tshirt3.jpg"
       }
     }
   },
@@ -41,15 +27,15 @@
     "Name": "Bershka",
     "TypeOfStore": "Clothing",
     "Location": "South2",
-    "ImagePath": "bershka.png",
-    "Products": null
+    "ImagePath": "/img/storeLogos/bershka.png",
+    "Products": {}
   },
   "3": {
     "Id": 3,
     "Name": "SportZone",
     "TypeOfStore": "Clothing, Sports & Hobbies",
     "Location": "South3",
-    "ImagePath": "sportzone.png",
-    "Products": null
+    "ImagePath": "/img/storeLogos/sportzone.png",
+    "Products": {}
   }
 }

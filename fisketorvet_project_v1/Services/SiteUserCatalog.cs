@@ -12,7 +12,8 @@ namespace fisketorvet_project_v1.Services
 
         public Dictionary<int, SiteUser> GetAllSiteUsers()
         {
-            return JsonReader.ReadSiteUserJson(filePath);
+            
+            return JsonReader<int, SiteUser>.ReadJson(filePath);
         }
         public int SiteAuth(string username, string password)//Method to authenticate users
         {
@@ -34,12 +35,7 @@ namespace fisketorvet_project_v1.Services
 
             return 2; //in the end if the user is incorrect or something it will return 2 
         }
-        //public bool SiteAuth(SiteUser user)//Method to authenticate users
-        //{
-        //    SiteUsers = GetAllSiteUsers(); //Populate the Dictionary with all the existing users so we can test credentials
-
-        //    return SiteUsers.ContainsValue(user);
-        //}
+        
     }
 
 

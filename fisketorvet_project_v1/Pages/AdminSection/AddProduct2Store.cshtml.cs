@@ -9,24 +9,31 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace fisketorvet_project_v1.Pages.AdminSection
 {
-    public class StoreAdminPageModel : PageModel
+    public class AddProduct2StoreModel : PageModel
     {
         private StoreCatalog _storeCatalog;
-        public Dictionary<int, Store> Stores { get; set; }
+        private ProductCatalog _productCatalog;
 
-        public StoreAdminPageModel(StoreCatalog storeCatalog)
+        [BindProperty]
+        public Product Product { get; set; }
+
+
+
+        public AddProduct2StoreModel(StoreCatalog repoStoreCatalog)
         {
-            _storeCatalog = storeCatalog;
-             Stores = _storeCatalog.GetAllStores();
+            _storeCatalog = repoStoreCatalog;
         }
         public void OnGet()
         {
 
+
+
         }
 
-        public IActionResult OnPostCreateNewStore()
+        public IActionResult OnPost(int id)
         {
-            return Redirect("CreateStoreAdminPage");
+            _storeCatalog.AddProductToStore(Product, id);
+            return Redirect("AdminPage");
         }
     }
 }
