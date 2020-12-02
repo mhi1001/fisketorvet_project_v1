@@ -9,43 +9,14 @@ using fisketorvet_project_v1.Pages;
 
 namespace fisketorvet_project_v1.Helpers
 {
-    public class JsonReader
+    public class JsonReader<K, V>
     {
-        public static Dictionary<int, Order> ReadOrderJson(string jsonFilePath)
+        public static Dictionary<K, V> ReadJson(string jsonFileName)
         {
-            string jsonString = File.ReadAllText(jsonFilePath); //Read the json file and set it to a string
-
-            return JsonConvert.DeserializeObject<Dictionary<int, Order>>(jsonString); //deserializes into our dictionary
+            string jsonString = File.ReadAllText(jsonFileName);
+            return JsonConvert.DeserializeObject<Dictionary<K, V>>(jsonString);
         }
 
-        internal static Dictionary<int, Customer> ReadJson(string filePath)
-        {
-            throw new NotImplementedException();
-        }
 
-        public static Dictionary<int, Customer> ReadCustomerJson(string jsonFilePath)
-        {
-            string jsonString = File.ReadAllText(jsonFilePath); //Read the json file and set it to a string
-
-            return JsonConvert.DeserializeObject<Dictionary<int, Customer>>(jsonString); //deserializes into our dictionary
-        }
-        public static Dictionary<int, Product> ReadProductJson(string jsonFilePath)
-        {
-            string jsonString = File.ReadAllText(jsonFilePath); //Read the json file and set it to a string
-
-            return JsonConvert.DeserializeObject<Dictionary<int, Product>>(jsonString); //deserializes into our dictionary
-        }
-        public static Dictionary<int, Store> ReadStoreJson(string jsonFilePath)
-        {
-            string jsonString = File.ReadAllText(jsonFilePath); //Read the json file and set it to a string
-
-            return JsonConvert.DeserializeObject<Dictionary<int, Store>>(jsonString); //deserializes into our dictionary
-        }
-        public static Dictionary<int, Customer> ReadCustomersJson(string jsonFilePath)
-        {
-            string jsonString = File.ReadAllText(jsonFilePath); //Read the json file and set it to a string
-
-            return JsonConvert.DeserializeObject<Dictionary<int, Customer>>(jsonString); //deserializes into our dictionary
-        }
     }
 }

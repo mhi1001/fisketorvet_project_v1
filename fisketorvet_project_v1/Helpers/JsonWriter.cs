@@ -9,28 +9,12 @@ using Newtonsoft.Json;
 
 namespace fisketorvet_project_v1.Helpers
 {
-    public class JsonWriter
+    public class JsonWriter<K, V>
     {
-        public static void WriteToCustomersJson(Dictionary<int, Customer> customers, string jSonFilePath)
+        public static void WriteToJson(Dictionary<K, V> items, string jsonFileName)
         {
-            string output = JsonConvert.SerializeObject(customers, Formatting.Indented);
-            File.WriteAllText(jSonFilePath, output);
-        }
-
-        public static void WriteToOrdersJson(Dictionary<int, Order> orders, string jSonFilePath)
-        {
-            string output = JsonConvert.SerializeObject(orders, Formatting.Indented);
-            File.WriteAllText(jSonFilePath, output);
-        }
-        public static void WriteToProductsJson(Dictionary<int, Product> products, string jSonFilePath)
-        {
-            string output = JsonConvert.SerializeObject(products, Formatting.Indented);
-            File.WriteAllText(jSonFilePath, output);
-        }
-        public static void WriteToStoresJson(Dictionary<int, Store> stores, string jSonFilePath)
-        {
-            string output = JsonConvert.SerializeObject(stores, Formatting.Indented);
-            File.WriteAllText(jSonFilePath, output);
+            string output = JsonConvert.SerializeObject(items, Newtonsoft.Json.Formatting.Indented);
+            File.WriteAllText(jsonFileName, output);
         }
     }
 }

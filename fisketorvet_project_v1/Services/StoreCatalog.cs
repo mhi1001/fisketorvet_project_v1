@@ -2,27 +2,25 @@
 using System.Linq;
 using fisketorvet_project_v1.Helpers;
 using fisketorvet_project_v1.Models;
+using Newtonsoft.Json;
+
 
 namespace fisketorvet_project_v1.Services
 {
     public class StoreCatalog
     {
         private string filePath = @".\Data\Stores.json";
-       
+
         private Dictionary<int, Store> Stores { get; set; }
-        private Dictionary<int, Product> Products { get; set; }
-
-        public void AddProductStore()
-        {
-            
 
 
-        }
-        
+
+
         public Dictionary<int, Store> GetAllStores()
         {
-            return JsonReader.ReadStoreJson(filePath);
+            return JsonReader<int, Store>.ReadJson(filePath);
         }
+
 
         public void UpdateStore(Store store)
         {
@@ -35,60 +33,71 @@ namespace fisketorvet_project_v1.Services
             foundStore.TypeOfStore = store.TypeOfStore;
             foundStore.Products = store.Products;
 
-            JsonWriter.WriteToStoresJson(Stores, filePath);
+
+            JsonWriter<int, Store>.WriteToJson(Stores, filePath);
         }
 
         public void AddStore(Store store)
         {
+            
             Stores = GetAllStores(); //Populate it with existing stores.
-
+            store.Id = GenerateStoreId(Stores);
             Stores.Add(store.Id, store);
-            JsonWriter.WriteToStoresJson(Stores, filePath); //After adding the new one to the dictionary, writes it again to json
+            JsonWriter<int, Store>.WriteToJson(Stores, filePath); //After adding the new one to the dictionary, writes it again to json
         }
 
-        public void RemoveStore(int id)
-        {
-            Stores.Remove(id);
-        }
-
-        public Store GetStore(int id)
+        public Store GetStore(int id) //Faster way to find store
         {
             Stores = GetAllStores(); //Populate the dictionary
-            foreach (Store st in Stores.Values)
-            {
-                if (st.Id == id)
-                {
-                    return st;
-                }
-            }
-            return new Store();
+            Store foundStore = Stores[id];
+            return foundStore;
         }
 
-        public Store AutoIncrementId(Store s) //Method to automatically add all the ids
+        private int GenerateProductId(Dictionary<int, Product> oldProducts)
         {
-            Stores = GetAllStores(); //
-            // empty list that receives all the IDs
-            List<int> Id = new List<int>();
-            foreach (var store in Stores.Values)
+            List<int> Ids = new List<int>();
+            foreach (var v in oldProducts) //receives the existing products and loops through them
             {
-                Id.Add(store.Id);
+                Ids.Add(v.Value.Id); //for eachh product add the ID of that own product to a list
             }
+            if (Ids.Count != 0)
+            {
+                return Ids.Max() + 1;
+            }
+            else
+                return 1; //pretty much if its not zero it gets the last value (highest) and adds plus 1, if its zero just gives one.
 
-            if (Id.Count != 0)//if there are IDs, it will get the last value and add +1 
+        }
+        private int GenerateStoreId(Dictionary<int, Store> oldStores)
+        {
+            List<int> Ids = new List<int>();
+            foreach (var s in oldStores) 
             {
-                int maxId = Id.Max() + 1;
-                s.Id = maxId;
+                Ids.Add(s.Value.Id); 
             }
-            else//If there are no IDs on the list, it will add automatically 1
+            if (Ids.Count != 0)
             {
-                s.Id = 1;
+                return Ids.Max() + 1;
             }
-
-            return s;
+            else
+                return 1; 
 
         }
 
+        public void AddProductToStore(Product product, int id)
+        {
+            Dictionary<int, Product> oldProducts = GetStore(id).Products; //Initialize the dictionary by getting the respective's store
+                                                                          // products ((PREVENTS NULL EXCEPTION)
 
+            product.Id = GenerateProductId(oldProducts); //gets the ID from the generator method
 
+            oldProducts.Add(product.Id, product); //and then adds the product to existing product dictionary
+
+            Stores = GetAllStores(); //We populate the stores one
+
+            Stores[id].Products = oldProducts; //we add the newly added products to the specific store that we edit
+
+            JsonWriter<int, Store>.WriteToJson(Stores, filePath); //and then write the store to json
+        }
     }
 }
