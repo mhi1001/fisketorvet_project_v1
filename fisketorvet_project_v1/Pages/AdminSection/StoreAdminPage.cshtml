@@ -45,7 +45,9 @@
                                                        <button type="submit" class="btn btn-sm btn-outline-secondary">Store Details</button>
                                                    </div>
                                                    <div class="panel-body">
-                                                       <button type="submit" class="btn btn-outline-secondary" align="right">Products</button>
+                                                       @*<button type="submit" class="btn btn-outline-secondary" align="right">Products</button>*@
+
+                                                       <a class="btn btn-outline-secondary" asp-page="ManageProducts" asp-route-id="@st.Id">Products</a>
                                                    </div>
                                                </div>
                                            </div>

@@ -13,6 +13,7 @@ namespace fisketorvet_project_v1.Pages.PublicSection
     {
         private StoreCatalog _storeCatalog;
         public Store Store { get; set; }
+        public Dictionary<int, Product> StoreProducts { get; set; }
 
         public StoresDetailsModel(StoreCatalog repoStoreCatalog)
         {
@@ -21,6 +22,8 @@ namespace fisketorvet_project_v1.Pages.PublicSection
         public IActionResult OnGet(int id)
         {
             Store = _storeCatalog.GetStore(id);
+            StoreProducts = _storeCatalog.GetStore(id).Products;
+
             return Page();
         }
     }
