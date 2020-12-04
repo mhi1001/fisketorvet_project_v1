@@ -36,6 +36,8 @@ namespace fisketorvet_project_v1.Services
             JsonWriter<int, Store>.WriteToJson(Stores, filePath);
         }
 
+        
+
         public void AddStore(Store store)
         {
             

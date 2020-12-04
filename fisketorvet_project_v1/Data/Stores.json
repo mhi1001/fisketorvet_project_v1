@@ -11,14 +11,32 @@
         "ProductType": 2,
         "ProductName": "Cool Latvian T Shirt",
         "Dimensions": "L",
-        "ImageName": "tshirt1.jpg"
+        "Price": 0.0,
+        "ImageName": "/img/zara_products/tshirt1.jpg"
       },
       "2": {
         "Id": 2,
         "ProductType": 2,
         "ProductName": "Cool Romanian T-Shirt",
         "Dimensions": "S",
-        "ImageName": "tshirt3.jpg"
+        "Price": 0.0,
+        "ImageName": "/img/zara_products/tshirt3.jpg"
+      },
+      "3": {
+        "Id": 3,
+        "ProductType": 3,
+        "ProductName": "Cool Slav Shoes",
+        "Dimensions": "41",
+        "Price": 29999.0,
+        "ImageName": "/img/zara_products/shoes1.jpg"
+      },
+      "4": {
+        "Id": 4,
+        "ProductType": 3,
+        "ProductName": "Cool Slav Shoes2",
+        "Dimensions": "39",
+        "Price": 29.99,
+        "ImageName": "/img/zara_products/shoes1.jpg"
       }
     }
   },
