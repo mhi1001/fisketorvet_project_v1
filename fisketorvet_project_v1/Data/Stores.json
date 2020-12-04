@@ -78,7 +78,16 @@
     "TypeOfStore": "Clothing",
     "Location": "South2",
     "ImagePath": "/img/storeLogos/bershka.png",
-    "Products": {}
+    "Products": {
+      "1": {
+        "Id": 1,
+        "ProductType": 0,
+        "ProductName": "Cool Bershka T-Shirt",
+        "Dimensions": "S",
+        "Price": 10.99,
+        "ImageName": "/img/zara_products/tshirt1.jpg"
+      }
+    }
   },
   "3": {
     "Id": 3,

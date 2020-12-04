@@ -26,7 +26,7 @@ namespace fisketorvet_project_v1.Pages.AdminSection
 
         public IActionResult OnPostCreateNewStore()
         {
-            return Redirect("CreateStoreAdminPage");
+            return Redirect("/Create/CreateStoreAdminPage");
         }
     }
 }

@@ -35,6 +35,7 @@ namespace fisketorvet_project_v1.Pages.AdminSection
             _storeCatalog.AddProductToStore(Product, id);
             Store = _storeCatalog.GetStore(id);
             return RedirectToPage("ManageProducts", new { id = Store.Id });
+
         }
     }
 }
