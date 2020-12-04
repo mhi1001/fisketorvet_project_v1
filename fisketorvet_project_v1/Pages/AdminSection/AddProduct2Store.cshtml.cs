@@ -16,7 +16,7 @@ namespace fisketorvet_project_v1.Pages.AdminSection
 
         [BindProperty]
         public Product Product { get; set; }
-
+        public Store Store { get; set; }
 
 
         public AddProduct2StoreModel(StoreCatalog repoStoreCatalog)
@@ -33,7 +33,8 @@ namespace fisketorvet_project_v1.Pages.AdminSection
         public IActionResult OnPost(int id)
         {
             _storeCatalog.AddProductToStore(Product, id);
-            return Redirect("ManageProducts");
+            Store = _storeCatalog.GetStore(id);
+            return RedirectToPage("ManageProducts", new { id = Store.Id });
         }
     }
 }
