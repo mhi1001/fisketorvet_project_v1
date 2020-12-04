@@ -37,6 +37,38 @@
         "Dimensions": "39",
         "Price": 29.99,
         "ImageName": "/img/zara_products/shoes1.jpg"
+      },
+      "5": {
+        "Id": 5,
+        "ProductType": 0,
+        "ProductName": "Portuguese T Shirt",
+        "Dimensions": "M",
+        "Price": 19.99,
+        "ImageName": "/img/zara_products/tshirt1.jpg"
+      },
+      "6": {
+        "Id": 6,
+        "ProductType": 0,
+        "ProductName": "Cool OverPriced T-Shirt 3",
+        "Dimensions": "S",
+        "Price": 199.0,
+        "ImageName": "/img/zara_products/tshirt1.jpg"
+      },
+      "7": {
+        "Id": 7,
+        "ProductType": 0,
+        "ProductName": "Cool Latvian T Shirt",
+        "Dimensions": "L",
+        "Price": 19.9,
+        "ImageName": "/img/zara_products/tshirt1.jpg"
+      },
+      "8": {
+        "Id": 8,
+        "ProductType": 0,
+        "ProductName": "Portuguese T Shirt",
+        "Dimensions": "M",
+        "Price": 299.99,
+        "ImageName": "/img/zara_products/tshirt1.jpg"
       }
     }
   },
