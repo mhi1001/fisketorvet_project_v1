@@ -16,9 +16,13 @@
                     <a href="#"><img class="card-img-top" src="@prd.ImageName"></a>
                     <div class="caption">
                         <h6><a href="#">@prd.ProductName</a></h6>
-                        <span class="price">
-                            <del>$24.99</del>
-                        </span><span class="price sale">$12.49</span>
+                        <div class="justify-content-around">
+                            <span class="price">
+                                <del>$24.99</del>
+                            </span><span class="price sale">$12.49</span>
+                            <div class="mx-auto" style="height: 50px;"><a class="btn btn-outline-primary" style="float: right;" asp-page="ShoppingCart" asp-route-id="@prd.Id">Add to cart</a></div>
+                        </div>
+                        
                     </div>
                 </div>
             </div>
