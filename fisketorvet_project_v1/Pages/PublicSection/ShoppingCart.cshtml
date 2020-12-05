@@ -11,16 +11,16 @@
     <th class="text-right">Price</th>
     </tr>
     </thead>
-      @if (Model.AddedProducts.Count != 0)
+      @if (Model.OrderProducts.Count != 0)
     {
     <tbody>
-     @foreach (var item in Model.AddedProducts)
+     @foreach (var item in Model.OrderProducts)
         {
         <tr>
         <td class="text-center">@item.ProductName</td>
         <td class="text-left">@item.ProductType</td>
         <td>
-        <img src="~/Books/@item.ImageName" width="60" height="70">
+        <img src="@item.ImageName" width="60" height="70">
         </td>
         <td class="text-right">@item.Price.ToString("c")</td> @*for sessions i think*@
         <td>

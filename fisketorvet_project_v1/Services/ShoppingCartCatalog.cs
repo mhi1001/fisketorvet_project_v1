@@ -14,6 +14,10 @@ namespace fisketorvet_project_v1.Services
         {
             _cartList = new List<Product>();
         }
+        public List<Product> GetAll()
+        {
+            return _cartList;
+        }
 
         public void AddProduct(Product product)
         {

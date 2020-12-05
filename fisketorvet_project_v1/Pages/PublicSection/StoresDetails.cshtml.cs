@@ -26,5 +26,6 @@ namespace fisketorvet_project_v1.Pages.PublicSection
 
             return Page();
         }
+
     }
 }
