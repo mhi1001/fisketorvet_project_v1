@@ -24,8 +24,9 @@ namespace fisketorvet_project_v1.Pages.PublicSection
             _shoppingCartCatalog = repoShoppingCartCatalog;
         }
 
-        public void OnGet(int id,)
-        {Product product = _storeCatalog()
+        public void OnGet()
+        {
+
         }
     }
 }
