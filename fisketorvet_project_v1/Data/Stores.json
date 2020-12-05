@@ -1,20 +1,84 @@
 {
+  "1": {
+    "Id": 1,
+    "Name": "Zara",
+    "TypeOfStore": "Clothing",
+    "Location": "South1",
+    "ImagePath": "/img/storeLogos/zara.png",
+    "Products": {
+      "1": {
+        "Id": 1,
+        "ProductType": 2,
+        "ProductName": "Cool Latvian T Shirt",
+        "Dimensions": "L",
+        "Price": 0.0,
+        "ImageName": "/img/zara_products/tshirt1.jpg"
+      },
+      "2": {
+        "Id": 2,
+        "ProductType": 2,
+        "ProductName": "Cool Romanian T-Shirt",
+        "Dimensions": "S",
+        "Price": 0.0,
+        "ImageName": "/img/zara_products/tshirt3.jpg"
+      },
+      "3": {
+        "Id": 3,
+        "ProductType": 3,
+        "ProductName": "Cool Slav Shoes",
+        "Dimensions": "41",
+        "Price": 29999.0,
+        "ImageName": "/img/zara_products/shoes1.jpg"
+      },
+      "4": {
+        "Id": 4,
+        "ProductType": 3,
+        "ProductName": "Cool Slav Shoes2",
+        "Dimensions": "39",
+        "Price": 29.99,
+        "ImageName": "/img/zara_products/shoes1.jpg"
+      },
+      "5": {
+        "Id": 5,
+        "ProductType": 0,
+        "ProductName": "Portuguese T Shirt",
+        "Dimensions": "M",
+        "Price": 19.99,
+        "ImageName": "/img/zara_products/tshirt1.jpg"
+      },
+      "6": {
+        "Id": 6,
+        "ProductType": 0,
+        "ProductName": "Cool OverPriced T-Shirt 3",
+        "Dimensions": "S",
+        "Price": 199.0,
+        "ImageName": "/img/zara_products/tshirt1.jpg"
+      },
+      "7": {
+        "Id": 7,
+        "ProductType": 0,
+        "ProductName": "Cool Latvian T Shirt",
+        "Dimensions": "L",
+        "Price": 19.9,
+        "ImageName": "/img/zara_products/tshirt1.jpg"
+      },
+      "8": {
+        "Id": 8,
+        "ProductType": 0,
+        "ProductName": "Portuguese T Shirt",
+        "Dimensions": "M",
+        "Price": 299.99,
+        "ImageName": "/img/zara_products/tshirt1.jpg"
+      }
+    }
+  },
   "2": {
     "Id": 2,
     "Name": "Bershka",
     "TypeOfStore": "Clothing",
     "Location": "South2",
     "ImagePath": "/img/storeLogos/bershka.png",
-    "Products": {
-      "1": {
-        "Id": 1,
-        "ProductType": 0,
-        "ProductName": "Cool Bershka T-Shirt",
-        "Dimensions": "S",
-        "Price": 10.99,
-        "ImageName": "/img/zara_products/tshirt1.jpg"
-      }
-    }
+    "Products": {}
   },
   "3": {
     "Id": 3,

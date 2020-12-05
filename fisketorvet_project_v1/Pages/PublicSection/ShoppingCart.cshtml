@@ -1,0 +1,54 @@
+﻿@page
+@model fisketorvet_project_v1.Pages.PublicSection.ShoppingCartModel
+@{
+    <h1>ShoppingCart</h1>
+    <table class="table table-bordered table-striped">
+    <thead>
+    <tr>
+    <th>Title</th>
+    <th>Author</th>
+    <th>Image</th>
+    <th class="text-right">Price</th>
+    </tr>
+    </thead>
+      @if (Model.AddedProducts.Count != 0)
+    {
+    <tbody>
+     @foreach (var item in Model.AddedProducts.Values)
+        {
+        <tr>
+        <td class="text-center">@item.ProductName</td>
+        <td class="text-left">@item.ProductType</td>
+        <td>
+        <img src="~/Books/@item.ImageName" width="60" height="70">
+        </td>
+        <td class="text-right">@item.Price.ToString("c")</td> @*for sessions i think*@
+        <td>
+        <form method="post">
+        <button asp-page-handler="Delete" asp-route-isbn="@item.Id"
+        class="btn btn-danger btn-group-lg pull-right">
+              Delete-From-Cart
+              </button>
+              </form>
+              </td>
+              </tr>
+        }
+    </tbody>
+    <tfoot>
+    <tr>
+    <td colspan="3" class="text-right">Total:</td>
+    <td class="text-right">
+              @*@Model.ChartService.CalculateTotalPrice().ToString("c")*@
+              </td>
+              </tr>
+              </tfoot>
+    }
+    </table>
+    <div class="text-center">
+    <a asp-page="/Books/AllBooks" class="btn btn-primary">Continue shopping</a>
+    <a asp-page="/Orders/CheckOut" class="btn btn-primary">Check_Out</a>
+</div>
+
+
+
+}

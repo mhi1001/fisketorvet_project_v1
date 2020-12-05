@@ -11,7 +11,7 @@ namespace fisketorvet_project_v1.Pages.PublicSection
 {
     public class StoresDetailsModel : PageModel
     {
-        private StoreCatalog _storeCatalog;
+        private StoreCatalog _storeCatalog;   //
         public Store Store { get; set; }
         public Dictionary<int, Product> StoreProducts { get; set; }
 
