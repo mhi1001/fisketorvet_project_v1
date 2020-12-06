@@ -9,21 +9,26 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace fisketorvet_project_v1.Pages
 {
-    public class Index1Model : PageModel
+    public class DeleteStore : PageModel
     {
-        public StoreCatalog storeCatalog { set; get; }
+        private StoreCatalog _storeCatalog;
         [BindProperty]
-        public Store store { set; get; }
+        public Store Store { set; get; }
+
+        public DeleteStore(StoreCatalog repoStoreCatalog)
+        {
+            _storeCatalog = repoStoreCatalog;
+        }
         public IActionResult OnGet(int id)
         {
-            store = storeCatalog.GetStore(id);
+            Store = _storeCatalog.GetStore(id);
             return Page();
         }
 
         public IActionResult OnPost(int id)
         {
-            storeCatalog.RemoveStore(id);
-            return RedirectToPage("StoreAdminPage",new{id=store.Id});
+            _storeCatalog.RemoveStore(id);
+            return Redirect("/AdminSection/StoreAdminPage");
         }
     }
 }

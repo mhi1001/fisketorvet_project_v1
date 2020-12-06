@@ -96,7 +96,7 @@ namespace fisketorvet_project_v1.Services
         {
             Dictionary<int, Product> oldProducts = GetStore(id).Products; //Initialize the dictionary by getting the respective's store
                                                                           // products ((PREVENTS NULL EXCEPTION)
-
+            //Product prd = GetStore(id).Products[1];
             product.Id = GenerateProductId(oldProducts); //gets the ID from the generator method
 
             oldProducts.Add(product.Id, product); //and then adds the product to existing product dictionary

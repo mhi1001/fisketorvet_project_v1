@@ -1,6 +1,6 @@
 ﻿@page
 @using fisketorvet_project_v1.Models
-@model fisketorvet_project_v1.Pages.Index1Model
+@model fisketorvet_project_v1.Pages.DeleteStore
 @{
     ViewData["Title"] = "Delete Store";
 }
@@ -9,9 +9,9 @@
 <form method="post">
     <div asp-validation-summary="ModelOnly" class="text-danger"> </div>
     <div class="form-group">
-        <label asp-for="@Model.store.Id" class="control-label"> Id </label>
-        <input asp-for="@Model.store.Id" class="form-control" />
-        <span asp-validation-for="@Model.store.Id" class="text-danger"></span>
+        <label asp-for="@Model.Store.Id" class="control-label"> Id </label>
+        <input asp-for="@Model.Store.Id" class="form-control" />
+        <span asp-validation-for="@Model.Store.Id" class="text-danger"></span>
     </div>
 
 
