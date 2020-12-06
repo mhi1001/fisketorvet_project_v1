@@ -23,7 +23,7 @@ namespace fisketorvet_project_v1.Pages
         public IActionResult OnPost(int id)
         {
             storeCatalog.RemoveStore(id);
-            return Redirect("ViewStores");
+            return RedirectToPage("StoreAdminPage",new{id=store.Id});
         }
     }
 }

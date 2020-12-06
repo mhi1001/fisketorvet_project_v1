@@ -87,5 +87,21 @@
     "Location": "South3",
     "ImagePath": "/img/storeLogos/sportzone.png",
     "Products": {}
+  },
+  "4": {
+    "Id": 4,
+    "Name": null,
+    "TypeOfStore": null,
+    "Location": null,
+    "ImagePath": null,
+    "Products": {}
+  },
+  "5": {
+    "Id": 5,
+    "Name": "Margherita",
+    "TypeOfStore": "clothes",
+    "Location": "Copenhagen",
+    "ImagePath": "tr.img",
+    "Products": {}
   }
 }

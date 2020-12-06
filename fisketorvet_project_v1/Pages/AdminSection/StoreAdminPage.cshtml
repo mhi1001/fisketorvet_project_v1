@@ -57,7 +57,7 @@
                                    </div>
                                    <div align="right">
                                        <form method="post">
-                                           <input align="right" type="submit" class="btn btn-sm btn-outline-secondary" value="Remove" style="background-color: red; color: black" asp-page-handler="CreateNewStore"/>
+                                           <input align="right" type="submit" class="btn btn-danger" value="Remove" @*style="background-color: red; color: black"*@ asp-route-id="@st.Id" asp-page-handler="DeleteStore"/>
                                        </form>
                                    </div>
                                </div>
