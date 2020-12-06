@@ -78,7 +78,24 @@
     "TypeOfStore": "Clothing",
     "Location": "South2",
     "ImagePath": "/img/storeLogos/bershka.png",
-    "Products": {}
+    "Products": {
+      "1": {
+        "Id": 1,
+        "ProductType": 1,
+        "ProductName": "Jacket",
+        "Dimensions": "L",
+        "Price": 199.99,
+        "ImageName": "/img/zara_products/jacket1.jpg"
+      },
+      "2": {
+        "Id": 2,
+        "ProductType": 1,
+        "ProductName": "Jacket",
+        "Dimensions": "S",
+        "Price": 10.99,
+        "ImageName": "/img/zara_products/jacket2.jpg"
+      }
+    }
   },
   "3": {
     "Id": 3,
@@ -86,6 +103,23 @@
     "TypeOfStore": "Clothing, Sports & Hobbies",
     "Location": "South3",
     "ImagePath": "/img/storeLogos/sportzone.png",
-    "Products": {}
+    "Products": {
+      "1": {
+        "Id": 1,
+        "ProductType": 2,
+        "ProductName": "Nice Jeans",
+        "Dimensions": "44",
+        "Price": 29999.0,
+        "ImageName": "/img/zara_products/jeans1.jpg"
+      },
+      "2": {
+        "Id": 2,
+        "ProductType": 2,
+        "ProductName": "MegaNice Jeans",
+        "Dimensions": "38",
+        "Price": 199.99,
+        "ImageName": "/img/zara_products/jeans2.jpg"
+      }
+    }
   }
 }

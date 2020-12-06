@@ -5,8 +5,8 @@
     <table class="table table-bordered table-striped">
     <thead>
     <tr>
-    <th>Title</th>
-    <th>Author</th>
+    <th>Name</th>
+    <th>Type</th>
     <th>Image</th>
     <th class="text-right">Price</th>
     </tr>
@@ -25,9 +25,9 @@
         <td class="text-right">@item.Price.ToString("c")</td> @*for sessions i think*@
         <td>
         <form method="post">
-        <button asp-page-handler="Delete" asp-route-isbn="@item.Id"
+        <button asp-page-handler="DeleteProduct" asp-route-id="@item.Id" asp-route-storeid=
         class="btn btn-danger btn-group-lg pull-right">
-              Delete-From-Cart
+              Remove from Cart
               </button>
               </form>
               </td>
@@ -36,16 +36,16 @@
     </tbody>
     <tfoot>
     <tr>
-    <td colspan="3" class="text-right">Total:</td>
+        <td colspan="3" class="text-right">Total of <b>@Model.OrderProducts.Count() Product:</b></td>
     <td class="text-right">
-              @*@Model.ChartService.CalculateTotalPrice().ToString("c")*@
+              @Model._ShoppingCartCatalog.TotalPrice().ToString("c") @*Formats the result to a string*@ 
               </td>
               </tr>
               </tfoot>
     }
     </table>
     <div class="text-center">
-    <a asp-page="/Books/AllBooks" class="btn btn-primary">Continue shopping</a>
+    <a asp-page="/PublicSection/ViewStores" class="btn btn-primary">Continue Shopping</a>
     <a asp-page="/Orders/CheckOut" class="btn btn-primary">Check_Out</a>
 </div>
 
