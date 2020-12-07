@@ -134,5 +134,29 @@
         "ImageName": "/img/zara_products/tshirt1.jpg"
       }
     ]
+  },
+  "5": {
+    "Id": 5,
+    "Date": "2020-12-07T14:41:34.9177773+01:00",
+    "Customer": {
+      "Id": 2,
+      "UserName": "user",
+      "Name": "User",
+      "Address": "My one and only home",
+      "Email": "user@gmial.com",
+      "PhoneNumber": "+45helooooooo",
+      "Password": "user",
+      "Admin": false
+    },
+    "Products": [
+      {
+        "Id": 1,
+        "ProductType": 2,
+        "ProductName": "Cool Latvian T Shirt",
+        "Dimensions": "L",
+        "Price": 0.0,
+        "ImageName": "/img/zara_products/tshirt1.jpg"
+      }
+    ]
   }
 }

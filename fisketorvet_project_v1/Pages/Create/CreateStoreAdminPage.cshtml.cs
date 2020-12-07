@@ -28,7 +28,7 @@ namespace fisketorvet_project_v1.Pages.AdminSection
              
             _storeCatalog.AddStore(Store); //Add the store to the catalog
 
-            return Redirect("StoreAdminPage");
+            return Redirect("/AdminSection/StoreAdminPage");
         }
     }
 }
