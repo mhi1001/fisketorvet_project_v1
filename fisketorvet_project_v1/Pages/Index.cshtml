@@ -3,11 +3,30 @@
 @{
     ViewData["Title"] = "Home page";
 }
+<style> 
+    body {
+        background-image: url("/img/style/1.jpg");
+        background-repeat: no-repeat, repeat;
+        background-position-x: left;
+        background-color: #cccccc;
+        background-size: cover;
+    }
+    h1 {
+        /*text-align: justify;*/
+        text-decoration: overline underline;
+      /*  text-indent: 50px;*/
+        text-shadow: 5px 5px 5px white;
+    }
+</style>
+<label>
+    <div class="text-center" style="color: navy">
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+        <h1 class="display-4" style="font-family: Lucida Handwriting">
+            <b>Welcome to Fisketorvet!</b>
+        </h1>
+        @*<p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>*@
+    </div>
+</label>
 
 <head>
     <title>Bootstrap Example</title>
@@ -24,7 +43,7 @@
         }
     </style>
 </head>
-<body>
+
 
 <div id="myCarousel" class="carousel slide" data-ride="carousel" color>
     <!-- Indicators -->
@@ -42,16 +61,18 @@
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
         <div class="item active">
-            <img src="/img/events-news/1.jpg" alt="Chania" witdh="500" height="345">
-            <div class="carousel-caption">
-                <h3>Surprise Presents</h3>
-                <p> Check our in-store offers!</p>
-            </div>
+            <img src="/img/events-news/Santa-Photo.png" alt="Responsive image" width="500" height="345">
+                <div class="carousel-caption" style="color: black">
+                    <h3></h3>
+                    <p></p>
+                </div>
         </div>
+
+        
 
         <div class="item">
             <img src="/img/events-news/2.jpg" alt="Responsive image" width="500" height="345">
-            <div class="carousel-caption">
+            <div class="carousel-caption" style="color: black">
                 <h3>Santa for you</h3>
                 <p>This year, we have a special Santa event!</p>
             </div>
@@ -60,8 +81,10 @@
         <div class="item">
             <img src="/img/events-news/3.jpg" alt="New York" width="500" height="345">
             <div class="carousel-caption">
-                <h3>Cozy dinner</h3>
-                <p>PALÆO has a special cozy place for your romantic dinner!</p>
+
+                <h3><b>Cozy dinner</b></h3>
+                <p><b>PALÆO has a special cozy place for your romantic dinner!</b></p>
+
             </div>
         </div>
 
@@ -96,6 +119,17 @@
                 <p></p>
             </div>
         </div>
+        <div class="item">
+            <img src="/img/events-news/1-1.jpg" alt="Chania" witdh="500" height="345">
+            <div class="carousel-caption" style="left: auto">
+                <h3>
+                    <b>Surprise Presents</b>
+                </h3>
+                <p>
+                    <b>Check our in-store offers!</b>
+                </p>
+            </div>
+        </div>
 
     </div>
 
@@ -109,4 +143,4 @@
         <span class="sr-only">Next</span>
     </a>
 </div>
-</body>
+
