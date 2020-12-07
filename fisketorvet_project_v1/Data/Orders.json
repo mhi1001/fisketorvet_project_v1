@@ -1,3 +1,138 @@
 {
-
+  "1": {
+    "Id": 1,
+    "Date": "2020-12-07T13:24:46.6308712+01:00",
+    "Customer": {
+      "Id": 2,
+      "UserName": "user",
+      "Name": "User",
+      "Address": "My one and only home",
+      "Email": "user@gmial.com",
+      "PhoneNumber": "+45helooooooo",
+      "Password": "user",
+      "Admin": false
+    },
+    "Products": [
+      {
+        "Id": 1,
+        "ProductType": 2,
+        "ProductName": "Cool Latvian T Shirt",
+        "Dimensions": "L",
+        "Price": 0.0,
+        "ImageName": "/img/zara_products/tshirt1.jpg"
+      },
+      {
+        "Id": 1,
+        "ProductType": 2,
+        "ProductName": "Cool Latvian T Shirt",
+        "Dimensions": "L",
+        "Price": 0.0,
+        "ImageName": "/img/zara_products/tshirt1.jpg"
+      }
+    ]
+  },
+  "2": {
+    "Id": 2,
+    "Date": "2020-12-07T13:26:15.3239319+01:00",
+    "Customer": {
+      "Id": 2,
+      "UserName": "user",
+      "Name": "User",
+      "Address": "My one and only home",
+      "Email": "user@gmial.com",
+      "PhoneNumber": "+45helooooooo",
+      "Password": "user",
+      "Admin": false
+    },
+    "Products": [
+      {
+        "Id": 1,
+        "ProductType": 2,
+        "ProductName": "Cool Latvian T Shirt",
+        "Dimensions": "L",
+        "Price": 0.0,
+        "ImageName": "/img/zara_products/tshirt1.jpg"
+      },
+      {
+        "Id": 3,
+        "ProductType": 3,
+        "ProductName": "Cool Slav Shoes",
+        "Dimensions": "41",
+        "Price": 29999.0,
+        "ImageName": "/img/zara_products/shoes1.jpg"
+      }
+    ]
+  },
+  "3": {
+    "Id": 3,
+    "Date": "2020-12-07T13:26:34.9036439+01:00",
+    "Customer": {
+      "Id": 2,
+      "UserName": "user",
+      "Name": "User",
+      "Address": "My one and only home",
+      "Email": "user@gmial.com",
+      "PhoneNumber": "+45helooooooo",
+      "Password": "user",
+      "Admin": false
+    },
+    "Products": [
+      {
+        "Id": 3,
+        "ProductType": 3,
+        "ProductName": "Cool Slav Shoes",
+        "Dimensions": "41",
+        "Price": 29999.0,
+        "ImageName": "/img/zara_products/shoes1.jpg"
+      },
+      {
+        "Id": 1,
+        "ProductType": 2,
+        "ProductName": "Cool Latvian T Shirt",
+        "Dimensions": "L",
+        "Price": 0.0,
+        "ImageName": "/img/zara_products/tshirt1.jpg"
+      }
+    ]
+  },
+  "4": {
+    "Id": 4,
+    "Date": "2020-12-07T13:27:14.2874365+01:00",
+    "Customer": {
+      "Id": 2,
+      "UserName": "user",
+      "Name": "User",
+      "Address": "My one and only home",
+      "Email": "user@gmial.com",
+      "PhoneNumber": "+45helooooooo",
+      "Password": "user",
+      "Admin": false
+    },
+    "Products": [
+      {
+        "Id": 3,
+        "ProductType": 3,
+        "ProductName": "Cool Slav Shoes",
+        "Dimensions": "41",
+        "Price": 29999.0,
+        "ImageName": "/img/zara_products/shoes1.jpg"
+      },
+      {
+        "Id": 1,
+        "ProductType": 2,
+        "ProductName": "Cool Latvian T Shirt",
+        "Dimensions": "L",
+        "Price": 0.0,
+        "ImageName": "/img/zara_products/tshirt1.jpg"
+      },
+      {
+        "Id": 6,
+        "ProductType": 0,
+        "ProductName": "Cool OverPriced T-Shirt 3",
+        "Dimensions": "S",
+        "Price": 199.0,
+        "ImageName": "/img/zara_products/tshirt1.jpg"
+      }
+    ]
+  }
 }

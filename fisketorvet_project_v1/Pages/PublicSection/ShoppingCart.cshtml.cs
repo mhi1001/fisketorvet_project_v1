@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using fisketorvet_project_v1.Models;
 using fisketorvet_project_v1.Services;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
@@ -29,6 +30,10 @@ namespace fisketorvet_project_v1.Pages.PublicSection
 
         public IActionResult OnGet(int id, int storeid) //On StoreDetails, using asp-route I pass 2 different Ids, regarding each store and then receive them here.
         {
+            if (HttpContext.Session.GetString("cat") == null)
+            {
+                return Redirect("/Login");
+            }
             _storeIdentification = storeid;//Assigns the store identification
             Product = _storeCatalog.GetStore(storeid).Products[id]; //get the specific product, from the specific store(storeid)
             _ShoppingCartCatalog.AddProduct(Product); //Add the product to the list

@@ -2,3 +2,17 @@
 @model fisketorvet_project_v1.Pages.PublicSection.CheckOutModel
 @{
 }
+
+<h4>Hello @Model.Customer.Name: Thank you for placing this order on @DateTime.Now</h4>
+<h5> Your order contains:</h5>
+@foreach (var item in Model.OrderProducts)
+{
+    <tr>
+        <td class="text-left"> Name: @item.ProductName</td>
+        <td class="text-right">
+            Total Price :
+            @((item.Price).ToString("c"))
+        </td>
+    </tr>
+    <br />
+}
