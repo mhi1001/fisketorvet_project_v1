@@ -2,6 +2,7 @@
   "1": {
     "Id": 1,
     "Name": "Zara",
+    "Description": "Zara specializes in fast fashion, and products include clothing, accessories, shoes, swimwear, beauty, and perfumes.",
     "TypeOfStore": "Clothing",
     "Location": "South1",
     "ImagePath": "/img/storeLogos/zara.png",
@@ -75,6 +76,7 @@
   "2": {
     "Id": 2,
     "Name": "Bershka",
+    "Description": null,
     "TypeOfStore": "Clothing",
     "Location": "South2",
     "ImagePath": "/img/storeLogos/bershka.png",
@@ -100,6 +102,7 @@
   "3": {
     "Id": 3,
     "Name": "SportZone",
+    "Description": null,
     "TypeOfStore": "Clothing, Sports & Hobbies",
     "Location": "South3",
     "ImagePath": "/img/storeLogos/sportzone.png",
@@ -121,5 +124,14 @@
         "ImageName": "/img/zara_products/jeans2.jpg"
       }
     }
+  },
+  "4": {
+    "Id": 4,
+    "Name": "teststore",
+    "Description": "This is a very nice store, It has all kind of stuff and its really cool and nice. i hope everyone likes this store as much as I do.",
+    "TypeOfStore": "Clothing",
+    "Location": "South4",
+    "ImagePath": "zara.png",
+    "Products": {}
   }
 }

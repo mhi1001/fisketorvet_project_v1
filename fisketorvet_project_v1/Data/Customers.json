@@ -1,6 +1,6 @@
 {
   "1": {
-    "Id": 1, 
+    "Id": 1,
     "UserName": "admin",
     "Name": "Admin",
     "Email": "admin@gmial.com",
@@ -23,6 +23,16 @@
     "Name": "Catalina",
     "Email": "paul6465@edu.easj.dk",
     "Password": "1234",
+    "Admin": true
+  },
+  "4": {
+    "Id": 4,
+    "UserName": "pedro22",
+    "Name": "Pedro Rainho",
+    "Address": "Kobenhavnsvej 66k\n Roskilde 4000",
+    "Email": "pedro_mrmr@hotmail.com",
+    "PhoneNumber": "+351928020747",
+    "Password": "pedro22",
     "Admin": true
   }
 }

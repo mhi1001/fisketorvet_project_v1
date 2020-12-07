@@ -45,5 +45,12 @@ namespace fisketorvet_project_v1.Pages.PublicSection
             
             return Page();
         }
+
+        public IActionResult OnPostResetCart()
+        {
+            OrderProducts = _shoppingCartCatalog.GetAll();
+            OrderProducts.Clear();
+            return Redirect("/Index");
+        }
     }
 }
