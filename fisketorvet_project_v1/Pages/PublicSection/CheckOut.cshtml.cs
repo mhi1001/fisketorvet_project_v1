@@ -39,7 +39,7 @@ namespace fisketorvet_project_v1.Pages.PublicSection
             order.Customer = Customer;
             order.Products = OrderProducts;
             order.Date = DateTime.Now;
-            
+            order.TotalPrice = OrderProducts.Sum(product => product.Price);
             _orderCatalog.AddOrder(order);
 
             
