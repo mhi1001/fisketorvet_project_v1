@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using fisketorvet_project_v1.Models;
 using fisketorvet_project_v1.Services;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
@@ -18,12 +19,15 @@ namespace fisketorvet_project_v1.Pages.AdminSection
         {
             _storeCatalog = repoStoreCatalog;
         }
-        public void OnGet(int id)
+        public IActionResult OnGet(int id)
         {
-           
+            if (HttpContext.Session.GetString("SessionType") != "adminSession")
+            {
+                return Redirect("/Unauthorized");
+            }
             Store = _storeCatalog.GetStore(id);
             Products = _storeCatalog.GetStore(id).Products;
-            
+            return Page();
 
         }
 
