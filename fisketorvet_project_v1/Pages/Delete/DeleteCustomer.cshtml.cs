@@ -22,7 +22,7 @@ namespace fisketorvet_project_v1.Pages.Delete
         public IActionResult OnPost(int id)
         {
             _customerCatalog.RemoveCustomer(id);
-            return Redirect("/AdminSection/OrderAdminPage");
+            return Redirect("/AdminSection/CustomerAdminPage");
         }
     }
 }
