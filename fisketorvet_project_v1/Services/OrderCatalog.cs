@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using fisketorvet_project_v1.Helpers;
 using fisketorvet_project_v1.Models;
 
@@ -9,6 +10,27 @@ namespace fisketorvet_project_v1.Services
     {
         private string filePath = @".\Data\Orders.json";
         private Dictionary<int, Order> Orders { get; set; }
+        private CustomerCatalog Customers { get; set; }
+        private Customer c;
+
+        public OrderCatalog(CustomerCatalog c)
+        {
+            Customers = c;
+        }
+        public Dictionary<int, Order> MyOrders(int id)
+        {
+            Dictionary<int,Order> orders=new Dictionary<int, Order>();
+            c=Customers.GetCustomer(id);
+            if (c != null)
+            {
+                Orders=GetAllOrders();
+                foreach (var o in Orders.Values)
+                {
+                    if(o.Customer==c) orders.Add(o.Id,o);
+                }
+            }
+            return orders;
+        }
 
         public Dictionary<int, Order> GetAllOrders()
         {

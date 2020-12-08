@@ -6,7 +6,7 @@
 
 
 <div class="text-center">
-    <h1 class="display-4">Store Administration Page</h1>
+    <h1>Store Administration Page</h1>
 </div>
 
 <div align="right">
@@ -57,7 +57,7 @@
                                    </div>
                                    <div align="right">
                                        <form method="post">
-                                           <input align="right" type="submit" class="btn btn-sm btn-outline-secondary" value="Remove" style="background-color: red; color: black"asp-route-id="@st.Id" asp-page="/Delete/DeleteStore"/>
+                                           <input align="right" type="submit" class="btn btn-danger" value="Remove" asp-route-id="@st.Id" asp-page="/Delete/DeleteStore"/>@*style="background-color: red; color: black"*@
                                        </form>
                                    </div>
                                </div>

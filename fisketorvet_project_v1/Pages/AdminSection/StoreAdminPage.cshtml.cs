@@ -33,5 +33,10 @@ namespace fisketorvet_project_v1.Pages.AdminSection
         {
             return Redirect("/Create/CreateStoreAdminPage");
         }
+
+        //public IActionResult OnPostDeleteStore(int id)
+        //{
+        //    return Redirect("/Delete/DeleteStore");
+        //}
     }
 }
