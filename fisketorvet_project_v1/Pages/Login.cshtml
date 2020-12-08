@@ -16,7 +16,7 @@
         <form method="post">
             <div class="form-group">
                 <label class="control-label"><b>Username</b></label>
-                <input asp-for="@Model.SiteUser.UserName"  class="form-control" />
+                <input asp-for="@Model.SiteUser.UserName" class="form-control" />
                 <span asp-validation-for="@Model.SiteUser.UserName" class="text-danger"></span>
             </div>
 
@@ -30,6 +30,9 @@
                 <input type="submit" class="btn btn-primary btn-outline-primary" value="Login" />
             </div>
         </form>
+        <div>
+            <a asp-page="/PublicSection/RegisterPage">Don't have an account ? Create here</a>
+        </div>
         <div>
             <a style="color: black" asp-page="/Index"><h5>Back to MainMenu</h5></a>
         </div>

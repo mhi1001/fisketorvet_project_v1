@@ -1,6 +1,7 @@
 ﻿@using System.Net
 @using Microsoft.AspNetCore.Http
-<style> 
+@{ var session = Context.Session.GetString("cat"); }
+<style>
     body {
         background-image: url("/img/style/1.jpg");
         background-repeat: no-repeat, repeat;
@@ -8,6 +9,7 @@
         background-color: #cccccc;
         background-size: cover;
     }
+
     h1 {
         text-align: justify;
         text-decoration: overline underline;
@@ -16,7 +18,7 @@
         font-family: Lucida Handwriting;
     }
 </style>
-@*@{ var session = HttpContext.Session.GetString("cat");  }*@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -45,16 +47,22 @@
                             <a class="nav-link text-dark" asp-area="" asp-page="/PublicSection/ViewStores">Stores</a>
                         </li>
 
-                        
-                        @*@{
-                        
-                        if(HttpContext.Session == null)
+                        @{
 
-                        }*@
-                       
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Login">Login</a>
-                        </li>
+                            if (session == null)
+                            {
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" asp-area="" asp-page="/Login">Login</a>
+                                </li>
+                            }
+                            else
+                            {
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" asp-area="" asp-page="/Logout">Log out</a>
+                                </li>
+                            }
+                        }
+
                     </ul>
                 </div>
             </div>

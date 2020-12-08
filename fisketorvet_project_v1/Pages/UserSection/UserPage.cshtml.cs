@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using fisketorvet_project_v1.Models;
 using fisketorvet_project_v1.Services;
 using Microsoft.AspNetCore.Http;
@@ -11,12 +12,21 @@ namespace fisketorvet_project_v1.Pages.UserSection
     {
         [BindProperty]
         public Customer cust { set; get; }
-
+        [BindProperty]
+        public OrderCatalog Order { set; get; }
         public CustomerCatalog catalog;
+        [BindProperty]
+        public Dictionary<int, Order> orders { set; get; }
 
-        public UserPageModel(CustomerCatalog c)
+        public UserPageModel(CustomerCatalog c, OrderCatalog o)
         {
             catalog = c;
+            Order = o;
+        }
+        public Dictionary<int, Order> MyOrder()
+        {
+            orders=Order.MyOrders(cust.Id);
+            return orders;
         }
         public IActionResult OnGet(int id)
         {
