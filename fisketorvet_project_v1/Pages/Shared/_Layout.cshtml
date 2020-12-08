@@ -1,7 +1,7 @@
 ﻿@using System.Net
 @using Microsoft.AspNetCore.Http
 
-@*@{ var session = HttpContext.Session.GetString("cat");  }*@
+@{ var session = Context.Session.GetString("cat"); }
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -29,16 +29,22 @@
                             <a class="nav-link text-dark" asp-area="" asp-page="/PublicSection/ViewStores">Stores</a>
                         </li>
 
-                        
-                        @*@{
-                        
-                        if(HttpContext.Session == null)
 
-                        }*@
-                       
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Login">Login</a>
-                        </li>
+                        @{
+
+                            if (session == null)
+                            {
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" asp-area="" asp-page="/Login">Login</a>
+                                </li>
+                            }
+                            else
+                            {
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" asp-area="" asp-page="/Logout">Log out</a>
+                                </li>
+                            }
+                        }
                     </ul>
                 </div>
             </div>
