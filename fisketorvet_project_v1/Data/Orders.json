@@ -1,244 +1,4 @@
 {
-  "1": {
-    "Id": 1,
-    "Date": "2020-12-07T13:24:46.6308712+01:00",
-    "Customer": {
-      "Id": 2,
-      "UserName": "user",
-      "Name": "User",
-      "Address": "My one and only home",
-      "Email": "user@gmial.com",
-      "PhoneNumber": "+45helooooooo",
-      "Password": "user",
-      "Admin": false
-    },
-    "Products": [
-      {
-        "Id": 1,
-        "ProductType": 2,
-        "ProductName": "Cool Latvian T Shirt",
-        "Dimensions": "L",
-        "Price": 0.0,
-        "ImageName": "/img/zara_products/tshirt1.jpg"
-      },
-      {
-        "Id": 1,
-        "ProductType": 2,
-        "ProductName": "Cool Latvian T Shirt",
-        "Dimensions": "L",
-        "Price": 0.0,
-        "ImageName": "/img/zara_products/tshirt1.jpg"
-      }
-    ]
-  },
-  "2": {
-    "Id": 2,
-    "Date": "2020-12-07T13:26:15.3239319+01:00",
-    "Customer": {
-      "Id": 2,
-      "UserName": "user",
-      "Name": "User",
-      "Address": "My one and only home",
-      "Email": "user@gmial.com",
-      "PhoneNumber": "+45helooooooo",
-      "Password": "user",
-      "Admin": false
-    },
-    "Products": [
-      {
-        "Id": 1,
-        "ProductType": 2,
-        "ProductName": "Cool Latvian T Shirt",
-        "Dimensions": "L",
-        "Price": 0.0,
-        "ImageName": "/img/zara_products/tshirt1.jpg"
-      },
-      {
-        "Id": 3,
-        "ProductType": 3,
-        "ProductName": "Cool Slav Shoes",
-        "Dimensions": "41",
-        "Price": 29999.0,
-        "ImageName": "/img/zara_products/shoes1.jpg"
-      }
-    ]
-  },
-  "3": {
-    "Id": 3,
-    "Date": "2020-12-07T13:26:34.9036439+01:00",
-    "Customer": {
-      "Id": 2,
-      "UserName": "user",
-      "Name": "User",
-      "Address": "My one and only home",
-      "Email": "user@gmial.com",
-      "PhoneNumber": "+45helooooooo",
-      "Password": "user",
-      "Admin": false
-    },
-    "Products": [
-      {
-        "Id": 3,
-        "ProductType": 3,
-        "ProductName": "Cool Slav Shoes",
-        "Dimensions": "41",
-        "Price": 29999.0,
-        "ImageName": "/img/zara_products/shoes1.jpg"
-      },
-      {
-        "Id": 1,
-        "ProductType": 2,
-        "ProductName": "Cool Latvian T Shirt",
-        "Dimensions": "L",
-        "Price": 0.0,
-        "ImageName": "/img/zara_products/tshirt1.jpg"
-      }
-    ]
-  },
-  "4": {
-    "Id": 4,
-    "Date": "2020-12-07T13:27:14.2874365+01:00",
-    "Customer": {
-      "Id": 2,
-      "UserName": "user",
-      "Name": "User",
-      "Address": "My one and only home",
-      "Email": "user@gmial.com",
-      "PhoneNumber": "+45helooooooo",
-      "Password": "user",
-      "Admin": false
-    },
-    "Products": [
-      {
-        "Id": 3,
-        "ProductType": 3,
-        "ProductName": "Cool Slav Shoes",
-        "Dimensions": "41",
-        "Price": 29999.0,
-        "ImageName": "/img/zara_products/shoes1.jpg"
-      },
-      {
-        "Id": 1,
-        "ProductType": 2,
-        "ProductName": "Cool Latvian T Shirt",
-        "Dimensions": "L",
-        "Price": 0.0,
-        "ImageName": "/img/zara_products/tshirt1.jpg"
-      },
-      {
-        "Id": 6,
-        "ProductType": 0,
-        "ProductName": "Cool OverPriced T-Shirt 3",
-        "Dimensions": "S",
-        "Price": 199.0,
-        "ImageName": "/img/zara_products/tshirt1.jpg"
-      }
-    ]
-  },
-  "5": {
-    "Id": 5,
-    "Date": "2020-12-07T15:10:01.0192224+01:00",
-    "Customer": {
-      "Id": 1,
-      "UserName": "admin",
-      "Name": "Admin",
-      "Address": null,
-      "Email": "admin@gmial.com",
-      "PhoneNumber": null,
-      "Password": "admin",
-      "Admin": true
-    },
-    "Products": [
-      {
-        "Id": 1,
-        "ProductType": 2,
-        "ProductName": "Cool Latvian T Shirt",
-        "Dimensions": "L",
-        "Price": 0.0,
-        "ImageName": "/img/zara_products/tshirt1.jpg"
-      }
-    ]
-  },
-  "6": {
-    "Id": 6,
-    "Date": "2020-12-07T15:19:56.1754118+01:00",
-    "Customer": {
-      "Id": 1,
-      "UserName": "admin",
-      "Name": "Admin",
-      "Address": null,
-      "Email": "admin@gmial.com",
-      "PhoneNumber": null,
-      "Password": "admin",
-      "Admin": true
-    },
-    "Products": [
-      {
-        "Id": 1,
-        "ProductType": 2,
-        "ProductName": "Cool Latvian T Shirt",
-        "Dimensions": "L",
-        "Price": 0.0,
-        "ImageName": "/img/zara_products/tshirt1.jpg"
-      },
-      {
-        "Id": 1,
-        "ProductType": 2,
-        "ProductName": "Cool Latvian T Shirt",
-        "Dimensions": "L",
-        "Price": 0.0,
-        "ImageName": "/img/zara_products/tshirt1.jpg"
-      }
-    ]
-  },
-  "7": {
-    "Id": 7,
-    "Date": "2020-12-07T15:20:08.4404691+01:00",
-    "Customer": {
-      "Id": 1,
-      "UserName": "admin",
-      "Name": "Admin",
-      "Address": null,
-      "Email": "admin@gmial.com",
-      "PhoneNumber": null,
-      "Password": "admin",
-      "Admin": true
-    },
-    "Products": [
-      {
-        "Id": 1,
-        "ProductType": 2,
-        "ProductName": "Cool Latvian T Shirt",
-        "Dimensions": "L",
-        "Price": 0.0,
-        "ImageName": "/img/zara_products/tshirt1.jpg"
-      }
-    ]
-  },
-  "8": {
-    "Id": 8,
-    "Date": "2020-12-07T15:20:20.3720154+01:00",
-    "Customer": {
-      "Id": 1,
-      "UserName": "admin",
-      "Name": "Admin",
-      "Address": null,
-      "Email": "admin@gmial.com",
-      "PhoneNumber": null,
-      "Password": "admin",
-      "Admin": true
-    },
-    "Products": [
-      {
-        "Id": 3,
-        "ProductType": 3,
-        "ProductName": "Cool Slav Shoes",
-        "Dimensions": "41",
-        "Price": 29999.0,
-        "ImageName": "/img/zara_products/shoes1.jpg"
-      }
-    ]
-  },
   "9": {
     "Id": 9,
     "Date": "2020-12-07T15:25:30.4866743+01:00",
@@ -261,7 +21,8 @@
         "Price": 0.0,
         "ImageName": "/img/zara_products/tshirt1.jpg"
       }
-    ]
+    ],
+    "TotalPrice": 0.0
   },
   "10": {
     "Id": 10,
@@ -285,7 +46,8 @@
         "Price": 0.0,
         "ImageName": "/img/zara_products/tshirt1.jpg"
       }
-    ]
+    ],
+    "TotalPrice": 0.0
   },
   "11": {
     "Id": 11,
@@ -325,7 +87,8 @@
         "Price": 19.99,
         "ImageName": "/img/zara_products/tshirt1.jpg"
       }
-    ]
+    ],
+    "TotalPrice": 0.0
   },
   "12": {
     "Id": 12,
@@ -357,7 +120,8 @@
         "Price": 19.99,
         "ImageName": "/img/zara_products/tshirt1.jpg"
       }
-    ]
+    ],
+    "TotalPrice": 0.0
   },
   "13": {
     "Id": 13,
@@ -389,7 +153,8 @@
         "Price": 29.99,
         "ImageName": "/img/zara_products/shoes1.jpg"
       }
-    ]
+    ],
+    "TotalPrice": 0.0
   },
   "14": {
     "Id": 14,
@@ -429,7 +194,8 @@
         "Price": 10.99,
         "ImageName": "/img/zara_products/jacket2.jpg"
       }
-    ]
+    ],
+    "TotalPrice": 0.0
   },
   "15": {
     "Id": 15,
@@ -461,7 +227,8 @@
         "Price": 29.99,
         "ImageName": "/img/zara_products/shoes1.jpg"
       }
-    ]
+    ],
+    "TotalPrice": 0.0
   },
   "16": {
     "Id": 16,
@@ -501,7 +268,8 @@
         "Price": 199.99,
         "ImageName": "/img/zara_products/jeans2.jpg"
       }
-    ]
+    ],
+    "TotalPrice": 0.0
   },
   "17": {
     "Id": 17,
@@ -541,7 +309,8 @@
         "Price": 199.99,
         "ImageName": "/img/zara_products/jeans2.jpg"
       }
-    ]
+    ],
+    "TotalPrice": 0.0
   },
   "18": {
     "Id": 18,
@@ -581,7 +350,8 @@
         "Price": 199.99,
         "ImageName": "/img/zara_products/jeans2.jpg"
       }
-    ]
+    ],
+    "TotalPrice": 0.0
   },
   "19": {
     "Id": 19,
@@ -605,7 +375,8 @@
         "Price": 19.99,
         "ImageName": "/img/zara_products/tshirt1.jpg"
       }
-    ]
+    ],
+    "TotalPrice": 0.0
   },
   "20": {
     "Id": 20,
@@ -629,7 +400,8 @@
         "Price": 19.9,
         "ImageName": "/img/zara_products/tshirt1.jpg"
       }
-    ]
+    ],
+    "TotalPrice": 0.0
   },
   "21": {
     "Id": 21,
@@ -653,7 +425,8 @@
         "Price": 19.9,
         "ImageName": "/img/zara_products/tshirt1.jpg"
       }
-    ]
+    ],
+    "TotalPrice": 0.0
   },
   "22": {
     "Id": 22,
@@ -677,7 +450,8 @@
         "Price": 19.9,
         "ImageName": "/img/zara_products/tshirt1.jpg"
       }
-    ]
+    ],
+    "TotalPrice": 0.0
   },
   "23": {
     "Id": 23,
@@ -701,7 +475,8 @@
         "Price": 19.9,
         "ImageName": "/img/zara_products/tshirt1.jpg"
       }
-    ]
+    ],
+    "TotalPrice": 0.0
   },
   "24": {
     "Id": 24,
@@ -725,7 +500,8 @@
         "Price": 19.9,
         "ImageName": "/img/zara_products/tshirt1.jpg"
       }
-    ]
+    ],
+    "TotalPrice": 0.0
   },
   "25": {
     "Id": 25,
@@ -749,7 +525,8 @@
         "Price": 0.0,
         "ImageName": "/img/zara_products/tshirt1.jpg"
       }
-    ]
+    ],
+    "TotalPrice": 0.0
   },
   "26": {
     "Id": 26,
@@ -773,7 +550,8 @@
         "Price": 0.0,
         "ImageName": "/img/zara_products/tshirt1.jpg"
       }
-    ]
+    ],
+    "TotalPrice": 0.0
   },
   "27": {
     "Id": 27,
@@ -797,7 +575,8 @@
         "Price": 0.0,
         "ImageName": "/img/zara_products/tshirt1.jpg"
       }
-    ]
+    ],
+    "TotalPrice": 0.0
   },
   "28": {
     "Id": 28,
@@ -829,7 +608,8 @@
         "Price": 0.0,
         "ImageName": "/img/zara_products/tshirt1.jpg"
       }
-    ]
+    ],
+    "TotalPrice": 0.0
   },
   "29": {
     "Id": 29,
@@ -861,7 +641,8 @@
         "Price": 0.0,
         "ImageName": "/img/zara_products/tshirt1.jpg"
       }
-    ]
+    ],
+    "TotalPrice": 0.0
   },
   "30": {
     "Id": 30,
@@ -893,7 +674,8 @@
         "Price": 0.0,
         "ImageName": "/img/zara_products/tshirt1.jpg"
       }
-    ]
+    ],
+    "TotalPrice": 0.0
   },
   "31": {
     "Id": 31,
@@ -925,7 +707,8 @@
         "Price": 0.0,
         "ImageName": "/img/zara_products/tshirt1.jpg"
       }
-    ]
+    ],
+    "TotalPrice": 0.0
   },
   "32": {
     "Id": 32,
@@ -957,7 +740,8 @@
         "Price": 0.0,
         "ImageName": "/img/zara_products/tshirt1.jpg"
       }
-    ]
+    ],
+    "TotalPrice": 0.0
   },
   "33": {
     "Id": 33,
@@ -981,7 +765,8 @@
         "Price": 0.0,
         "ImageName": "/img/zara_products/tshirt1.jpg"
       }
-    ]
+    ],
+    "TotalPrice": 0.0
   },
   "34": {
     "Id": 34,
@@ -1005,7 +790,8 @@
         "Price": 0.0,
         "ImageName": "/img/zara_products/tshirt1.jpg"
       }
-    ]
+    ],
+    "TotalPrice": 0.0
   },
   "35": {
     "Id": 35,
@@ -1029,7 +815,8 @@
         "Price": 0.0,
         "ImageName": "/img/zara_products/tshirt1.jpg"
       }
-    ]
+    ],
+    "TotalPrice": 0.0
   },
   "36": {
     "Id": 36,
@@ -1053,7 +840,8 @@
         "Price": 0.0,
         "ImageName": "/img/zara_products/tshirt1.jpg"
       }
-    ]
+    ],
+    "TotalPrice": 0.0
   },
   "37": {
     "Id": 37,
@@ -1077,7 +865,8 @@
         "Price": 0.0,
         "ImageName": "/img/zara_products/tshirt1.jpg"
       }
-    ]
+    ],
+    "TotalPrice": 0.0
   },
   "38": {
     "Id": 38,
@@ -1109,7 +898,8 @@
         "Price": 0.0,
         "ImageName": "/img/zara_products/tshirt3.jpg"
       }
-    ]
+    ],
+    "TotalPrice": 0.0
   },
   "39": {
     "Id": 39,
@@ -1133,7 +923,8 @@
         "Price": 0.0,
         "ImageName": "/img/zara_products/tshirt1.jpg"
       }
-    ]
+    ],
+    "TotalPrice": 0.0
   },
   "40": {
     "Id": 40,
@@ -1165,7 +956,8 @@
         "Price": 199.0,
         "ImageName": "/img/zara_products/tshirt1.jpg"
       }
-    ]
+    ],
+    "TotalPrice": 0.0
   },
   "41": {
     "Id": 41,
@@ -1189,6 +981,7 @@
         "Price": 0.0,
         "ImageName": "/img/zara_products/tshirt1.jpg"
       }
-    ]
+    ],
+    "TotalPrice": 0.0
   }
 }
