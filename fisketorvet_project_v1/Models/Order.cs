@@ -12,5 +12,6 @@ namespace fisketorvet_project_v1.Models
         public DateTime Date { get; set; }
         public Customer Customer { get; set;}
         public List<Product> Products { get; set; }
+        public double TotalPrice { get; set; }
     }
 } 

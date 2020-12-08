@@ -20,8 +20,13 @@ namespace fisketorvet_project_v1.Pages.AdminSection
         }
         public void OnGet(int id)
         {
+           
             Store = _storeCatalog.GetStore(id);
             Products = _storeCatalog.GetStore(id).Products;
+            
+
         }
+
+        
     }
 }

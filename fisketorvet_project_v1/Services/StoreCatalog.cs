@@ -107,5 +107,6 @@ namespace fisketorvet_project_v1.Services
 
             JsonWriter<int, Store>.WriteToJson(Stores, filePath); //and then write the store to json
         }
+
     }
 }

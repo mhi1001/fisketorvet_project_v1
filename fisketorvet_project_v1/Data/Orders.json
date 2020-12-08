@@ -137,7 +137,159 @@
   },
   "5": {
     "Id": 5,
-    "Date": "2020-12-07T14:41:34.9177773+01:00",
+    "Date": "2020-12-07T15:10:01.0192224+01:00",
+    "Customer": {
+      "Id": 1,
+      "UserName": "admin",
+      "Name": "Admin",
+      "Address": null,
+      "Email": "admin@gmial.com",
+      "PhoneNumber": null,
+      "Password": "admin",
+      "Admin": true
+    },
+    "Products": [
+      {
+        "Id": 1,
+        "ProductType": 2,
+        "ProductName": "Cool Latvian T Shirt",
+        "Dimensions": "L",
+        "Price": 0.0,
+        "ImageName": "/img/zara_products/tshirt1.jpg"
+      }
+    ]
+  },
+  "6": {
+    "Id": 6,
+    "Date": "2020-12-07T15:19:56.1754118+01:00",
+    "Customer": {
+      "Id": 1,
+      "UserName": "admin",
+      "Name": "Admin",
+      "Address": null,
+      "Email": "admin@gmial.com",
+      "PhoneNumber": null,
+      "Password": "admin",
+      "Admin": true
+    },
+    "Products": [
+      {
+        "Id": 1,
+        "ProductType": 2,
+        "ProductName": "Cool Latvian T Shirt",
+        "Dimensions": "L",
+        "Price": 0.0,
+        "ImageName": "/img/zara_products/tshirt1.jpg"
+      },
+      {
+        "Id": 1,
+        "ProductType": 2,
+        "ProductName": "Cool Latvian T Shirt",
+        "Dimensions": "L",
+        "Price": 0.0,
+        "ImageName": "/img/zara_products/tshirt1.jpg"
+      }
+    ]
+  },
+  "7": {
+    "Id": 7,
+    "Date": "2020-12-07T15:20:08.4404691+01:00",
+    "Customer": {
+      "Id": 1,
+      "UserName": "admin",
+      "Name": "Admin",
+      "Address": null,
+      "Email": "admin@gmial.com",
+      "PhoneNumber": null,
+      "Password": "admin",
+      "Admin": true
+    },
+    "Products": [
+      {
+        "Id": 1,
+        "ProductType": 2,
+        "ProductName": "Cool Latvian T Shirt",
+        "Dimensions": "L",
+        "Price": 0.0,
+        "ImageName": "/img/zara_products/tshirt1.jpg"
+      }
+    ]
+  },
+  "8": {
+    "Id": 8,
+    "Date": "2020-12-07T15:20:20.3720154+01:00",
+    "Customer": {
+      "Id": 1,
+      "UserName": "admin",
+      "Name": "Admin",
+      "Address": null,
+      "Email": "admin@gmial.com",
+      "PhoneNumber": null,
+      "Password": "admin",
+      "Admin": true
+    },
+    "Products": [
+      {
+        "Id": 3,
+        "ProductType": 3,
+        "ProductName": "Cool Slav Shoes",
+        "Dimensions": "41",
+        "Price": 29999.0,
+        "ImageName": "/img/zara_products/shoes1.jpg"
+      }
+    ]
+  },
+  "9": {
+    "Id": 9,
+    "Date": "2020-12-07T15:25:30.4866743+01:00",
+    "Customer": {
+      "Id": 1,
+      "UserName": "admin",
+      "Name": "Admin",
+      "Address": null,
+      "Email": "admin@gmial.com",
+      "PhoneNumber": null,
+      "Password": "admin",
+      "Admin": true
+    },
+    "Products": [
+      {
+        "Id": 1,
+        "ProductType": 2,
+        "ProductName": "Cool Latvian T Shirt",
+        "Dimensions": "L",
+        "Price": 0.0,
+        "ImageName": "/img/zara_products/tshirt1.jpg"
+      }
+    ]
+  },
+  "10": {
+    "Id": 10,
+    "Date": "2020-12-07T19:27:25.9554579+01:00",
+    "Customer": {
+      "Id": 1,
+      "UserName": "admin",
+      "Name": "Admin",
+      "Address": null,
+      "Email": "admin@gmial.com",
+      "PhoneNumber": null,
+      "Password": "admin",
+      "Admin": true
+    },
+    "Products": [
+      {
+        "Id": 1,
+        "ProductType": 2,
+        "ProductName": "Cool Latvian T Shirt",
+        "Dimensions": "L",
+        "Price": 0.0,
+        "ImageName": "/img/zara_products/tshirt1.jpg"
+      }
+    ]
+  },
+  "11": {
+    "Id": 11,
+    "Date": "2020-12-07T19:41:22.2607951+01:00",
     "Customer": {
       "Id": 2,
       "UserName": "user",
@@ -147,6 +299,886 @@
       "PhoneNumber": "+45helooooooo",
       "Password": "user",
       "Admin": false
+    },
+    "Products": [
+      {
+        "Id": 1,
+        "ProductType": 2,
+        "ProductName": "Cool Latvian T Shirt",
+        "Dimensions": "L",
+        "Price": 0.0,
+        "ImageName": "/img/zara_products/tshirt1.jpg"
+      },
+      {
+        "Id": 3,
+        "ProductType": 3,
+        "ProductName": "Cool Slav Shoes",
+        "Dimensions": "41",
+        "Price": 29999.0,
+        "ImageName": "/img/zara_products/shoes1.jpg"
+      },
+      {
+        "Id": 5,
+        "ProductType": 0,
+        "ProductName": "Portuguese T Shirt",
+        "Dimensions": "M",
+        "Price": 19.99,
+        "ImageName": "/img/zara_products/tshirt1.jpg"
+      }
+    ]
+  },
+  "12": {
+    "Id": 12,
+    "Date": "2020-12-07T19:53:00.124956+01:00",
+    "Customer": {
+      "Id": 1,
+      "UserName": "admin",
+      "Name": "Admin",
+      "Address": null,
+      "Email": "admin@gmial.com",
+      "PhoneNumber": null,
+      "Password": "admin",
+      "Admin": true
+    },
+    "Products": [
+      {
+        "Id": 4,
+        "ProductType": 3,
+        "ProductName": "Cool Slav Shoes2",
+        "Dimensions": "39",
+        "Price": 29.99,
+        "ImageName": "/img/zara_products/shoes1.jpg"
+      },
+      {
+        "Id": 5,
+        "ProductType": 0,
+        "ProductName": "Portuguese T Shirt",
+        "Dimensions": "M",
+        "Price": 19.99,
+        "ImageName": "/img/zara_products/tshirt1.jpg"
+      }
+    ]
+  },
+  "13": {
+    "Id": 13,
+    "Date": "2020-12-07T20:31:25.4293635+01:00",
+    "Customer": {
+      "Id": 2,
+      "UserName": "user",
+      "Name": "User",
+      "Address": "My one and only home",
+      "Email": "user@gmial.com",
+      "PhoneNumber": "+45helooooooo",
+      "Password": "user",
+      "Admin": false
+    },
+    "Products": [
+      {
+        "Id": 3,
+        "ProductType": 3,
+        "ProductName": "Cool Slav Shoes",
+        "Dimensions": "41",
+        "Price": 29999.0,
+        "ImageName": "/img/zara_products/shoes1.jpg"
+      },
+      {
+        "Id": 4,
+        "ProductType": 3,
+        "ProductName": "Cool Slav Shoes2",
+        "Dimensions": "39",
+        "Price": 29.99,
+        "ImageName": "/img/zara_products/shoes1.jpg"
+      }
+    ]
+  },
+  "14": {
+    "Id": 14,
+    "Date": "2020-12-07T20:37:46.8296759+01:00",
+    "Customer": {
+      "Id": 2,
+      "UserName": "user",
+      "Name": "User",
+      "Address": "My one and only home",
+      "Email": "user@gmial.com",
+      "PhoneNumber": "+45helooooooo",
+      "Password": "user",
+      "Admin": false
+    },
+    "Products": [
+      {
+        "Id": 1,
+        "ProductType": 2,
+        "ProductName": "Cool Latvian T Shirt",
+        "Dimensions": "L",
+        "Price": 0.0,
+        "ImageName": "/img/zara_products/tshirt1.jpg"
+      },
+      {
+        "Id": 1,
+        "ProductType": 2,
+        "ProductName": "Nice Jeans",
+        "Dimensions": "44",
+        "Price": 29999.0,
+        "ImageName": "/img/zara_products/jeans1.jpg"
+      },
+      {
+        "Id": 2,
+        "ProductType": 1,
+        "ProductName": "Jacket",
+        "Dimensions": "S",
+        "Price": 10.99,
+        "ImageName": "/img/zara_products/jacket2.jpg"
+      }
+    ]
+  },
+  "15": {
+    "Id": 15,
+    "Date": "2020-12-07T20:40:17.8755594+01:00",
+    "Customer": {
+      "Id": 2,
+      "UserName": "user",
+      "Name": "User",
+      "Address": "My one and only home",
+      "Email": "user@gmial.com",
+      "PhoneNumber": "+45helooooooo",
+      "Password": "user",
+      "Admin": false
+    },
+    "Products": [
+      {
+        "Id": 5,
+        "ProductType": 0,
+        "ProductName": "Portuguese T Shirt",
+        "Dimensions": "M",
+        "Price": 19.99,
+        "ImageName": "/img/zara_products/tshirt1.jpg"
+      },
+      {
+        "Id": 4,
+        "ProductType": 3,
+        "ProductName": "Cool Slav Shoes2",
+        "Dimensions": "39",
+        "Price": 29.99,
+        "ImageName": "/img/zara_products/shoes1.jpg"
+      }
+    ]
+  },
+  "16": {
+    "Id": 16,
+    "Date": "2020-12-07T20:47:43.5300823+01:00",
+    "Customer": {
+      "Id": 4,
+      "UserName": "pedro22",
+      "Name": "Pedro Rainho",
+      "Address": "Kobenhavnsvej 66k\n Roskilde 4000",
+      "Email": "pedro_mrmr@hotmail.com",
+      "PhoneNumber": "+351928020747",
+      "Password": "pedro22",
+      "Admin": true
+    },
+    "Products": [
+      {
+        "Id": 4,
+        "ProductType": 3,
+        "ProductName": "Cool Slav Shoes2",
+        "Dimensions": "39",
+        "Price": 29.99,
+        "ImageName": "/img/zara_products/shoes1.jpg"
+      },
+      {
+        "Id": 5,
+        "ProductType": 0,
+        "ProductName": "Portuguese T Shirt",
+        "Dimensions": "M",
+        "Price": 19.99,
+        "ImageName": "/img/zara_products/tshirt1.jpg"
+      },
+      {
+        "Id": 2,
+        "ProductType": 2,
+        "ProductName": "MegaNice Jeans",
+        "Dimensions": "38",
+        "Price": 199.99,
+        "ImageName": "/img/zara_products/jeans2.jpg"
+      }
+    ]
+  },
+  "17": {
+    "Id": 17,
+    "Date": "2020-12-07T20:49:30.1143788+01:00",
+    "Customer": {
+      "Id": 4,
+      "UserName": "pedro22",
+      "Name": "Pedro Rainho",
+      "Address": "Kobenhavnsvej 66k\n Roskilde 4000",
+      "Email": "pedro_mrmr@hotmail.com",
+      "PhoneNumber": "+351928020747",
+      "Password": "pedro22",
+      "Admin": true
+    },
+    "Products": [
+      {
+        "Id": 4,
+        "ProductType": 3,
+        "ProductName": "Cool Slav Shoes2",
+        "Dimensions": "39",
+        "Price": 29.99,
+        "ImageName": "/img/zara_products/shoes1.jpg"
+      },
+      {
+        "Id": 5,
+        "ProductType": 0,
+        "ProductName": "Portuguese T Shirt",
+        "Dimensions": "M",
+        "Price": 19.99,
+        "ImageName": "/img/zara_products/tshirt1.jpg"
+      },
+      {
+        "Id": 2,
+        "ProductType": 2,
+        "ProductName": "MegaNice Jeans",
+        "Dimensions": "38",
+        "Price": 199.99,
+        "ImageName": "/img/zara_products/jeans2.jpg"
+      }
+    ]
+  },
+  "18": {
+    "Id": 18,
+    "Date": "2020-12-07T20:50:27.0080041+01:00",
+    "Customer": {
+      "Id": 4,
+      "UserName": "pedro22",
+      "Name": "Pedro Rainho",
+      "Address": "Kobenhavnsvej 66k\n Roskilde 4000",
+      "Email": "pedro_mrmr@hotmail.com",
+      "PhoneNumber": "+351928020747",
+      "Password": "pedro22",
+      "Admin": true
+    },
+    "Products": [
+      {
+        "Id": 4,
+        "ProductType": 3,
+        "ProductName": "Cool Slav Shoes2",
+        "Dimensions": "39",
+        "Price": 29.99,
+        "ImageName": "/img/zara_products/shoes1.jpg"
+      },
+      {
+        "Id": 5,
+        "ProductType": 0,
+        "ProductName": "Portuguese T Shirt",
+        "Dimensions": "M",
+        "Price": 19.99,
+        "ImageName": "/img/zara_products/tshirt1.jpg"
+      },
+      {
+        "Id": 2,
+        "ProductType": 2,
+        "ProductName": "MegaNice Jeans",
+        "Dimensions": "38",
+        "Price": 199.99,
+        "ImageName": "/img/zara_products/jeans2.jpg"
+      }
+    ]
+  },
+  "19": {
+    "Id": 19,
+    "Date": "2020-12-07T20:56:47.2189878+01:00",
+    "Customer": {
+      "Id": 4,
+      "UserName": "pedro22",
+      "Name": "Pedro Rainho",
+      "Address": "Kobenhavnsvej 66k\n Roskilde 4000",
+      "Email": "pedro_mrmr@hotmail.com",
+      "PhoneNumber": "+351928020747",
+      "Password": "pedro22",
+      "Admin": true
+    },
+    "Products": [
+      {
+        "Id": 5,
+        "ProductType": 0,
+        "ProductName": "Portuguese T Shirt",
+        "Dimensions": "M",
+        "Price": 19.99,
+        "ImageName": "/img/zara_products/tshirt1.jpg"
+      }
+    ]
+  },
+  "20": {
+    "Id": 20,
+    "Date": "2020-12-07T20:58:13.4543922+01:00",
+    "Customer": {
+      "Id": 4,
+      "UserName": "pedro22",
+      "Name": "Pedro Rainho",
+      "Address": "Kobenhavnsvej 66k\n Roskilde 4000",
+      "Email": "pedro_mrmr@hotmail.com",
+      "PhoneNumber": "+351928020747",
+      "Password": "pedro22",
+      "Admin": true
+    },
+    "Products": [
+      {
+        "Id": 7,
+        "ProductType": 0,
+        "ProductName": "Cool Latvian T Shirt",
+        "Dimensions": "L",
+        "Price": 19.9,
+        "ImageName": "/img/zara_products/tshirt1.jpg"
+      }
+    ]
+  },
+  "21": {
+    "Id": 21,
+    "Date": "2020-12-07T20:58:38.4936869+01:00",
+    "Customer": {
+      "Id": 4,
+      "UserName": "pedro22",
+      "Name": "Pedro Rainho",
+      "Address": "Kobenhavnsvej 66k\n Roskilde 4000",
+      "Email": "pedro_mrmr@hotmail.com",
+      "PhoneNumber": "+351928020747",
+      "Password": "pedro22",
+      "Admin": true
+    },
+    "Products": [
+      {
+        "Id": 7,
+        "ProductType": 0,
+        "ProductName": "Cool Latvian T Shirt",
+        "Dimensions": "L",
+        "Price": 19.9,
+        "ImageName": "/img/zara_products/tshirt1.jpg"
+      }
+    ]
+  },
+  "22": {
+    "Id": 22,
+    "Date": "2020-12-07T21:00:22.1358986+01:00",
+    "Customer": {
+      "Id": 4,
+      "UserName": "pedro22",
+      "Name": "Pedro Rainho",
+      "Address": "Kobenhavnsvej 66k\n Roskilde 4000",
+      "Email": "pedro_mrmr@hotmail.com",
+      "PhoneNumber": "+351928020747",
+      "Password": "pedro22",
+      "Admin": true
+    },
+    "Products": [
+      {
+        "Id": 7,
+        "ProductType": 0,
+        "ProductName": "Cool Latvian T Shirt",
+        "Dimensions": "L",
+        "Price": 19.9,
+        "ImageName": "/img/zara_products/tshirt1.jpg"
+      }
+    ]
+  },
+  "23": {
+    "Id": 23,
+    "Date": "2020-12-07T21:00:24.7083135+01:00",
+    "Customer": {
+      "Id": 4,
+      "UserName": "pedro22",
+      "Name": "Pedro Rainho",
+      "Address": "Kobenhavnsvej 66k\n Roskilde 4000",
+      "Email": "pedro_mrmr@hotmail.com",
+      "PhoneNumber": "+351928020747",
+      "Password": "pedro22",
+      "Admin": true
+    },
+    "Products": [
+      {
+        "Id": 7,
+        "ProductType": 0,
+        "ProductName": "Cool Latvian T Shirt",
+        "Dimensions": "L",
+        "Price": 19.9,
+        "ImageName": "/img/zara_products/tshirt1.jpg"
+      }
+    ]
+  },
+  "24": {
+    "Id": 24,
+    "Date": "2020-12-07T21:00:41.5853762+01:00",
+    "Customer": {
+      "Id": 4,
+      "UserName": "pedro22",
+      "Name": "Pedro Rainho",
+      "Address": "Kobenhavnsvej 66k\n Roskilde 4000",
+      "Email": "pedro_mrmr@hotmail.com",
+      "PhoneNumber": "+351928020747",
+      "Password": "pedro22",
+      "Admin": true
+    },
+    "Products": [
+      {
+        "Id": 7,
+        "ProductType": 0,
+        "ProductName": "Cool Latvian T Shirt",
+        "Dimensions": "L",
+        "Price": 19.9,
+        "ImageName": "/img/zara_products/tshirt1.jpg"
+      }
+    ]
+  },
+  "25": {
+    "Id": 25,
+    "Date": "2020-12-07T21:01:41.9575669+01:00",
+    "Customer": {
+      "Id": 4,
+      "UserName": "pedro22",
+      "Name": "Pedro Rainho",
+      "Address": "Kobenhavnsvej 66k\n Roskilde 4000",
+      "Email": "pedro_mrmr@hotmail.com",
+      "PhoneNumber": "+351928020747",
+      "Password": "pedro22",
+      "Admin": true
+    },
+    "Products": [
+      {
+        "Id": 1,
+        "ProductType": 2,
+        "ProductName": "Cool Latvian T Shirt",
+        "Dimensions": "L",
+        "Price": 0.0,
+        "ImageName": "/img/zara_products/tshirt1.jpg"
+      }
+    ]
+  },
+  "26": {
+    "Id": 26,
+    "Date": "2020-12-07T21:04:22.0200843+01:00",
+    "Customer": {
+      "Id": 4,
+      "UserName": "pedro22",
+      "Name": "Pedro Rainho",
+      "Address": "Kobenhavnsvej 66k\n Roskilde 4000",
+      "Email": "pedro_mrmr@hotmail.com",
+      "PhoneNumber": "+351928020747",
+      "Password": "pedro22",
+      "Admin": true
+    },
+    "Products": [
+      {
+        "Id": 1,
+        "ProductType": 2,
+        "ProductName": "Cool Latvian T Shirt",
+        "Dimensions": "L",
+        "Price": 0.0,
+        "ImageName": "/img/zara_products/tshirt1.jpg"
+      }
+    ]
+  },
+  "27": {
+    "Id": 27,
+    "Date": "2020-12-07T21:12:07.2269923+01:00",
+    "Customer": {
+      "Id": 4,
+      "UserName": "pedro22",
+      "Name": "Pedro Rainho",
+      "Address": "Kobenhavnsvej 66k\n Roskilde 4000",
+      "Email": "pedro_mrmr@hotmail.com",
+      "PhoneNumber": "+351928020747",
+      "Password": "pedro22",
+      "Admin": true
+    },
+    "Products": [
+      {
+        "Id": 1,
+        "ProductType": 2,
+        "ProductName": "Cool Latvian T Shirt",
+        "Dimensions": "L",
+        "Price": 0.0,
+        "ImageName": "/img/zara_products/tshirt1.jpg"
+      }
+    ]
+  },
+  "28": {
+    "Id": 28,
+    "Date": "2020-12-07T21:12:15.3819883+01:00",
+    "Customer": {
+      "Id": 4,
+      "UserName": "pedro22",
+      "Name": "Pedro Rainho",
+      "Address": "Kobenhavnsvej 66k\n Roskilde 4000",
+      "Email": "pedro_mrmr@hotmail.com",
+      "PhoneNumber": "+351928020747",
+      "Password": "pedro22",
+      "Admin": true
+    },
+    "Products": [
+      {
+        "Id": 1,
+        "ProductType": 2,
+        "ProductName": "Cool Latvian T Shirt",
+        "Dimensions": "L",
+        "Price": 0.0,
+        "ImageName": "/img/zara_products/tshirt1.jpg"
+      },
+      {
+        "Id": 1,
+        "ProductType": 2,
+        "ProductName": "Cool Latvian T Shirt",
+        "Dimensions": "L",
+        "Price": 0.0,
+        "ImageName": "/img/zara_products/tshirt1.jpg"
+      }
+    ]
+  },
+  "29": {
+    "Id": 29,
+    "Date": "2020-12-07T21:12:16.7827183+01:00",
+    "Customer": {
+      "Id": 4,
+      "UserName": "pedro22",
+      "Name": "Pedro Rainho",
+      "Address": "Kobenhavnsvej 66k\n Roskilde 4000",
+      "Email": "pedro_mrmr@hotmail.com",
+      "PhoneNumber": "+351928020747",
+      "Password": "pedro22",
+      "Admin": true
+    },
+    "Products": [
+      {
+        "Id": 1,
+        "ProductType": 2,
+        "ProductName": "Cool Latvian T Shirt",
+        "Dimensions": "L",
+        "Price": 0.0,
+        "ImageName": "/img/zara_products/tshirt1.jpg"
+      },
+      {
+        "Id": 1,
+        "ProductType": 2,
+        "ProductName": "Cool Latvian T Shirt",
+        "Dimensions": "L",
+        "Price": 0.0,
+        "ImageName": "/img/zara_products/tshirt1.jpg"
+      }
+    ]
+  },
+  "30": {
+    "Id": 30,
+    "Date": "2020-12-07T21:12:22.4218288+01:00",
+    "Customer": {
+      "Id": 4,
+      "UserName": "pedro22",
+      "Name": "Pedro Rainho",
+      "Address": "Kobenhavnsvej 66k\n Roskilde 4000",
+      "Email": "pedro_mrmr@hotmail.com",
+      "PhoneNumber": "+351928020747",
+      "Password": "pedro22",
+      "Admin": true
+    },
+    "Products": [
+      {
+        "Id": 1,
+        "ProductType": 2,
+        "ProductName": "Cool Latvian T Shirt",
+        "Dimensions": "L",
+        "Price": 0.0,
+        "ImageName": "/img/zara_products/tshirt1.jpg"
+      },
+      {
+        "Id": 1,
+        "ProductType": 2,
+        "ProductName": "Cool Latvian T Shirt",
+        "Dimensions": "L",
+        "Price": 0.0,
+        "ImageName": "/img/zara_products/tshirt1.jpg"
+      }
+    ]
+  },
+  "31": {
+    "Id": 31,
+    "Date": "2020-12-07T21:12:23.1523904+01:00",
+    "Customer": {
+      "Id": 4,
+      "UserName": "pedro22",
+      "Name": "Pedro Rainho",
+      "Address": "Kobenhavnsvej 66k\n Roskilde 4000",
+      "Email": "pedro_mrmr@hotmail.com",
+      "PhoneNumber": "+351928020747",
+      "Password": "pedro22",
+      "Admin": true
+    },
+    "Products": [
+      {
+        "Id": 1,
+        "ProductType": 2,
+        "ProductName": "Cool Latvian T Shirt",
+        "Dimensions": "L",
+        "Price": 0.0,
+        "ImageName": "/img/zara_products/tshirt1.jpg"
+      },
+      {
+        "Id": 1,
+        "ProductType": 2,
+        "ProductName": "Cool Latvian T Shirt",
+        "Dimensions": "L",
+        "Price": 0.0,
+        "ImageName": "/img/zara_products/tshirt1.jpg"
+      }
+    ]
+  },
+  "32": {
+    "Id": 32,
+    "Date": "2020-12-07T21:12:23.7317945+01:00",
+    "Customer": {
+      "Id": 4,
+      "UserName": "pedro22",
+      "Name": "Pedro Rainho",
+      "Address": "Kobenhavnsvej 66k\n Roskilde 4000",
+      "Email": "pedro_mrmr@hotmail.com",
+      "PhoneNumber": "+351928020747",
+      "Password": "pedro22",
+      "Admin": true
+    },
+    "Products": [
+      {
+        "Id": 1,
+        "ProductType": 2,
+        "ProductName": "Cool Latvian T Shirt",
+        "Dimensions": "L",
+        "Price": 0.0,
+        "ImageName": "/img/zara_products/tshirt1.jpg"
+      },
+      {
+        "Id": 1,
+        "ProductType": 2,
+        "ProductName": "Cool Latvian T Shirt",
+        "Dimensions": "L",
+        "Price": 0.0,
+        "ImageName": "/img/zara_products/tshirt1.jpg"
+      }
+    ]
+  },
+  "33": {
+    "Id": 33,
+    "Date": "2020-12-07T21:14:55.4853446+01:00",
+    "Customer": {
+      "Id": 1,
+      "UserName": "admin",
+      "Name": "Admin",
+      "Address": null,
+      "Email": "admin@gmial.com",
+      "PhoneNumber": null,
+      "Password": "admin",
+      "Admin": true
+    },
+    "Products": [
+      {
+        "Id": 1,
+        "ProductType": 2,
+        "ProductName": "Cool Latvian T Shirt",
+        "Dimensions": "L",
+        "Price": 0.0,
+        "ImageName": "/img/zara_products/tshirt1.jpg"
+      }
+    ]
+  },
+  "34": {
+    "Id": 34,
+    "Date": "2020-12-07T21:14:56.8257431+01:00",
+    "Customer": {
+      "Id": 1,
+      "UserName": "admin",
+      "Name": "Admin",
+      "Address": null,
+      "Email": "admin@gmial.com",
+      "PhoneNumber": null,
+      "Password": "admin",
+      "Admin": true
+    },
+    "Products": [
+      {
+        "Id": 1,
+        "ProductType": 2,
+        "ProductName": "Cool Latvian T Shirt",
+        "Dimensions": "L",
+        "Price": 0.0,
+        "ImageName": "/img/zara_products/tshirt1.jpg"
+      }
+    ]
+  },
+  "35": {
+    "Id": 35,
+    "Date": "2020-12-07T21:14:58.6591535+01:00",
+    "Customer": {
+      "Id": 1,
+      "UserName": "admin",
+      "Name": "Admin",
+      "Address": null,
+      "Email": "admin@gmial.com",
+      "PhoneNumber": null,
+      "Password": "admin",
+      "Admin": true
+    },
+    "Products": [
+      {
+        "Id": 1,
+        "ProductType": 2,
+        "ProductName": "Cool Latvian T Shirt",
+        "Dimensions": "L",
+        "Price": 0.0,
+        "ImageName": "/img/zara_products/tshirt1.jpg"
+      }
+    ]
+  },
+  "36": {
+    "Id": 36,
+    "Date": "2020-12-07T21:15:12.5969862+01:00",
+    "Customer": {
+      "Id": 1,
+      "UserName": "admin",
+      "Name": "Admin",
+      "Address": null,
+      "Email": "admin@gmial.com",
+      "PhoneNumber": null,
+      "Password": "admin",
+      "Admin": true
+    },
+    "Products": [
+      {
+        "Id": 1,
+        "ProductType": 2,
+        "ProductName": "Cool Latvian T Shirt",
+        "Dimensions": "L",
+        "Price": 0.0,
+        "ImageName": "/img/zara_products/tshirt1.jpg"
+      }
+    ]
+  },
+  "37": {
+    "Id": 37,
+    "Date": "2020-12-07T21:16:54.2135399+01:00",
+    "Customer": {
+      "Id": 1,
+      "UserName": "admin",
+      "Name": "Admin",
+      "Address": null,
+      "Email": "admin@gmial.com",
+      "PhoneNumber": null,
+      "Password": "admin",
+      "Admin": true
+    },
+    "Products": [
+      {
+        "Id": 1,
+        "ProductType": 2,
+        "ProductName": "Cool Latvian T Shirt",
+        "Dimensions": "L",
+        "Price": 0.0,
+        "ImageName": "/img/zara_products/tshirt1.jpg"
+      }
+    ]
+  },
+  "38": {
+    "Id": 38,
+    "Date": "2020-12-07T21:17:50.1625633+01:00",
+    "Customer": {
+      "Id": 1,
+      "UserName": "admin",
+      "Name": "Admin",
+      "Address": null,
+      "Email": "admin@gmial.com",
+      "PhoneNumber": null,
+      "Password": "admin",
+      "Admin": true
+    },
+    "Products": [
+      {
+        "Id": 1,
+        "ProductType": 2,
+        "ProductName": "Cool Latvian T Shirt",
+        "Dimensions": "L",
+        "Price": 0.0,
+        "ImageName": "/img/zara_products/tshirt1.jpg"
+      },
+      {
+        "Id": 2,
+        "ProductType": 2,
+        "ProductName": "Cool Romanian T-Shirt",
+        "Dimensions": "S",
+        "Price": 0.0,
+        "ImageName": "/img/zara_products/tshirt3.jpg"
+      }
+    ]
+  },
+  "39": {
+    "Id": 39,
+    "Date": "2020-12-07T21:18:46.9564311+01:00",
+    "Customer": {
+      "Id": 1,
+      "UserName": "admin",
+      "Name": "Admin",
+      "Address": null,
+      "Email": "admin@gmial.com",
+      "PhoneNumber": null,
+      "Password": "admin",
+      "Admin": true
+    },
+    "Products": [
+      {
+        "Id": 1,
+        "ProductType": 2,
+        "ProductName": "Cool Latvian T Shirt",
+        "Dimensions": "L",
+        "Price": 0.0,
+        "ImageName": "/img/zara_products/tshirt1.jpg"
+      }
+    ]
+  },
+  "40": {
+    "Id": 40,
+    "Date": "2020-12-07T21:19:56.8669303+01:00",
+    "Customer": {
+      "Id": 1,
+      "UserName": "admin",
+      "Name": "Admin",
+      "Address": null,
+      "Email": "admin@gmial.com",
+      "PhoneNumber": null,
+      "Password": "admin",
+      "Admin": true
+    },
+    "Products": [
+      {
+        "Id": 1,
+        "ProductType": 2,
+        "ProductName": "Cool Latvian T Shirt",
+        "Dimensions": "L",
+        "Price": 0.0,
+        "ImageName": "/img/zara_products/tshirt1.jpg"
+      },
+      {
+        "Id": 6,
+        "ProductType": 0,
+        "ProductName": "Cool OverPriced T-Shirt 3",
+        "Dimensions": "S",
+        "Price": 199.0,
+        "ImageName": "/img/zara_products/tshirt1.jpg"
+      }
+    ]
+  },
+  "41": {
+    "Id": 41,
+    "Date": "2020-12-07T21:20:04.9737713+01:00",
+    "Customer": {
+      "Id": 1,
+      "UserName": "admin",
+      "Name": "Admin",
+      "Address": null,
+      "Email": "admin@gmial.com",
+      "PhoneNumber": null,
+      "Password": "admin",
+      "Admin": true
     },
     "Products": [
       {

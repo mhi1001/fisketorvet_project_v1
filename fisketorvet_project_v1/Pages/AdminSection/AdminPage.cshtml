@@ -6,15 +6,19 @@
 
 @inject CustomerCatalog CustomerCatalog
 @inject StoreCatalog StoreCatalog
+@inject OrderCatalog OrderCatalog
 <div class="text-center">
     <h1 class="display-4">Welcome to the Admin Page</h1>
 
 </div>
 <div class="alert alert-primary" role="alert">
-    There are currently @CustomerCatalog.GetAllCustomers().Count users registered in our Website !
+    There are currently @CustomerCatalog.GetAllCustomers().Count users registered in our system !
 </div>
 <div class="alert alert-primary" role="alert">
-    There are currently @StoreCatalog.GetAllStores().Count stores in our Shopping mall !
+    There are currently @StoreCatalog.GetAllStores().Count stores in our system!
+</div>
+<div class="alert alert-primary" role="alert">
+    There are currently @OrderCatalog.GetAllOrders().Count registered orders in our system !
 </div>
 <div class="card-deck">
     <div class="card">
