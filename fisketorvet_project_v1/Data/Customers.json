@@ -1,9 +1,11 @@
 {
   "1": {
-    "Id": 1, 
+    "Id": 1,
     "UserName": "admin",
     "Name": "Admin",
+    "Address": null,
     "Email": "admin@gmial.com",
+    "PhoneNumber": null,
     "Password": "admin",
     "Admin": true
   },
@@ -21,7 +23,9 @@
     "Id": 3,
     "UserName": "Cata_Lina",
     "Name": "Catalina",
+    "Address": null,
     "Email": "paul6465@edu.easj.dk",
+    "PhoneNumber": null,
     "Password": "1234",
     "Admin": true
   }

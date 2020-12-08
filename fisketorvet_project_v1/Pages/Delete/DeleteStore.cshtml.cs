@@ -19,11 +19,6 @@ namespace fisketorvet_project_v1.Pages
         {
             _storeCatalog = repoStoreCatalog;
         }
-        public IActionResult OnGet(int id)
-        {
-            Store = _storeCatalog.GetStore(id);
-            return Page();
-        }
 
         public IActionResult OnPost(int id)
         {

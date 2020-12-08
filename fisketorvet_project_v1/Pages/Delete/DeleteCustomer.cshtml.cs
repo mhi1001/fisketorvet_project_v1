@@ -11,20 +11,18 @@ namespace fisketorvet_project_v1.Pages.Delete
 {
     public class DeleteCustomerModel : PageModel
     {
-        public CustomerCatalog CustomerCatalog { set; get; }
+        private CustomerCatalog _customerCatalog;
 
-        [BindProperty]
-        public Customer Customer { set; get; }
-        public IActionResult OnGet(int id)
+        public DeleteCustomerModel(CustomerCatalog repoCustomerCatalog)
         {
-            Customer = CustomerCatalog.GetCustomer(id);
-            return Page();
+            _customerCatalog = repoCustomerCatalog;
         }
+
 
         public IActionResult OnPost(int id)
         {
-            CustomerCatalog.RemoveCustomer(id);
-            return Redirect("CustomerAdminPage");
+            _customerCatalog.RemoveCustomer(id);
+            return Redirect("/AdminSection/CustomerAdminPage");
         }
     }
 }

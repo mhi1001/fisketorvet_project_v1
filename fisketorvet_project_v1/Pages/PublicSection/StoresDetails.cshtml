@@ -17,10 +17,10 @@
                     <div class="caption">
                         <h6><a href="#">@prd.ProductName</a></h6>
                         <div class="justify-content-around">
-                            <span class="price">
-                                <del>$24.99</del>
-                            </span><span class="price sale">$12.49</span>
-                            <div class="mx-auto" style="height: 50px;"><a class="btn btn-outline-primary" style="float: right;" asp-page="ShoppingCart" asp-route-id="@prd.Id">Add to cart</a></div>
+                            <span class="price sale">@prd.Price.ToString("c")</span>
+                            <div class="mx-auto" style="height: 50px;">
+                                <form method="post"><a class="btn btn-outline-primary" style="float: right;" asp-page="ShoppingCart"  asp-route-id="@prd.Id" asp-route-storeid="@Model.Store.Id">Add to cart</a></form>
+                            </div>
                         </div>
                         
                     </div>

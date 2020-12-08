@@ -9,7 +9,7 @@
         <form method="post">
             <div class="form-group">
                 <label class="control-label"> Username </label>
-                <input asp-for="@Model.SiteUser.UserName"  class="form-control" />
+                <input asp-for="@Model.SiteUser.UserName" class="form-control" />
                 <span asp-validation-for="@Model.SiteUser.UserName" class="text-danger"></span>
             </div>
 
@@ -23,6 +23,9 @@
                 <input type="submit" class="btn btn-primary btn-outline-primary" value="Login" />
             </div>
         </form>
+        <div>
+            <a asp-page="/PublicSection/RegisterPage">Don't have an account ? Create here</a>
+        </div>
         <div>
             <a asp-page="/Index">Back to MainMenu</a>
         </div>

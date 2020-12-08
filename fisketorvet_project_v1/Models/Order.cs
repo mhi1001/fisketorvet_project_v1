@@ -11,6 +11,7 @@ namespace fisketorvet_project_v1.Models
         public int Id { get; set; }
         public DateTime Date { get; set; }
         public Customer Customer { get; set;}
-        public Dictionary<int, Product> Products { get; set; }
+        public List<Product> Products { get; set; }
+        public double TotalPrice { get; set; }
     }
 } 

@@ -45,11 +45,14 @@
                     <img src="@prd.ImageName" width="80" height="70">
                 </td>
                 <td>
-                    <a asp-page="EditProduct" 
-                       class="btn btn-success btn-group-lg pull-right"  >
+                    <a asp-page="EditProduct"
+                       class="btn btn-success btn-group-lg pull-right">
                         Edit
                     </a>
-                </td>          
+                    <form method="post">
+                        <input align="right" type="submit" class="btn btn-danger" value="Remove" style="background-color: red; color: black"asp-route-productid="@prd.Id"asp-route-storeid="@Model.Store.Id" asp-page="/Delete/DeleteProduct"/>
+                    </form>
+</td>          
             </tr>
         }
     }

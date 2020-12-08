@@ -1,7 +1,60 @@
 ﻿@page
+@using fisketorvet_project_v1.Models
+@using fisketorvet_project_v1.Services
 @model fisketorvet_project_v1.Pages.AdminSection.OrderAdminPageModel
 @{
 }
-<div class="text-center">
-    <h1 class="display-4">Store Administration Page</h1>
-</div>
+
+<h1>Orders Management Page</h1>
+
+<table class="table">
+    <thead>
+    <tr>
+        <th>ID </th>
+        <th>Date</th>
+        <th>Customer Name</th>
+        <th>Customer Contact</th>
+        <th>Price</th>
+        <th> </th>
+        <th><a asp-page="AddProduct2Store"
+               class="btn btn-primary btn-group-lg"  >
+            Add New
+        </a></th>
+    </tr>
+    </thead>
+    <tbody>
+    @if(Model.Orders.Count!=0)
+    {        
+        @foreach (Order order in Model.Orders.Values)
+        {
+            <tr>
+                <td>
+                    @order.Id
+                </td>
+                <td>
+                    @order.Date
+                </td>
+                <td>
+                    @order.Customer.Name
+                </td>
+                <td>
+                    @order.Customer.PhoneNumber
+                </td>
+                <td>
+                    @order.TotalPrice.ToString("c");
+                </td>
+                
+                <td>
+                    <a asp-page="EditProduct"
+                       class="btn btn-success btn-group-lg pull-right">
+                        Edit
+                    </a>
+                    <form method="post">
+                        <input align="right" type="submit" class="btn btn-danger" value="Remove" style="background-color: red; color: black" asp-route-id="@order.Id" asp-page="/Delete/DeleteOrder" />
+                    </form>
+                </td>          
+            </tr>
+        }
+    }
+    </tbody>
+</table>
