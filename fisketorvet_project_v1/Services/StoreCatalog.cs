@@ -36,11 +36,11 @@ namespace fisketorvet_project_v1.Services
             JsonWriter<int, Store>.WriteToJson(Stores, filePath);
         }
 
-        
+
 
         public void AddStore(Store store)
         {
-            
+
             Stores = GetAllStores(); //Populate it with existing stores.
             store.Id = GenerateStoreId(Stores);
             Stores.Add(store.Id, store);
@@ -51,7 +51,22 @@ namespace fisketorvet_project_v1.Services
         {
             Stores = GetAllStores();
             Stores.Remove(id);
-            JsonWriter<int, Store>.WriteToJson(Stores,filePath);
+            JsonWriter<int, Store>.WriteToJson(Stores, filePath);
+        }
+
+        public void RemoveProductFromStore(int storeid, int productid)
+        {
+
+            Dictionary<int, Product> oldProducts = GetStore(storeid).Products;
+
+            oldProducts.Remove(productid);
+            Stores[storeid].Products.Remove(productid);
+
+            Stores = GetAllStores();
+
+            Stores[storeid].Products = oldProducts; //we add the newly added products to the specific store that we edit
+
+            JsonWriter<int, Store>.WriteToJson(Stores, filePath); //and then write the store to json
         }
 
         public Store GetStore(int id) //Faster way to find store
@@ -79,16 +94,16 @@ namespace fisketorvet_project_v1.Services
         private int GenerateStoreId(Dictionary<int, Store> oldStores)
         {
             List<int> Ids = new List<int>();
-            foreach (var s in oldStores) 
+            foreach (var s in oldStores)
             {
-                Ids.Add(s.Value.Id); 
+                Ids.Add(s.Value.Id);
             }
             if (Ids.Count != 0)
             {
                 return Ids.Max() + 1;
             }
             else
-                return 1; 
+                return 1;
 
         }
 
@@ -96,7 +111,7 @@ namespace fisketorvet_project_v1.Services
         {
             Dictionary<int, Product> oldProducts = GetStore(id).Products; //Initialize the dictionary by getting the respective's store
                                                                           // products ((PREVENTS NULL EXCEPTION)
-            //Product prd = GetStore(id).Products[1];
+                                                                          //Product prd = GetStore(id).Products[1];
             product.Id = GenerateProductId(oldProducts); //gets the ID from the generator method
 
             oldProducts.Add(product.Id, product); //and then adds the product to existing product dictionary

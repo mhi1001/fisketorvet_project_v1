@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using fisketorvet_project_v1.Helpers;
 using fisketorvet_project_v1.Models;
 using Microsoft.AspNetCore.Components;
@@ -16,14 +17,19 @@ namespace fisketorvet_project_v1.Services
             return JsonReader<int, Customer>.ReadJson(filePath);
         }
 
-        public void AddCustomer(Customer c)
+        public void AddCustomer(Customer customer)
         {
-            Customers.Add(c.Id,c);
+            Customers = GetAllCustomers(); //Populate it 
+            customer.Id = GenerateCustomerId(Customers);
+            Customers.Add(customer.Id, customer);
+            JsonWriter<int, Customer>.WriteToJson(Customers, filePath); //After adding the new one to the dictionary, writes it again to json
         }
 
         public void RemoveCustomer(int id)
         {
+            Customers = GetAllCustomers();
             Customers.Remove(id);
+            JsonWriter<int, Customer>.WriteToJson(Customers,filePath);
         }
 
         public Customer GetCustomer(int id)
@@ -62,6 +68,22 @@ namespace fisketorvet_project_v1.Services
 
         //    return SiteUsers.ContainsValue(user);
         //}
+        private int GenerateCustomerId(Dictionary<int, Customer> oldCustomers)
+        {
+            List<int> Ids = new List<int>();
+            foreach (var s in oldCustomers) 
+            {
+                Ids.Add(s.Value.Id); 
+            }
+            if (Ids.Count != 0)
+            {
+                return Ids.Max() + 1;
+            }
+            else
+                return 1; 
+
+        }
+
 
     }
 }

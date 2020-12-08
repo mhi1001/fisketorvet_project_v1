@@ -13,7 +13,7 @@ namespace fisketorvet_project_v1.Pages.AdminSection
     {
         private OrderCatalog _orderCatalog;
         
-        public Order Order { get; set; }
+        
         public Dictionary<int, Order> Orders { get; set; }
 
         public OrderAdminPageModel(OrderCatalog repoOrderCatalog)
