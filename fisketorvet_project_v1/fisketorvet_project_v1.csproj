@@ -15,7 +15,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="wwwroot\img\bershka.png" />
     <None Include="wwwroot\img\sportzone.png" />
     <None Include="wwwroot\img\zara.png" />
   </ItemGroup>

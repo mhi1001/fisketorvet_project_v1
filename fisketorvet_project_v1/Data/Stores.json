@@ -76,10 +76,10 @@
   "2": {
     "Id": 2,
     "Name": "Bershka",
-    "Description": null,
+    "Description": "Bershka is mainly made for adventurous young people, who are aware of the latest trends and are interested in music, social networks and new technologies.",
     "TypeOfStore": "Clothing",
     "Location": "South2",
-    "ImagePath": "/img/storeLogos/bershka.png",
+    "ImagePath": "/img/storeLogos/Bershka.png",
     "Products": {
       "1": {
         "Id": 1,
