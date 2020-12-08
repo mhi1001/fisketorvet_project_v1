@@ -39,8 +39,18 @@ namespace fisketorvet_project_v1.Pages
                 {
                     Customer s = _custCatalogRepo.SiteAuth(SiteUser.UserName, SiteUser.Password);
                     HttpContext.Session.SetString("cat",JsonConvert.SerializeObject(s));
-                    if (s.Admin) return RedirectToPage("/AdminSection/AdminPage");
-                    else return RedirectToPage("/UserSection/UserPage");
+
+                    if (s.Admin)
+                    {
+                        HttpContext.Session.SetString("SessionType","adminSession");
+                        return RedirectToPage("/AdminSection/AdminPage");
+
+                    }
+
+                    else
+                    {
+                        return RedirectToPage("/UserSection/UserPage");
+                    }
                 }
             }
            return RedirectToPage("/Index");
