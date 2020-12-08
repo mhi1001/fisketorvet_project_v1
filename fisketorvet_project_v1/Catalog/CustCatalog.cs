@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using fisketorvet_project_v1.Models;
 using fisketorvet_project_v1.Pages;
 
 namespace fisketorvet_project_v1.Catalog
@@ -13,12 +14,12 @@ namespace fisketorvet_project_v1.Catalog
 
         public void AddCustomer(Customer c)
         {
-            clients.Add(c.ID,c);
+            clients.Add(c.Id,c);
         }
 
         public void DeleteCustomer(Customer c)
         {
-            clients.Remove(c.ID);
+            clients.Remove(c.Id);
         }
 
         public void Update(Customer c)
