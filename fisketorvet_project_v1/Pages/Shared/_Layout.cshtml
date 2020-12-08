@@ -1,6 +1,20 @@
 ﻿@using System.Net
 @using Microsoft.AspNetCore.Http
-
+<style> 
+    body {
+        background-image: url("/img/style/1.jpg");
+        background-repeat: no-repeat, repeat;
+        background-position-x: left;
+        background-color: #cccccc;
+        background-size: cover;
+    }
+    h1 {
+        text-align: justify;
+        text-decoration: overline underline;
+        text-indent: 50px;
+        text-shadow: 5px 5px 5px white;
+    }
+</style>
 @*@{ var session = HttpContext.Session.GetString("cat");  }*@
 <!DOCTYPE html>
 <html lang="en">
@@ -11,6 +25,7 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
 </head>
+
 <body>
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-transparent border-bottom box-shadow mb-3">
