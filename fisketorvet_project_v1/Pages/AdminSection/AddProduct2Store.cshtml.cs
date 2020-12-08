@@ -13,7 +13,7 @@ namespace fisketorvet_project_v1.Pages.AdminSection
     public class AddProduct2StoreModel : PageModel
     {
         private StoreCatalog _storeCatalog;
-        private ProductCatalog _productCatalog;
+       
 
         [BindProperty]
         public Product Product { get; set; }
