@@ -2,7 +2,7 @@
   "1": {
     "Id": 1,
     "Name": "Zara",
-    "Description": "Zara specializes in fast fashion, and products include clothing, accessories, shoes, swimwear, beauty, and perfumes.",
+    "Description": "Zara specializes in fast fashion, and products include clothing, accessories, shoes, swimwear, beauty, and perfumes and scarfs.",
     "TypeOfStore": "Clothing",
     "Location": "South1",
     "ImagePath": "/img/storeLogos/zara.png",
@@ -83,14 +83,6 @@
     "Location": "South3",
     "ImagePath": "/img/storeLogos/sportzone.png",
     "Products": {
-      "1": {
-        "Id": 1,
-        "ProductType": 2,
-        "ProductName": "Nice Jeans",
-        "Dimensions": "44",
-        "Price": 29999.0,
-        "ImageName": "/img/zara_products/jeans1.jpg"
-      },
       "2": {
         "Id": 2,
         "ProductType": 2,
@@ -98,6 +90,14 @@
         "Dimensions": "38",
         "Price": 199.99,
         "ImageName": "/img/zara_products/jeans2.jpg"
+      },
+      "3": {
+        "Id": 3,
+        "ProductType": 0,
+        "ProductName": "Cool OverPriced T-Shirt 10",
+        "Dimensions": "L",
+        "Price": 19.9,
+        "ImageName": "/img/zara_products/tshirt3.jpg"
       }
     }
   }

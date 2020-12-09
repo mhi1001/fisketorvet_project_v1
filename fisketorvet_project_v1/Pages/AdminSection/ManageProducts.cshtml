@@ -13,7 +13,7 @@
             <th>Dimensions</th>
             <th>Product Type</th>
             <th>Price</th>
-            <th> </th>
+            <th></th>
             <th><a asp-page="AddProduct2Store" asp-route-id="@Model.Store.Id" 
                    class="btn btn-primary btn-group-lg"  >
                 Add New
@@ -45,10 +45,6 @@
                     <img src="@prd.ImageName" width="80" height="70">
                 </td>
                 <td>
-                    <a asp-page="EditProduct"
-                       class="btn btn-success btn-group-lg pull-right">
-                        Edit
-                    </a>
                     <form method="post">
                         <input align="right" type="submit" class="btn btn-danger" value="Remove" style="background-color: red; color: black"asp-route-productid="@prd.Id"asp-route-storeid="@Model.Store.Id" asp-page="/Delete/DeleteProduct"/>
                     </form>

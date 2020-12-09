@@ -13,6 +13,7 @@ namespace fisketorvet_project_v1.Services
 
         private Dictionary<int, Store> Stores { get; set; }
         
+
         
         public Dictionary<int, Store> GetAllStores()
         {
@@ -33,6 +34,20 @@ namespace fisketorvet_project_v1.Services
             Stores = GetAllStores();
             Stores.Remove(id);
             JsonWriter<int, Store>.WriteToJson(Stores, filePath);
+        }
+
+        public void UpdateStore(Store store)
+        {
+            Dictionary<int, Store> stores = GetAllStores();
+            Store foundStore = stores[store.Id];
+            foundStore.Name = store.Name;
+            foundStore.Description = store.Description;
+            foundStore.Location = store.Location;
+            foundStore.ImagePath = store.ImagePath;
+            foundStore.TypeOfStore = store.TypeOfStore;
+            foundStore.Products = GetStore(store.Id).Products;
+            JsonWriter<int, Store>.WriteToJson(stores, filePath);
+
         }
 
         public void RemoveProductFromStore(int storeid, int productid)

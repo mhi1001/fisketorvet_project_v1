@@ -25,9 +25,14 @@ namespace fisketorvet_project_v1.Pages.PublicSection
 
         public IActionResult OnPost()
         {
-            Customer.Admin = false; //Set default as false, so the registered users arent given admin
-            _customerCatalog.AddCustomer(Customer); //Adding customer
-            return Redirect("/Login");
+            if (ModelState.IsValid)
+            {
+                Customer.Admin = false; //Set default as false, so the registered users arent given admin
+                _customerCatalog.AddCustomer(Customer); //Adding customer
+                return Redirect("/Login");
+            }
+
+            return Page();
         }
     }
 }

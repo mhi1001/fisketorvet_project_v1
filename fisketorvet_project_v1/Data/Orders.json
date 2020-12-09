@@ -26,41 +26,41 @@
   },
   "2": {
     "Id": 2,
-    "Date": "2020-12-09T13:36:17.6862374+01:00",
+    "Date": "2020-12-09T03:48:45.7491954+01:00",
     "Customer": {
-      "Id": 3,
-      "UserName": "Paulici",
-      "Name": "Paula-Catalina Curca",
-      "Address": "Bymarken 59",
-      "Email": "catalina.paulina21@gmail.com",
-      "PhoneNumber": "+4550170295",
-      "Password": "AQAAAAEAACcQAAAAEEoje83zvzzWCyDuSQ/dE63DMe6m0LszsHqnFxo2GfEEctTr5pxgEhFp4wl51hnH1Q==",
-      "Admin": false
+      "Id": 1,
+      "UserName": "admin",
+      "Name": "Pedro Miguel",
+      "Address": "Alexvej 55A, Roskilde",
+      "Email": "pedro1@gmail.com",
+      "PhoneNumber": "91111111",
+      "Password": "AQAAAAEAACcQAAAAECeseAR8HHE2NGCpAMaiugFjKECjcvzbu2x0yDzBTN8K6+iAez6c6GMUFegyqCyhnA==",
+      "Admin": true
     },
     "Products": [
       {
-        "Id": 4,
-        "ProductType": 3,
-        "ProductName": "Cool Slav Shoes2",
-        "Dimensions": "39",
-        "Price": 29.99,
-        "ImageName": "/img/zara_products/shoes1.jpg"
+        "Id": 5,
+        "ProductType": 0,
+        "ProductName": "Portuguese T Shirt",
+        "Dimensions": "M",
+        "Price": 19.99,
+        "ImageName": "/img/zara_products/tshirt1.jpg"
       }
     ],
-    "TotalPrice": 29.99
+    "TotalPrice": 19.99
   },
   "3": {
     "Id": 3,
-    "Date": "2020-12-09T17:03:27.4241122+01:00",
+    "Date": "2020-12-09T03:49:45.4000582+01:00",
     "Customer": {
-      "Id": 2,
-      "UserName": "user",
-      "Name": "John Doe",
-      "Address": "Copenhagen Avenue",
-      "Email": "user@gmail.com",
-      "PhoneNumber": "962626262",
-      "Password": "AQAAAAEAACcQAAAAEPWN7oCtQUEaIljFYIbU2wtyJge+XCJXFmx/J3sl1bYCzYXsVcEhZeAw8Si6yQ8i7g==",
-      "Admin": false
+      "Id": 1,
+      "UserName": "admin",
+      "Name": "Pedro Miguel",
+      "Address": "Alexvej 55A, Roskilde",
+      "Email": "pedro1@gmail.com",
+      "PhoneNumber": "91111111",
+      "Password": "AQAAAAEAACcQAAAAECeseAR8HHE2NGCpAMaiugFjKECjcvzbu2x0yDzBTN8K6+iAez6c6GMUFegyqCyhnA==",
+      "Admin": true
     },
     "Products": [
       {
@@ -70,8 +70,24 @@
         "Dimensions": "39",
         "Price": 29.99,
         "ImageName": "/img/zara_products/shoes1.jpg"
+      },
+      {
+        "Id": 2,
+        "ProductType": 2,
+        "ProductName": "MegaNice Jeans",
+        "Dimensions": "38",
+        "Price": 199.99,
+        "ImageName": "/img/zara_products/jeans2.jpg"
+      },
+      {
+        "Id": 1,
+        "ProductType": 1,
+        "ProductName": "Jacket",
+        "Dimensions": "L",
+        "Price": 199.99,
+        "ImageName": "/img/zara_products/jacket1.jpg"
       }
     ],
-    "TotalPrice": 29.99
+    "TotalPrice": 429.97
   }
 }
