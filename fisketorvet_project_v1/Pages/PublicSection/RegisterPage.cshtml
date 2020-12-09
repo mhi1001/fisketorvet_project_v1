@@ -2,7 +2,12 @@
 @model fisketorvet_project_v1.Pages.PublicSection.RegisterPageModel
 @{
 }
-<form method="post">
+<style>
+    .back {
+        background: linear-gradient(to right, rgba(255, 255, 255, 0.9),rgba(115, 115, 115,0.5) )
+    }
+</style>
+<form class="back" method="post">@*style="background-color: rgba(237, 237, 237,0.7) "*@
     <div class="col-md-4">
         <div class="form-group">
             <label asp-for="@Model.Customer.Name" class="control-label"> Name </label>
@@ -36,7 +41,9 @@
             <input type="submit" class="btn btn-primary btn-outline-primary" value="Register" />
         </div>
     </div>
+    <div>
+        <a asp-page="/Login"><h5>Back to LoginPage</h5></a>
+        <br/>
+    </div>
 </form>
-<div>
-    <a asp-page="/Login">Back to LoginPage</a>
-</div>
+

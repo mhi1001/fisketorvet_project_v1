@@ -5,46 +5,52 @@
 @{
 }
 <div class="text-center">
-    <h1 class="display-4">Welcome to the User Page</h1>
+    <h1 class="display-4">User Page</h1>
 
 </div>
+<style>
+    .back {
+        background: linear-gradient(to right, rgba(255, 255, 255, 0.9),rgba(115, 115, 115,0.3) )
+    }
+</style>
 
-<div>
-    <h3 align="center">Hello, @Model.Customer.Name !<br /> Welcome back!</h3>
-</div>
+<div class="back">
+    <div>
+        <h3 align="center">Hello, @Model.Customer.Name !<br /> Welcome back!</h3>
+    </div>
 
-<div class="panel-group">
-    <div class="panel panel-default">
-        <div class="panel-heading">
-            <h4 class="panel-title">
-                <button data-toggle="collapse" class="btn btn-sm btn-outline-secondary" data-target="#demo">My Orders</button>
-            </h4>
-        </div>
-        <div id="demo" class="panel-collapse collapse">
-            <div class="panel-body">
-                @foreach (Order order in Model.Orders.Values)
-                {
-                    <p>@order.Date</p>
-                    <p>@order.TotalPrice</p>
-                    if (@order.Products != null)
+    <div class="panel-group">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <button data-toggle="collapse" class="btn btn-sm btn-outline-secondary" data-target="#demo" style="background-color: cornflowerblue; color: aliceblue">My Orders</button>
+                </h4>
+            </div>
+            <div id="demo" class="panel-collapse collapse">
+                <div class="panel-body">
+                    @foreach (Order order in Model.Orders.Values)
                     {
-                        foreach (Product prd in order.Products)
+                        //Want to add a special message if you don't have any orders yet.
+                        <p>@order.Date</p>
+                        <p>@order.TotalPrice</p>
+                        if (@order.Products != null)
                         {
-                            <p>@prd.ProductName</p>
+                            foreach (Product prd in order.Products)
+                            {
+                                <p>@prd.ProductName</p>
+                                <img />
+                            }
+
                         }
 
                     }
 
-                }
-
-                @*<button type="submit" class="btn btn-sm btn-outline-secondary">Store Details</button>*@
-            </div>
-            <div class="panel-body">
-                @*<button type="submit" class="btn btn-outline-secondary" align="right">Products</button>
-                    I replcaed the button with the <a> so i could redirect to a page. Using boostrap classes you can make
-                    it look like a real button, you can just look at my example*@
-
-                <a class="btn btn-outline-secondary" asp-page="ManageProducts" asp-route-id="">Products</a>
+                </div>
+                <div class="panel-body">
+                    @*<button type="submit" class="btn btn-outline-secondary" align="right">Products</button>
+                        I replcaed the button with the <a> so i could redirect to a page. Using boostrap classes you can make
+                        it look like a real button, you can just look at my example*@
+                </div>
             </div>
         </div>
     </div>

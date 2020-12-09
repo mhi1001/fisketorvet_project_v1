@@ -14,6 +14,7 @@ namespace fisketorvet_project_v1.Pages.UserSection
         private OrderCatalog _orderCatalog;
        
         public Dictionary<int, Order> Orders { get; set; }
+        [BindProperty]
         public Customer Customer { get; set; }
 
         public UserPageModel(OrderCatalog repoOrderCatalog)
