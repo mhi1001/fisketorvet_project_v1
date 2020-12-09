@@ -32,7 +32,7 @@
                                <p class="card-text">@st.Description</p>
                                <div class="d-flex justify-content-between align-items-center">
                                    <div class="btn-group ">
-                                       <button type="submit" class="btn btn-sm btn-outline-secondary">View</button>
+                                       
                                        <div class="panel-group">
                                            <div class="panel panel-default">
                                                <div class="panel-heading">
@@ -42,7 +42,7 @@
                                                </div>
                                                <div id="demo" class="panel-collapse collapse">
                                                    <div class="panel-body">
-                                                       <button type="submit" class="btn btn-sm btn-outline-secondary">Store Details</button>
+                                                       <a class="btn btn-outline-secondary" asp-page="/Edit/EditStore" asp-route-id="@st.Id">Edit Store</a>
                                                    </div>
                                                    <div class="panel-body">
                                                        @*<button type="submit" class="btn btn-outline-secondary" align="right">Products</button>

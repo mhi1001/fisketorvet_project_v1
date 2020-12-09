@@ -1,5 +1,5 @@
 ﻿@page
-@model fisketorvet_project_v1.Pages.AdminSection.CreateStoreAdminPageModel
+@model fisketorvet_project_v1.Pages.Edit.EditStoreModel
 @{
 }
 <form method="post">
@@ -8,7 +8,7 @@
         <div class="form-group">
             <label asp-for="@Model.Store.Name" class="control-label"> Name </label>
             <input asp-for="@Model.Store.Name" class="form-control" />
-           
+            @*<span asp-validation-for="@Model.Store.Name" class="text-danger"></span>*@
         </div>
         <div class="form-group">
             <label asp-for="@Model.Store.Description" class="control-label"> Description </label>
@@ -25,7 +25,7 @@
         <div class="form-group">
             <label asp-for="@Model.Store.TypeOfStore" class="control-label"> Type </label>
             <input asp-for="@Model.Store.TypeOfStore" class="form-control" />
-          
+            @*<span asp-validation-for="@Model." class="text-danger"></span>*@
         </div>
         <div class="form-group">
             <input type="submit" class="btn btn-primary btn-outline-primary" value="Create" />
@@ -33,5 +33,5 @@
     </div>
 </form>
 <div>
-    <a asp-page="/AdminSection/StoreAdminPage">Back</a>
+    <a asp-page="/AdminSection/StoreAdminPage">Back to StoreAdmin Page</a>
 </div>

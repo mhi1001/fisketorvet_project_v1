@@ -16,10 +16,6 @@
         <th>Customer Contact</th>
         <th>Price</th>
         <th> </th>
-        <th><a asp-page="AddProduct2Store"
-               class="btn btn-primary btn-group-lg"  >
-            Add New
-        </a></th>
     </tr>
     </thead>
     <tbody>
@@ -45,12 +41,8 @@
                 </td>
                 
                 <td>
-                    <a asp-page="EditProduct"
-                       class="btn btn-success btn-group-lg pull-right">
-                        Edit
-                    </a>
                     <form method="post">
-                        <input align="right" type="submit" class="btn btn-danger" value="Remove" style="background-color: red; color: black" asp-route-id="@order.Id" asp-page="/Delete/DeleteOrder" />
+                        <input align="right" type="submit" class="btn btn-danger" value="Remove" style="background-color: red; color: white" asp-route-id="@order.Id" asp-page="/Delete/DeleteOrder" />
                     </form>
                 </td>          
             </tr>
