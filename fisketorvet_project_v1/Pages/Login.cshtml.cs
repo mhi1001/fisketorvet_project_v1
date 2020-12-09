@@ -14,46 +14,59 @@ namespace fisketorvet_project_v1.Pages
 {
     public class LoginModel : PageModel
     {
-        private CustomerCatalog _custCatalogRepo;
+        private Dictionary<int, Customer> Customers { get; set; }
+        private CustomerCatalog _customerCatalogRepo;
         [BindProperty]
-        public Customer SiteUser { get; set; }
+        public Customer Customer { get; set; }
 
-        public LoginModel(CustomerCatalog repoCustCatalog)
+        public LoginModel(CustomerCatalog repoCustomerCatalog)
         {
-            _custCatalogRepo = repoCustCatalog;
-        }
-
-        public void OnGet()
-        { 
+            _customerCatalogRepo = repoCustomerCatalog;
         }
 
         public IActionResult OnPost()
         {
-            if (ModelState.IsValid)
+            return CheckLogin();
+        }
+
+        private IActionResult CheckLogin()
+        {
+            string password, username;
+            username = Request.Form["Username"];
+            password = Request.Form["Password"];
+
+            bool userTry = _customerCatalogRepo.CheckPassword(username, password);
+            if (userTry)
             {
-                return Page();
-            }
-            else
-            {
-                if (_custCatalogRepo.SiteAuth(SiteUser.UserName, SiteUser.Password) != null)
+                Customer = GetCustomerUsername(username);
+                HttpContext.Session.SetString("cat",JsonConvert.SerializeObject(Customer));
+                if (Customer.Admin)
                 {
-                    Customer s = _custCatalogRepo.SiteAuth(SiteUser.UserName, SiteUser.Password);
-                    HttpContext.Session.SetString("cat",JsonConvert.SerializeObject(s));
-
-                    if (s.Admin)
-                    {
-                        HttpContext.Session.SetString("SessionType","adminSession");
-                        return RedirectToPage("/AdminSection/AdminPage");
-
-                    }
-
-                    else
-                    {
-                        return RedirectToPage("/UserSection/UserPage");
-                    }
+                    HttpContext.Session.SetString("SessionType","adminSession");
+                    return RedirectToPage("/AdminSection/AdminPage");
+                }
+                else
+                {
+                    return RedirectToPage("/UserSection/UserPage");
                 }
             }
-           return RedirectToPage("/Index");
+            
+            return Page();
+        }
+
+        private Customer GetCustomerUsername(string username)
+        {
+            Customers = _customerCatalogRepo.GetAllCustomers();
+            foreach (Customer c in Customers.Values)
+            {
+                if (c.UserName == username)
+                {
+                    return c;
+                    
+                }
+               
+            }
+            return new Customer();
         }
     }
 }

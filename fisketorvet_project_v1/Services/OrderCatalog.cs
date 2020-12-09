@@ -11,7 +11,7 @@ namespace fisketorvet_project_v1.Services
         private string filePath = @".\Data\Orders.json";
         private Dictionary<int, Order> Orders { get; set; }
         private CustomerCatalog Customers { get; set; }
-        private Customer c;
+        
 
         public OrderCatalog(CustomerCatalog c)
         {
