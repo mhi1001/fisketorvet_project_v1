@@ -54,7 +54,7 @@ namespace fisketorvet_project_v1.Pages
             return Page();
         }
 
-        private Customer GetCustomerUsername(string username)
+        private Customer GetCustomerUsername(string username) //Get the username, so we can get the customer object.
         {
             Customers = _customerCatalogRepo.GetAllCustomers();
             foreach (Customer c in Customers.Values)
