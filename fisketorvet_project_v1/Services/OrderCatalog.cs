@@ -10,13 +10,7 @@ namespace fisketorvet_project_v1.Services
     {
         private string filePath = @".\Data\Orders.json";
         private Dictionary<int, Order> Orders { get; set; }
-        private CustomerCatalog Customers { get; set; }
-        
 
-        public OrderCatalog(CustomerCatalog c)
-        {
-            Customers = c;
-        }
         public Dictionary<int, Order> MyOrders(int customerid)
         {
             Dictionary<int,Order> customerOrders=new Dictionary<int, Order>();
