@@ -35,14 +35,8 @@ namespace fisketorvet_project_v1.Services
         public Customer GetCustomer(int id)
         {
             Customers = GetAllCustomers(); //Populate the dictionary
-            foreach (Customer c in Customers.Values)
-            {
-                if (c.Id == id)
-                {
-                    return c;
-                }
-            }
-            return new Customer();
+            Customer foundCustomer = Customers[id];
+            return foundCustomer;
         }
 
         public Customer SiteAuth(string username, string password)//Method to authenticate users

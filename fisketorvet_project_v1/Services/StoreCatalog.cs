@@ -21,23 +21,6 @@ namespace fisketorvet_project_v1.Services
             return JsonReader<int, Store>.ReadJson(filePath);
         }
 
-
-        public void UpdateStore(Store store)
-        {
-            Stores = GetAllStores();
-            Store foundStore = Stores[store.Id];
-            foundStore.Id = store.Id;
-            foundStore.Name = store.Name;
-            foundStore.Location = store.Location;
-            foundStore.ImagePath = store.ImagePath;
-            foundStore.TypeOfStore = store.TypeOfStore;
-            foundStore.Products = store.Products;
-
-            JsonWriter<int, Store>.WriteToJson(Stores, filePath);
-        }
-
-
-
         public void AddStore(Store store)
         {
 

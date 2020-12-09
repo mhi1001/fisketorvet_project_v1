@@ -28,10 +28,5 @@ namespace fisketorvet_project_v1.Pages.UserSection
             return Page();
         }
 
-        public IActionResult OnPost(Customer c)
-        {
-            //cust = catalog.GetCustomer(id);
-            return Page();
-        }
     }
 }
