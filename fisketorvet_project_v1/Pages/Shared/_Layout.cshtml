@@ -1,6 +1,8 @@
 ﻿@using System.Net
 @using Microsoft.AspNetCore.Http
+@using Microsoft.VisualBasic
 @{ var session = Context.Session.GetString("cat"); }
+@{ var sessionType = Context.Session.GetString("SessionType"); }
 <style>
     body {
         background-image: url("/img/style/1.jpg");
@@ -57,10 +59,24 @@
                             }
                             else
                             {
+                                if (sessionType == "adminSession")
+                                {
+                                    <li class="nav-item">
+                                        <a class="nav-link text-dark" asp-area="" asp-page="/AdminSection/AdminPage">Administration</a>
+                                    </li>
+                                }
+                                else
+                                {
+                                    <li class="nav-item">
+                                        <a class="nav-link text-dark" asp-area="" asp-page="/UserSection/UserPage">My UserPage</a>
+                                    </li>
+                                }
                                 <li class="nav-item">
                                     <a class="nav-link text-dark" asp-area="" asp-page="/Logout">Log out</a>
                                 </li>
                             }
+                           
+                            
                         }
 
                     </ul>

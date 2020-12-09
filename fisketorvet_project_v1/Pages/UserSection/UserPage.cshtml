@@ -10,7 +10,7 @@
 </div>
 
 <div>
-    <h3 align="center">Hello, @Model.cust.Name !<br /> Welcome back!</h3>
+    <h3 align="center">Hello, @Model.Customer.Name !<br /> Welcome back!</h3>
 </div>
 
 <div class="panel-group">
@@ -22,19 +22,27 @@
         </div>
         <div id="demo" class="panel-collapse collapse">
             <div class="panel-body">
-                @foreach (Order o in Model.MyOrder().Values)
+                @foreach (Order order in Model.Orders.Values)
                 {
-                    <p>@o.Date</p>
-                    <p>@o.TotalPrice</p>
-                    <p>@o.Products</p>
+                    <p>@order.Date</p>
+                    <p>@order.TotalPrice</p>
+                    if (@order.Products != null)
+                    {
+                        foreach (Product prd in order.Products)
+                        {
+                            <p>@prd.ProductName</p>
+                        }
+
+                    }
+
                 }
 
                 @*<button type="submit" class="btn btn-sm btn-outline-secondary">Store Details</button>*@
             </div>
             <div class="panel-body">
                 @*<button type="submit" class="btn btn-outline-secondary" align="right">Products</button>
-                                                           I replcaed the button with the <a> so i could redirect to a page. Using boostrap classes you can make
-                                                           it look like a real button, you can just look at my example*@
+                    I replcaed the button with the <a> so i could redirect to a page. Using boostrap classes you can make
+                    it look like a real button, you can just look at my example*@
 
                 <a class="btn btn-outline-secondary" asp-page="ManageProducts" asp-route-id="">Products</a>
             </div>

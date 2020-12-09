@@ -10,28 +10,21 @@ namespace fisketorvet_project_v1.Pages.UserSection
 {
     public class UserPageModel : PageModel
     {
-        [BindProperty]
-        public Customer cust { set; get; }
-        [BindProperty]
-        public OrderCatalog Order { set; get; }
-        public CustomerCatalog catalog;
-        [BindProperty]
-        public Dictionary<int, Order> orders { set; get; }
+      
+        private OrderCatalog _orderCatalog;
+       
+        public Dictionary<int, Order> Orders { get; set; }
+        public Customer Customer { get; set; }
 
-        public UserPageModel(CustomerCatalog c, OrderCatalog o)
+        public UserPageModel(OrderCatalog repoOrderCatalog)
         {
-            catalog = c;
-            Order = o;
+            _orderCatalog = repoOrderCatalog;
         }
-        public Dictionary<int, Order> MyOrder()
-        {
-            orders=Order.MyOrders(cust.Id);
-            return orders;
-        }
+        
         public IActionResult OnGet(int id)
         {
-            cust=JsonConvert.DeserializeObject<Customer>(HttpContext.Session.GetString("cat"));
-            //cust=catalog.GetCustomer(id);
+            Customer = JsonConvert.DeserializeObject<Customer>(HttpContext.Session.GetString("cat"));
+            Orders = _orderCatalog.MyOrders(Customer.Id);
             return Page();
         }
 

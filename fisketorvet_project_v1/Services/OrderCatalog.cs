@@ -17,19 +17,20 @@ namespace fisketorvet_project_v1.Services
         {
             Customers = c;
         }
-        public Dictionary<int, Order> MyOrders(int id)
+        public Dictionary<int, Order> MyOrders(int customerid)
         {
-            Dictionary<int,Order> orders=new Dictionary<int, Order>();
-            c=Customers.GetCustomer(id);
-            if (c != null)
-            {
-                Orders=GetAllOrders();
-                foreach (var o in Orders.Values)
+            Dictionary<int,Order> customerOrders=new Dictionary<int, Order>();
+            Orders = GetAllOrders();
+            
+                foreach (Order order in Orders.Values)
                 {
-                    if(o.Customer==c) orders.Add(o.Id,o);
+                    if (order.Customer.Id == customerid)
+                    {
+                        customerOrders.Add(order.Id, order);
+                    }
                 }
-            }
-            return orders;
+            
+            return customerOrders;
         }
 
         public Dictionary<int, Order> GetAllOrders()
