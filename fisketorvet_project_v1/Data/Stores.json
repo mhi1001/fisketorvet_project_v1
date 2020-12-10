@@ -38,14 +38,6 @@
         "Dimensions": "L",
         "Price": 19.9,
         "ImageName": "/img/zara_products/tshirt1.jpg"
-      },
-      "8": {
-        "Id": 8,
-        "ProductType": 0,
-        "ProductName": "Portuguese T Shirt",
-        "Dimensions": "M",
-        "Price": 299.99,
-        "ImageName": "/img/zara_products/tshirt1.jpg"
       }
     }
   },

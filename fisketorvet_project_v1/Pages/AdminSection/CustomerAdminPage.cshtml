@@ -3,6 +3,12 @@
 @model fisketorvet_project_v1.Pages.AdminSection.CustomerAdminPageModel
 @{
 }
+<style>
+    .btn {
+        width: 100%;
+        margin: 5px; /* or whatever you like */
+    }
+</style>
 
 <h1>Customer Management Page</h1>
 
@@ -54,12 +60,11 @@
                             <b>@customer.Admin</b>
                         </td>
                         <td>
-                            <a asp-page="EditProduct"
-                               class="btn btn-success btn-group-lg pull-right">
+                            <a asp-page="EditProduct" class="btn btn-success btn-group-lg pull-right">
                                 Edit
                             </a>
                             <form method="post">
-                                <input align="right" type="submit" class="btn btn-danger" value="Remove" style="background-color: red; color: black" asp-route-id="@customer.Id" asp-page="/Delete/DeleteCustomer" />
+                                <input align="right" type="submit" class="btn btn-danger" value="Remove" style="background-color: red; color: white" asp-route-id="@customer.Id" asp-page="/Delete/DeleteCustomer" />
                             </form>
                         </td>
                     </tr>
