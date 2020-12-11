@@ -18,6 +18,20 @@ namespace fisketorvet_project_v1.Services
             return JsonReader<int, Customer>.ReadJson(filePath);
         }
 
+        public void UpdateCustomer(Customer customer)
+        {
+            Dictionary<int, Customer> customers = GetAllCustomers();
+            Customer foundCustomer = customers[customer.Id];
+            foundCustomer.Name = customer.Name;
+            foundCustomer.Address = customer.Address;
+            foundCustomer.Email = customer.Email;
+            foundCustomer.PhoneNumber = customer.PhoneNumber;
+            foundCustomer.Password = customer.Password;
+            foundCustomer.Admin = GetCustomer(customer.Id).Admin;
+            JsonWriter<int, Customer>.WriteToJson(customers, filePath);
+
+        }
+
         public void AddCustomer(Customer customer)
         {
             Dictionary<int, Customer> customers = GetAllCustomers(); //Populate it 
