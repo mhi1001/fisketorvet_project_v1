@@ -43,56 +43,57 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light @*bg-transparent*@ border-bottom box-shadow mb-3" style="background-color: rgba(54, 101, 196, 0.2); padding-left:16px">
-            <div class="container">
-                <a class="navbar-brand"  style="color: black;font-size:30px" asp-page="/Index">Fisketorvet</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/PublicSection/ViewStores">Stores</a>
-                        </li>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light @*bg-transparent*@ border-bottom box-shadow mb-3" style="background-color: rgba(0, 122, 153,0.5);padding-left: 16px">
+            @*rgba(51, 204, 204,0.6)*@
+                <div class="container">
+                    <a class="navbar-brand" style="color: white;font-size:30px" asp-page="/Index">Fisketorvet</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
+                        <ul class="navbar-nav flex-grow-1">
+                            <li class="nav-item">
+                                <a class="nav-link text-light" asp-area="" asp-page="/Index">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light" asp-area="" asp-page="/PublicSection/ViewStores">Stores</a>
+                            </li>
 
-                        @{
+                            @{
 
-                            if (session == null)
-                            {
-                                <li class="nav-item">
-                                    <a class="nav-link text-dark" asp-area="" asp-page="/Login">Login</a>
-                                </li>
-                            }
-                            else
-                            {
-                                if (sessionType == "adminSession")
+                                if (session == null)
                                 {
                                     <li class="nav-item">
-                                        <a class="nav-link text-dark" asp-area="" asp-page="/AdminSection/AdminPage">Administration</a>
+                                        <a class="nav-link text-light" asp-area="" asp-page="/Login">Login</a>
                                     </li>
                                 }
                                 else
                                 {
+                                    if (sessionType == "adminSession")
+                                    {
+                                        <li class="nav-item">
+                                            <a class="nav-link text-light" asp-area="" asp-page="/AdminSection/AdminPage">Administration</a>
+                                        </li>
+                                    }
+                                    else
+                                    {
+                                        <li class="nav-item">
+                                            <a class="nav-link text-light" asp-area="" asp-page="/UserSection/UserPage">My UserPage</a>
+                                        </li>
+                                    }
                                     <li class="nav-item">
-                                        <a class="nav-link text-dark" asp-area="" asp-page="/UserSection/UserPage">My UserPage</a>
+                                        <a class="nav-link text-light" asp-area="" asp-page="/Logout">Log out</a>
                                     </li>
                                 }
-                                <li class="nav-item">
-                                    <a class="nav-link text-dark" asp-area="" asp-page="/Logout">Log out</a>
-                                </li>
-                            }
-                           
-                            
-                        }
 
-                    </ul>
+
+                            }
+
+                        </ul>
+                    </div>
                 </div>
-            </div>
-        </nav>
+            </nav>
     </header>
     <div class="container">
         <main role="main" class="pb-3">
