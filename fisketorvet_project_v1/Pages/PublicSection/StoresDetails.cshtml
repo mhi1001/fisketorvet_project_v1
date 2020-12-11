@@ -11,7 +11,7 @@
     <div class="row flow-offset-1">
         @foreach (Product prd in @Model.StoreProducts.Values)
         {
-            <div class="col-xs-6 col-md-4 border bg-light">
+            <div class="col-xs-6 col-md-4 border" style="background-color: rgba(237, 237, 237,0.8)">
                 <div class="product tumbnail thumbnail-3">
                     <a href="#"><img class="card-img-top" src="@prd.ImageName"></a>
                     <div class="caption">

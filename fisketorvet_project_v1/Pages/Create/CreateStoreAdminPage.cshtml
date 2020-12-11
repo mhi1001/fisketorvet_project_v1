@@ -2,28 +2,40 @@
 @model fisketorvet_project_v1.Pages.AdminSection.CreateStoreAdminPageModel
 @{
 }
-<form method="post">
+<style>
+    .back {
+        background: linear-gradient(to bottom, rgba(255, 255, 255, 0.7), rgba(115, 115, 115,0.7))
+    }
+    label {
+        text-shadow: 5px 5px 5px white;
+        text-size-adjust: auto;
+        text-indent: each-line;
+    }
+
+</style>
+
+<form method="post" class="back">
     <div class="col-md-4">
 
         <div class="form-group">
-            <label asp-for="@Model.Store.Name" class="control-label"> Name </label>
+            <label asp-for="@Model.Store.Name" class="control-label"><b>Name</b>  </label>
             <input asp-for="@Model.Store.Name" class="form-control" />
            
         </div>
         <div class="form-group">
-            <label asp-for="@Model.Store.Description" class="control-label"> Description </label>
+            <label asp-for="@Model.Store.Description" class="control-label"> <b>Description</b> </label>
             <textarea asp-for="@Model.Store.Description" id="form7" class="form-control" rows="3"></textarea>
         </div>
         <div class="form-group">
-            <label asp-for="@Model.Store.Location" class="control-label"> Location </label>
+            <label asp-for="@Model.Store.Location" class="control-label"><b>Location</b> </label>
             <input asp-for="@Model.Store.Location" class="form-control" />
         </div>
         <div class="form-group">
-            <label asp-for="@Model.Store.ImagePath" class="control-label"> ImageName </label>
+            <label asp-for="@Model.Store.ImagePath" class="control-label"> <b>ImageName</b> </label>
             <input asp-for="@Model.Store.ImagePath" class="form-control" />
         </div>
         <div class="form-group">
-            <label asp-for="@Model.Store.TypeOfStore" class="control-label"> Type </label>
+            <label asp-for="@Model.Store.TypeOfStore" class="control-label"><b> Type</b> </label>
             <input asp-for="@Model.Store.TypeOfStore" class="form-control" />
           
         </div>

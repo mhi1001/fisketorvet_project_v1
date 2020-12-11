@@ -18,5 +18,15 @@
     "PhoneNumber": "962626262",
     "Password": "AQAAAAEAACcQAAAAEPWN7oCtQUEaIljFYIbU2wtyJge+XCJXFmx/J3sl1bYCzYXsVcEhZeAw8Si6yQ8i7g==",
     "Admin": false
+  },
+  "3": {
+    "Id": 3,
+    "UserName": "Paulici",
+    "Name": "Paula-Catalina Curca",
+    "Address": "Bymarken 59",
+    "Email": "catalina.paulina21@gmail.com",
+    "PhoneNumber": "+4550170295",
+    "Password": "AQAAAAEAACcQAAAAEEoje83zvzzWCyDuSQ/dE63DMe6m0LszsHqnFxo2GfEEctTr5pxgEhFp4wl51hnH1Q==",
+    "Admin": false
   }
 }

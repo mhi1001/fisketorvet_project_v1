@@ -89,5 +89,63 @@
       }
     ],
     "TotalPrice": 429.97
+  },
+  "4": {
+    "Id": 4,
+    "Date": "2020-12-10T10:54:54.2113244+01:00",
+    "Customer": {
+      "Id": 2,
+      "UserName": "user",
+      "Name": "John Doe",
+      "Address": "Copenhagen Avenue",
+      "Email": "user@gmail.com",
+      "PhoneNumber": "962626262",
+      "Password": "AQAAAAEAACcQAAAAEPWN7oCtQUEaIljFYIbU2wtyJge+XCJXFmx/J3sl1bYCzYXsVcEhZeAw8Si6yQ8i7g==",
+      "Admin": false
+    },
+    "Products": [
+      {
+        "Id": 1,
+        "ProductType": 1,
+        "ProductName": "Jacket",
+        "Dimensions": "L",
+        "Price": 199.99,
+        "ImageName": "/img/zara_products/jacket1.jpg"
+      }
+    ],
+    "TotalPrice": 199.99
+  },
+  "5": {
+    "Id": 5,
+    "Date": "2020-12-10T10:58:54.5187031+01:00",
+    "Customer": {
+      "Id": 1,
+      "UserName": "admin",
+      "Name": "Pedro Miguel",
+      "Address": "Alexvej 55A, Roskilde",
+      "Email": "pedro1@gmail.com",
+      "PhoneNumber": "91111111",
+      "Password": "AQAAAAEAACcQAAAAECeseAR8HHE2NGCpAMaiugFjKECjcvzbu2x0yDzBTN8K6+iAez6c6GMUFegyqCyhnA==",
+      "Admin": true
+    },
+    "Products": [
+      {
+        "Id": 5,
+        "ProductType": 0,
+        "ProductName": "Portuguese T Shirt",
+        "Dimensions": "M",
+        "Price": 19.99,
+        "ImageName": "/img/zara_products/tshirt1.jpg"
+      },
+      {
+        "Id": 2,
+        "ProductType": 2,
+        "ProductName": "MegaNice Jeans",
+        "Dimensions": "38",
+        "Price": 199.99,
+        "ImageName": "/img/zara_products/jeans2.jpg"
+      }
+    ],
+    "TotalPrice": 219.98000000000002
   }
 }

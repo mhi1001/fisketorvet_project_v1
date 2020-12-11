@@ -2,35 +2,42 @@
 @model fisketorvet_project_v1.Pages.AdminSection.AddProduct2StoreModel
 @{
 }
+<style>
+    .back {
+        background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(115, 115, 115,0.5))
+    }
+</style>
 
-<form method="post">
-    <div class="col-md-4">
+<div class="back">
+    <form method="post">
+        <div class="col-md-4">
 
-        <div class="form-group">
-            <label asp-for="@Model.Product.ProductName" class="control-label"> Name </label>
-            <input asp-for="@Model.Product.ProductName" class="form-control" />
-
-        </div>
-        <div class="form-group">
-            <label asp-for="@Model.Product.Dimensions" class="control-label"> Size / Weight / Other Dimensions </label>
-            <input asp-for="@Model.Product.Dimensions" class="form-control" />
-        </div>
-        <div class="form-group">
-            <label asp-for="@Model.Product.ProductType" class="control-label"> Type </label>
-            <select asp-for="@Model.Product.ProductType" class="form-control"
-                    asp-items="Html.GetEnumSelectList<ProductType>()">
-            </select>
             <div class="form-group">
-                <label asp-for="@Model.Product.Price" class="control-label"> Price</label>
-                <input asp-for="@Model.Product.Price" class="form-control" />
+                <label asp-for="@Model.Product.ProductName" class="control-label"><b> Name</b> </label>
+                <input asp-for="@Model.Product.ProductName" class="form-control" />
+
             </div>
             <div class="form-group">
-                <label asp-for="@Model.Product.ImageName" class="control-label"> Image Name </label>
-                <input asp-for="@Model.Product.ImageName" class="form-control" />
+                <label asp-for="@Model.Product.Dimensions" class="control-label"><b>Size / Weight / Other Dimensions</b></label>
+                <input asp-for="@Model.Product.Dimensions" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label asp-for="@Model.Product.ProductType" class="control-label"><b>Type</b></label>
+                <select asp-for="@Model.Product.ProductType" class="form-control"
+                        asp-items="Html.GetEnumSelectList<ProductType>()">
+                </select>
+                <div class="form-group">
+                    <label asp-for="@Model.Product.Price" class="control-label"><b>Price</b></label>
+                    <input asp-for="@Model.Product.Price" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label asp-for="@Model.Product.ImageName" class="control-label"><b> Image Name </b></label>
+                    <input asp-for="@Model.Product.ImageName" class="form-control" />
+                </div>
+            </div>
+            <div class="form-group">
+                <input type="submit" class="btn btn-primary btn-outline-primary" value="Create" />
             </div>
         </div>
-        <div class="form-group">
-            <input type="submit" class="btn btn-primary btn-outline-primary" value="Create" />
-        </div>
-    </div>
-</form>
+    </form>
+</div>
