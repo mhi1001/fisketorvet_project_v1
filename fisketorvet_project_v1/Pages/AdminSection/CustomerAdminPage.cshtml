@@ -3,66 +3,75 @@
 @model fisketorvet_project_v1.Pages.AdminSection.CustomerAdminPageModel
 @{
 }
+<style>
+    .btn {
+        width: 100%;
+        margin: 5px; /* or whatever you like */
+    }
+</style>
+
 <h1>Customer Management Page</h1>
 
-<table class="table">
-    <thead>
-        <tr>
-            <th>ID </th>
-            <th>Name</th>
-            <th>Email</th>
-            <th>Address</th>
-            <th>Phone Number</th>
-            <th>UserName</th>
-            <th>is Admin?</th>
-            <th>
-                @*<a asp-page="AddProduct2Store"                    this is the add new customer button, for future implementation
-                   class="btn btn-primary btn-group-lg">
-                    Add New
-                </a>*@
-            </th>
-        </tr>
-    </thead>
-    <tbody>
-        @if (Model.Customers.Count != 0)
-        {
-            @foreach (Customer customer in Model.Customers.Values)
+<div class="back" style="background-color: rgba(255, 255, 255,0.75)">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>ID </th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Address</th>
+                <th>Phone Number</th>
+                <th>UserName</th>
+                <th>is Admin?</th>
+                <th>
+                    @*<a asp-page="AddProduct2Store"                    this is the add new customer button, for future implementation
+                           class="btn btn-primary btn-group-lg">
+                            Add New
+                        </a>*@
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model.Customers.Count != 0)
             {
-                <tr>
-                    <td>
-                        @customer.Id
-                    </td>
-                    <td>
-                        @customer.Name
-                    </td>
-                    <td>
-                        @customer.Email
-                    </td>
-                    <td>
-                        @customer.Address
-                    </td>
-                    <td>
-                        @customer.PhoneNumber
-                    </td>
-                    <td>
-                        @customer.UserName
-                    </td>
-                   
-                    <td>
-                        @customer.Admin
-                    </td>
-                    <td>
-                        <a asp-page="EditProduct"
-                           class="btn btn-success btn-group-lg pull-right">
-                            Edit
-                        </a>
-                        <form method="post">
-                            <input align="right" type="submit" class="btn btn-danger" value="Remove" style="background-color: red; color: black" asp-route-id="@customer.Id" asp-page="/Delete/DeleteCustomer" />
-                        </form>
-                    </td>
-                </tr>
+                @foreach (Customer customer in Model.Customers.Values)
+                {
+                    <tr>
+                        <td>
+                            @customer.Id
+                        </td>
+                        <td>
+                            @customer.Name
+                        </td>
+                        <td>
+                            @customer.Email
+                        </td>
+                        <td>
+                            @customer.Address
+                        </td>
+                        <td>
+                            @customer.PhoneNumber
+                        </td>
+                        <td>
+                            @customer.UserName
+                        </td>
 
+                        <td>
+                            @customer.Admin
+                        </td>
+                        <td>
+                            <a asp-page="EditProduct"
+                               class="btn btn-success btn-group-lg pull-right">
+                                Edit
+                            </a>
+                            <form method="post">
+                                <input align="right" type="submit" class="btn btn-danger" value="Remove" style="background-color: red; color: black" asp-route-id="@customer.Id" asp-page="/Delete/DeleteCustomer" />
+                            </form>
+                        </td>
+                    </tr>
+
+                }
             }
-        }
-    </tbody>
-</table>
+        </tbody>
+    </table>
+    </div>
