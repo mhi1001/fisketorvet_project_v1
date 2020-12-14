@@ -60,8 +60,8 @@
                             <b>@customer.Admin</b>
                         </td>
                         <td>
-                            <a asp-page="EditUser" class="btn btn-success btn-group-lg pull-right">
-                               Implement
+                            <a asp-page="/Edit/EditUser" class="btn btn-success btn-group-lg pull-right" value="Edit" asp-route-id="@customer.Id">
+                               Edit
                             </a>
                             <form method="post">
                                 <input align="right" type="submit" class="btn btn-danger" value="Remove" style="background-color: red; color: white" asp-route-id="@customer.Id" asp-page="/Delete/DeleteCustomer" />

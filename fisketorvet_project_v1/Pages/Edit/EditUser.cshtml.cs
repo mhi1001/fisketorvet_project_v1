@@ -12,6 +12,7 @@ namespace fisketorvet_project_v1.Pages.Edit
     public class EditUserModel : PageModel
     {
         private CustomerCatalog userCatalog;
+
         [BindProperty]
         public Customer Customer { set; get; }
 
