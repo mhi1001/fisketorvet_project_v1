@@ -26,7 +26,7 @@ namespace fisketorvet_project_v1.Pages.PublicSection
              OrderProducts = new List<Product>();
             _storeCatalog = repoStoreCatalog;
             _ShoppingCartCatalog = repoShoppingCartCatalog;
-        }
+        }   
 
         public IActionResult OnGet(int id, int storeid) //On StoreDetails, using asp-route I pass 2 different Ids, regarding each store and then receive them here.
         {
@@ -34,7 +34,7 @@ namespace fisketorvet_project_v1.Pages.PublicSection
             {
                 return Redirect("/Login");
             }
-            _storeIdentification = storeid;//Assigns the store identification
+            _storeIdentification = storeid;//Assigns the store identification --(not being used but dont remove))
             Product = _storeCatalog.GetStore(storeid).Products[id]; //get the specific product, from the specific store(storeid)
             _ShoppingCartCatalog.AddProduct(Product); //Add the product to the list
             OrderProducts = _ShoppingCartCatalog.GetAll(); //refresh the list
